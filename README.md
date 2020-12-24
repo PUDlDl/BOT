@@ -6,7 +6,7 @@
 ### 𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗠𝗵𝗮𝗻𝗸𝗕𝗮𝗿𝗕𝗮𝗿
 
 ## NOTE:> 
-SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA TERMUX
+`SCRIPTNYA JANGAN DI JUAL/BELI lol`
 <</div>
 
 ### CARA INSTALLNYA
@@ -22,7 +22,7 @@ SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA 
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
 
-| AR15BOT      |                   Feature        |
+| GANG      |                   Feature        |
 | :-----------: | :------------------------------: |
 |       ✅       | Sticker Creator                  |
 |       ✅       | Nulis                            |
