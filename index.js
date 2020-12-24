@@ -350,7 +350,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'getses':
             	if (!isOwner) return reply(mess.only.ownerB)
             const sesPic = await client.getSnapshot()
-            client.sendFile(from, sesPic, 'session.png', '𝘁𝗼𝗱 ^_^...', id)
+            client.sendFile(from, sesPic, 'session.png', 'ngengg ^_^...', id)
             break	
 				case 'gtts':	
 				case 'tts':
@@ -536,7 +536,7 @@ break
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*✪* @${mem.jid.split('@')[0]}\n`
+						teks += `┣✪ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
