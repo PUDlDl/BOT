@@ -1,19 +1,19 @@
 
 const help = (prefix) => { 
 	return `                 
-┏━━━°❀ ❬ 𝘼𝘽𝙊𝙐𝙏 ❭ ❀°━━━┓
+┏━━━°✪〘 INFORMATION 〙✪°━━━┓
 ┃
-┏❉ *${prefix}owner*
-┣❉ *${prefix}donasi*
-┗❉ *${prefix}info*
+┃➣ *${prefix}info*
+┃➣ *${prefix}owner*
+┃➣ *${prefix}donasi*
 ┃
-┣━━━°❀ ❬ 𝗠𝗔𝗞𝗘𝗥 ❭ ❀°━━━⊱
+┣━━━°✪〘 MAKER 〙✪══°━━━≽
 ┃
 ┣➥ *${prefix}sticker*
 ┣➥ *${prefix}tsticker*
 ┣➥ *${prefix}nulis*
 ┃
-┣━━━━°❀ ❬ 𝙈𝙀𝘿𝙄𝘼 ❭ ❀°━━━⊱
+┣━━━━°✪〘 MEDIA 〙✪°━━━≽
 ┃
 ┣➥ *${prefix}tts*
 ┣➥ *${prefix}tiktok*
@@ -23,12 +23,12 @@ const help = (prefix) => {
 ┣➥ *${prefix}ocr*
 ┣➥ *${prefix}loli*
 ┃
-┣━━━°❀ ❬ 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 ❭ ❀°━━⊱
+┣━━━°✪〘 DOWNLOADER 〙✪°━━≽
 ┃
 ┣➥ *yt* [link]
 ┣➥ *play* [judul lagu]
 ┃
-┣━━━━°❀ ❬ 𝙂𝙍𝙊𝙐𝙋 ❭ ❀°━━━━⊱
+┣━━━━°✪〘 GROUP 〙✪══°━━━━≽
 ┃
 ┣➥ *${prefix}add* [62xxx]
 ┣➥ *${prefix}kick* [tag]
@@ -41,7 +41,7 @@ const help = (prefix) => {
 ┣➥ *${prefix}nsfw* [1/0]
 ┣➥ *${prefix}simih* [1/0]
 ┃
-┣━━━━━°❀ ❬ 𝙊𝙒𝙉𝙀𝙍 ❭ ❀°━━━━⊱
+┣━━━━━°✪〘 OWNER 〙✪°━━━━≽
 ┃
 ┣➥ *${prefix}bc* 
 ┣➥ *${prefix}leave*
@@ -50,9 +50,8 @@ const help = (prefix) => {
 ┣➥ *${prefix}clone* [tag]
 ┣➥ *${prefix}block*
 ┣➥ *${prefix}unblock*
-┣➥ *${prefix}getses*
 ┃
-┣━━━━°❀ ❬ 𝙊𝙏𝙃𝙀𝙍 ❭ ❀°━━━━━⊱
+┣━━━━°✪〘 OTHER 〙✪°━━━━━≽
 ┃
 ┣➥ *${prefix}ytsearch*
 ┣➥ *${prefix}listadmin*
@@ -64,7 +63,7 @@ const help = (prefix) => {
 ┣➥ *${prefix}url2img*
 ┃
 ┣━━━━━━━━━━━━━━━━━━━━
-┃ 
+┃ i'm PUDIDIBOTツ
 ┗━━━━━━━━━━━━━━━━━━━━`
 }
 exports.help = help
