@@ -536,8 +536,7 @@ break
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						rchoice = Math.floor(Math.random() * list_emoji.length)
-						teks += `┣➥ @${mem.jid.split('@')[0]}\n`
+						teks += `*#* @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
