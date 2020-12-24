@@ -236,7 +236,6 @@ client.on('group-participants-update', async (anu) => {
                 client.sendMessage(dari, './aris'+'welot'+'mp3',{quoted: mek, ptt:true})
                 break
                 
-                
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
