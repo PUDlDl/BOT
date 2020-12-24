@@ -20,9 +20,9 @@
 > Tinggal scan kode qr yeee..
 ```
 
-## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
+## ``FEATURES``
 
-| Yes      |                   Feature        |
+| On      |                   Feature        |
 | :-----------: | :------------------------------: |
 |       ✅       | Sticker Creator                  |
 |       ✅       | Nulis                            |
