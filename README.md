@@ -1,42 +1,23 @@
 ## <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> PUDIDI GANG
 <p align="center">
-<img src="https://raw.githubusercontent.com/A187ID/AR15BOT/main/aris/A187.jpg" width="230" height="230"/>
-</p>
-<br>
 
 </details>
 
 ### 𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗠𝗵𝗮𝗻𝗸𝗕𝗮𝗿𝗕𝗮𝗿
 
-### WARNING
-MAU RE-UPLOAD SCRIPT? KASIH NAMA/LINK CHANEL SAYA.... DILARANG UBAH INFO!!!
-
 ## NOTE:> 
 SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA TERMUX
-</div>
+<</div>
 
-### ALAT DAN BAHAN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Hello_Big.gif" width="29px">
-Siapin alat dan bahannya.
-```bash
-> niat
-> 2 handphone (1 buat jalanin sc, 1 buat scan kode qr kak)
-> jaringan internet kenceng,kuota+
-> penyimpanan yang memadai
-> aplikasi whatsapp
-> aplikasi termux
-> kopi+rokok ;v
-```
-
-### CARA INSTALLNYA  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/hmm.gif" width="29px">
-Script ini di modifikasi sama saya sendiri Aris187 ID.
-```bash
-> kalo lu belum punya apk termux, download di playstore
-> masuk ke apk termux lalu ketik dibawah ini!
-> git clone https://github.com/A187ID/AR15BOT
-> cd AR15BOT
+### CARA INSTALLNYA
+'''php
+> apt update && apt upgrade
+> pkg install git
+> git clone https://github.com/PUDIDI/GANG
+> cd GANG
 > bash install.sh
 > node index js
-> Tinggal scan kode qr yeee...done
+> Tinggal scan kode qr yeee..
 ```
 
 ## FEATURES  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Earth.gif" width="29px">
