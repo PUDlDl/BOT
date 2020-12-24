@@ -56,7 +56,6 @@ const help = (prefix) => {
 ┃
 ┣➥ *${prefix}ytsearch*
 ┣➥ *${prefix}listadmin*
-┣➥ *${prefix}blocklist*
 ┣➥ *${prefix}simi*
 ┣➥ *${prefix}wait*
 ┣➥ *${prefix}fitnah*
@@ -67,7 +66,7 @@ const help = (prefix) => {
 ┃ by AnxietyBotツ
 ┗━━━━━━━━━━━━━━━━━━━━
 ══━━━━°✪〘 LAST 〙✪°━━━━━══
-╔════════════════════──────────¤͜͡҈➢
+╔════════════════════───────¤͜͡҈➢
 ║ *um AnxietyBot*
 ╠════════════════════
 ║├≽️🗿 *AUTHOR*:
@@ -164,7 +163,7 @@ const help = (prefix) => {
 ║├≽️dahbye
 ╠════════════════════
 ║ BY *AnxietyBot*
-╚════════════════════──────────¤͜͡҈➢`
+╚════════════════════───────¤͜͡҈➢`
 }
 exports.help = help
 
