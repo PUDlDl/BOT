@@ -1,5 +1,5 @@
 {
-  "name": "AR15BOT",
+  "name": "SIMBADDA",
   "version": "1.0.0",
   "description": "Termux only",
   "main": "index.js",
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/A187ID/AR15BOT.git"
+    "url": "git+https://github.com/PUDlDl/BOT.git"
   },
   "keywords": [
     "k"
@@ -47,7 +47,7 @@
   "author": "Abdul Muttaqin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/A187ID/AR15BOT/issues"
+    "url": "https://github.com/PUDlDl/Bot/issues"
   },
-  "homepage": "https://github.com/A187ID/AR15BOT/readme"
+  "homepage": "https://github.com/PUDlDl/BOT/readme"
 }
