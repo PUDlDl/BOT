@@ -1,5 +1,5 @@
 const help = (prefix) => {
-	return `PUDIDIBOT
+	return `AnxietyBot
 	
 	                
 ┏━━━°✪〘 INFORMATION 〙✪°━━━┓
@@ -44,7 +44,7 @@ const help = (prefix) => {
 ┃
 ┣━━━━°✪〘 END 〙✪°━━━━━≽
 ┣━━━━━━━━━━━━━━━━━━━━
-┃ 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 PUDIDIBOT
+┃ 𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 AnxietyBot
 ┗━━━━━━━━━━━━━━━━━━━━`
 }
 
