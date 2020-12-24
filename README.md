@@ -10,9 +10,9 @@ SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA 
 <</div>
 
 ### CARA INSTALLNYA
-'''php
+```php
 > apt update && apt upgrade
-> pkg install git
+> pkg install git && pkg install wget && pkg install ffmpeg
 > git clone https://github.com/PUDIDI/GANG
 > cd GANG
 > bash install.sh
@@ -57,10 +57,11 @@ SCRIPTNYA JANGAN DI JUAL/BELI KAN.. SCRIPT INI 100% GRATIS BUAT KALIAN PENGGUNA 
 |       ✅       | leave                             |
 |       ✅       | url2img                           |
 |       ✅       | wait                          |
-|            info/donate/creator                  |
+|            More                  |
 
 Ket: Aktiv 24 jam
 
+Ket: Off sibuk
 ## SOSIAL MEDIA ADMIN <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/powerup.gif" width="29px">
 
 * [`Youtube Admin`](https://www.youtube.com/channel/UCGYLWtyT9IADYNUiK0uZiGg)
