@@ -41,6 +41,7 @@ const help = (prefix) => {
 ┣➥ *${prefix}setprefix
 ┣➥ *${prefix}welcome*
 ┣➥ *${prefix}left*
+┣➥ *${prefix}tagall*
 ┃
 ┣━━━━°✪〘 END 〙✪°━━━━━≽
 ┣━━━━━━━━━━━━━━━━━━━━
