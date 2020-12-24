@@ -40,6 +40,7 @@ const help = (prefix) => {
 ┣➥ *${prefix}welcome* [1/0]
 ┣➥ *${prefix}nsfw* [1/0]
 ┣➥ *${prefix}simih* [1/0]
+┣➥ *${prefix}tagall*
 ┃
 ┣━━━━━°✪〘 OWNER 〙✪°━━━━≽
 ┃
@@ -63,7 +64,7 @@ const help = (prefix) => {
 ┣➥ *${prefix}url2img*
 ┃
 ┣━━━━━━━━━━━━━━━━━━━━
-┃ i'm PUDIDIBOTツ
+┃ by AnxietyBotツ
 ┗━━━━━━━━━━━━━━━━━━━━`
 }
 exports.help = help
