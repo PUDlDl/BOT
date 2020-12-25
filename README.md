@@ -13,8 +13,8 @@
 ```php
 > apt update && apt upgrade
 > pkg install git && pkg install wget && pkg install ffmpeg
-> git clone https://github.com/PUDIDI/GANG
-> cd GANG
+> git clone https://github.com/PUDIDI/BOT
+> cd BOT
 > bash install.sh
 > node index js
 > Tinggal scan kode qr yeee..
