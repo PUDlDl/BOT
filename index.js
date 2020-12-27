@@ -39,7 +39,7 @@ const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'ORG:@itspapoy;\n' // KASIH CREDITS GUA SU!!!
             + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' // JANGAN KEK BABI SU
             + 'END:VCARD' // ARIS187 ID
-prefix = '!'
+prefix = '.'
 blocked = []            
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
@@ -107,7 +107,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝗛𝗮𝗹𝗹𝗼 @${num.split('@')[0]}\𝘀𝗲𝗹𝗮𝗺𝗮𝘁 𝗱𝗮𝘁𝗮𝗻𝗴 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 *${mdata.subject}* 𝘆𝗮𝗻𝗴 𝗯𝗲𝘁𝗮𝗵 𝘆𝗮𝗵 𝗱𝗶𝘀𝗶𝗻𝗶😃`
+				teks = `Hallo @${num.split('@')[0]}\ Selamat datang di Group *${mdata.subject}* baik baik yaa kamu di sini semoga betahツ`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -117,7 +117,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝘀𝗮𝘆𝗼𝗻𝗮𝗿𝗮𝗮𝗮𝗮🥳 @${num.split('@')[0]} 𝗴𝗮 𝘂𝘀𝗮𝗵 𝗯𝗮𝗹𝗶𝗸 𝗸𝗲𝘀𝗶𝗻𝗶 𝗹𝗮𝗴𝗶 𝘆𝗮𝗵`
+				teks = `Sayonaraaa👋🏻 @${num.split('@')[0]} terimakasih sudah tidak setia dan hanya sekedar singgah, walaupun akhirnya tidak menetap, kami sekeluarga mengucapkan bodoamat dahlahツ`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
