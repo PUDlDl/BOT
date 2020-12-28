@@ -529,6 +529,19 @@ break
                  const linkgc = await conn.groupInviteCode (from) 
                  reply (linkgc)
                  break 
+                                case 'tagalll':
+                                case 'everyone':
+                                      if (!isGroupMsg) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
+                                      if (!isGroupAdmins) return aruga.reply(from, 'Gagal, perintah ini hanya dapat digunakan oleh admin grup!', id)
+                                      const groupMem = await aruga.getGroupMembers(groupId)
+                                      let hehex = '╔══✪〘 Mention All 〙✪══\n'
+                                      for (let i = 0; i < groupMem.length; i++) {
+                                      hehex += '╠➥'
+                                      hehex += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
+                                      }
+                                      hehex += '╚═〘 *A R U G A  B O T* 〙'
+                                      await aruga.sendTextWithMentions(from, hehex)
+                                      break
 				case 'tagall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -569,21 +582,21 @@ break
 	
                     break
 				case 'bc': 
-					if (!isOwner) return reply('𝙡𝙪 𝙨𝙞𝙖𝙥𝙖?') 
+					if (!isOwner) return reply(mess.only.ownerB)
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await client.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							client.sendMessage(_.jid, buff, image, {caption: `❮ 𝙋𝙀𝙎𝘼𝙉 𝘽𝙍𝙊𝘼𝘿𝘾𝘼𝙎𝙏 ❯\n\n${body.slice(4)}`})
+							client.sendMessage(_.jid, buff, image, {caption: `❮ 𝐏𝐄𝐒𝐀𝐍 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 *Anxiety𝐁𝐎𝐓* ❯\n\n${body.slice(4)}`})
 						}
-						reply('𝙨𝙪𝙘𝙘𝙚𝙨𝙨 𝙗𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 ')
+						reply('𝐬𝐮𝐜𝐜𝐬𝐬 𝐛𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `❮ 𝙋𝙀𝙎𝘼𝙉 𝘽𝙍𝙊𝘼𝘿𝘾𝘼𝙎𝙏 ❯\n\n${body.slice(4)}`)
+							sendMess(_.jid, `❮ 𝐏𝐄𝐒𝐀𝐍 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 *Anxiety𝐁𝐎𝐓* ❯\n\n${body.slice(4)}`)
 						}
-						reply('𝙨𝙪𝙘𝙘𝙚𝙨𝙨 𝙗𝙧𝙤𝙖𝙙𝙘𝙖𝙨𝙩 ')
+						reply('𝐬𝐮𝐜𝐜𝐬𝐬 𝐛𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭')
 					}
 					break
 			       	case 'setpp': 
@@ -599,7 +612,7 @@ break
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 					if (args.length < 1) return reply('𝗽𝗮𝘀𝘁𝗶 𝘆𝗮𝗻𝗴 𝗺𝗮𝘂 𝗱𝗶 𝗮𝗱𝗱 𝗮𝗻𝗮𝗸 𝗽𝘂𝗻𝗴𝘂𝘁?')
-					if (args[0].startsWith('08')) return reply('𝗚𝘂𝗻𝗮𝗸𝗮𝗻 𝗸𝗼𝗱𝗲 𝗻𝗲𝗴𝗮𝗿𝗮 𝘁𝗼𝗱')
+					if (args[0].startsWith('08')) return reply('𝗚𝘂𝗻𝗮𝗸𝗮𝗻 𝗸𝗼𝗱𝗲 𝗻𝗲𝗴𝗮𝗿𝗮 _-')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						client.groupAdd(from, [num])
