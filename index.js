@@ -529,19 +529,6 @@ break
                  const linkgc = await conn.groupInviteCode (from) 
                  reply (linkgc)
                  break 
-                                case 'tagalll':
-                                case 'everyone':
-                                        if (!isGroup) return aruga.reply(mess.only.group)
-                                        if (!isGroupAdmins) return reply(mess.only.admin)
-                                        members_id = []
-                                        teks = '╔══✪〘 Mention All 〙✪══\n'
-                                        for (let mem of groupMembers) {
-                                              teks += '*✪*
-                                              members_id.push(mem.jid)
-                                        }
-                                        teks += '╚═〘 *A n x i e t y  B o t* 〙'
-                                        mentions(teks, members_id, true)
-                                        break
 				case 'tagall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
