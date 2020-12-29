@@ -536,7 +536,7 @@ break
                                         members_id = []
                                         teks = '╔══✪〘 Mention All 〙✪══\n'
                                         for (let mem of groupMembers) {
-                                              teks += '╠➥ @${mem.jid.split('@')[0]}\n`
+                                              teks += '*✪*
                                               members_id.push(mem.jid)
                                         }
                                         teks += '╚═〘 *A n x i e t y  B o t* 〙'
@@ -547,11 +547,12 @@ break
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += '\n\n'
+					teks += '╔══✪〘 Mention All 〙✪══\n'
 					for (let mem of groupMembers) {
 						teks += `*┣¤͜͡҈✪* @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
+                                        teks += '╚═〘 *A n x i e t y  B o t* 〙'
 					mentions(teks, members_id, true)
 					break
 				case 'clearall':
