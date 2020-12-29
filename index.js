@@ -536,7 +536,7 @@ break
                                         members_id = []
                                         teks = '╔══✪〘 Mention All 〙✪══\n'
                                         for (let mem of groupMembers) {
-                                              teks += '╠➥'
+                                              teks += '╠➥ @${mem.jid.split('@')[0]}\n`
                                               members_id.push(mem.jid)
                                         }
                                         teks += '╚═〘 *A n x i e t y  B o t* 〙'
