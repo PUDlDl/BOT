@@ -531,17 +531,17 @@ break
                  break 
                                 case 'tagalll':
                                 case 'everyone':
-                                      if (!isGroupMsg) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
-                                      if (!isGroupAdmins) return aruga.reply(from, 'Gagal, perintah ini hanya dapat digunakan oleh admin grup!', id)
-                                      const groupMem = await aruga.getGroupMembers(groupId)
-                                      let hehex = '╔══✪〘 Mention All 〙✪══\n'
-                                      for (let i = 0; i < groupMem.length; i++) {
-                                      hehex += '╠➥'
-                                      hehex += ` @${groupMem[i].id.replace(/@c.us/g, '')}\n`
-                                      }
-                                      hehex += '╚═〘 *A R U G A  B O T* 〙'
-                                      await aruga.sendTextWithMentions(from, hehex)
-                                      break
+                                        if (!isGroup) return aruga.reply(mess.only.group)
+                                        if (!isGroupAdmins) return reply(mess.only.admin)
+                                        members_id = []
+                                        teks = '╔══✪〘 Mention All 〙✪══\n'
+                                        for (let mem of groupMembers) {
+                                              teks += '╠➥'
+                                              members_id.push(mem.jid)
+                                        }
+                                        teks += '╚═〘 *A n x i e t y  B o t* 〙'
+                                        mentions(teks, members_id, true)
+                                        break
 				case 'tagall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
