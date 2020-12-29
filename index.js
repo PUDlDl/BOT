@@ -71,7 +71,11 @@ function kyun(seconds){
 
 const { tanggal, waktu, instagram, whatsapp, youtube, nomer, ontime } = config
 
-
+//FF
+if (text.includes("-say")){
+  const teks = text.replace(/-say /, "")
+conn.sendMessage(id, teks, MessageType.text)
+}
 
 const { exec } = require("child_process")
 
