@@ -79,7 +79,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, subscribe Aris187 ID`)
+   console.log(`[ ${time} ] SCAN QR CODE MU NAK, by AnxietyBot`)
 })
 
 client.on('credentials-updated', () => {
@@ -153,17 +153,17 @@ client.on('group-participants-update', async (anu) => {
 
 			mess = {
 				wait: '❬❗❭ 𝗪𝗔𝗜𝗧, 𝗹𝗮𝗴𝗶 𝗽𝗿𝗼𝘀𝗲𝘀',
-				success: '️❬ ✔ ❭ 𝘀𝘂𝗰𝗰𝗲𝘀𝘀 𝘁𝗼𝗱🖤',
+				success: '️❬ ✔ ❭ 𝘀𝘂𝗰𝗰𝗲𝘀𝘀',
 				error: {
 					stick: '𝗬𝗲𝗮𝗵 𝗴𝗮𝗴𝗮𝗹 ;(, 𝘂𝗹𝗮𝗻𝗴𝗶 𝗹𝗮𝗴𝗶 𝘆𝗮𝗵 𝘁𝗼𝗱 ^_^',
 					Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
 				},
 				only: {
-					group: '❬❗❭ 𝗚𝗥𝗢𝗨𝗣 𝗢𝗡𝗟𝗬 𝗧𝗢𝗗',
-					ownerG: '❬❗❭ 𝗢𝗪𝗡𝗘𝗥 𝗢𝗡𝗟𝗬 𝗧𝗢𝗗',
-					ownerB: '❬❗❭  𝗢𝗪𝗡𝗘𝗥 𝗢𝗡𝗟𝗬 𝗧𝗢𝗗',
-					admin: '❬❗❭ 𝗔𝗗𝗠𝗜𝗡 𝗢𝗡𝗟𝗬 𝗧𝗢𝗗',
-					Badmin: '❬❗❭ 𝗕𝗢𝗧 𝗛𝗔𝗥𝗨𝗦 𝗝𝗔𝗗𝗜 𝗔𝗗𝗠𝗜𝗡 𝗧𝗢𝗗'
+					group: '❬!❭ GRUP ONLY SAYANG',
+					ownerG: '❬!❭ OWNER ONLY SAYANG',
+					ownerB: '❬!❭  OWNER ONLY SAYANG',
+					admin: '❬!❭ ADMIN ONLY',
+					Badmin: '❬!❭ BOT HARUS JADI ADMIN DULU Bep'
 				}
 			}
 
@@ -236,20 +236,91 @@ client.on('group-participants-update', async (anu) => {
                 client.sendMessage(dari, './aris'+'welot'+'mp3',{quoted: mek, ptt:true})
                 break
                 
-                
+                case 'daftar':  // NAMBAHIN NOMOR DI DATABASE
+                argz = body.trim().split('|')
+                if (argz.length >= 2) {
+                const nonye = sender.id
+                const namanye = argz[1]
+                const umurnye = argz[2]
+                    if(isNaN(umurnye)) return await tobz.reply(from, 'Umur harus berupa angka!!', id)
+                    if(umurnye >= 40) return await tobz.reply(from, 'Kamu terlalu tua, kembali lagi ke masa muda untuk menggunakan Elaina', id)
+                    const jenenge = namanye.replace(' ','')
+                    var ceknya = nonye
+                        var obj = pendaftar.some((val) => {
+                            return val.id === ceknya
+                        })
+                        if (obj === true){
+                            return tobz.reply(from, 'kamu sudah terdaftar', id) // BAKAL RESPON JIKA NO UDAH ADA
+                        } else {
+                            const mentah = await tobz.checkNumberStatus(nonye) // PENDAFTARAN
+                            const msg = monospace(`Pendaftaran berhasil dengan SN: ${SN} pada ${moment().format('DD/MM/YY HH:mm:ss')}
+₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋
+[Nama]: ${jenenge} [@${nonye.replace(/[@c.us]/g, '')}]
+[Nomor]: wa.me/${nonye.replace('@c.us', '')}
+[Umur]: ${umurnye}
+⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻
+Untuk menggunakan bot silahkan kirim ${prefix}menu
+Total Pengguna yang telah terdaftar ${pendaftar.length}`)
+                            const hasil = mentah.canReceiveMessage ? msg : false
+                            if (!hasil) return tobz.reply(from, 'Nomor WhatsApp tidak valid [ Tidak terdaftar di WhatsApp ]', id) 
+                            {
+                            const register = ({
+                                id: mentah.id._serialized,
+                                nama: jenenge,
+                                umur: umurnye
+                            })
+                            pendaftar.push(register)
+                            fs.writeFileSync('./lib/database/user.json', JSON.stringify(pendaftar)) // DATABASE
+                                tobz.sendTextWithMentions(from, hasil)
+                            }
+                        }
+                    } else {
+                        await tobz.reply(from, `Format yang kamu masukkan salah sayang, kirim ${prefix}daftar |nama|umur\n\ncontoh format: ${prefix}daftar |pudidi|17\n\ncukup gunakan nama depan/panggilan saja`, id) //if user is not registered
+                    }
+                break
+            case 'daftarulang':
+                    if (!isAdmin) return tobz.reply(from, 'Command ini hanya dapat digunakan oleh admin AnxietyBot', id)  
+                    const nomernya = args[1]
+                    let textnya = nomernya.replace(/[-\s+@c.us]/g,'')
+                    const cusnya = textnya + '@c.us'
+                    const umurnya = args[2]
+                    if(umurnya >= 40) return await tobz.reply(from, 'Umur terlalu tua kak hhe, max 40 yaa :D', id)
+                        var found = false
+                        Object.keys(pendaftar).forEach((i) => {
+                            if(pendaftar[i].id == cusnya){
+                                found = i
+                            }
+                        })
+                        if (found !== false) {
+                            pendaftar[found].umur = umurnya;
+                            const updated = pendaftar[found]
+                            const result = monospace(`Update data berhasil dengan SN: ${SN} pada ${moment().format('DD/MM/YY HH:mm:ss')}
+₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋
+[Nama]: ${updated.nama} | @${updated.id.replace(/[@c.us]/g, '')}
+[Nomor]: wa.me/${updated.id.replace('@c.us', '')}
+[Umur]: ${updated.umur}
+⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻
+Total Pengguna yang telah terdaftar ${pendaftar.length}`)
+                            console.log(pendaftar[found])
+                            fs.writeFileSync('./lib/database/user.json',JSON.stringify(pendaftar));
+                            tobz.sendTextWithMentions(from, result, id)
+                        } else {
+                                tobz.reply(from, `${monospace(`Di database ngga ada nomer itu kak`)}`, id)
+                        }
+                break
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `𝗡𝗮𝗺𝗮 𝗯𝗼𝘁 : ${me.name}\n*𝗡𝗼𝗺𝗲𝗿 𝗯𝗼𝘁* : @${me.jid.split('@')[0]}\n*𝗣𝗿𝗲𝗳𝗶𝘅* : ${prefix}\n𝗧𝗼𝘁𝗮𝗹 𝗕𝗹𝗼𝗰𝗸 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 : ${blocked.length}\n𝗧𝗵𝗲 𝗯𝗼𝘁 𝗶𝘀 𝗮𝗰𝘁𝗶𝘃𝗲 𝗼𝗻 : ${kyun(uptime)}\n𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗠𝗵𝗮𝗻𝗸𝗕𝗮𝗿𝗕𝗮𝗿`
+					teks = `*Nama Bot* : ${me.name}\n*Nomer Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*Waktu Bot Active* : ${kyun(uptime)}\n*Thanks 4 MhankBarBar*`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
 				case 'blocklist': 
-					teks = '𝗕𝗟𝗢𝗖𝗞 𝗟𝗜𝗦𝗧 :\n'
+					teks = 'Block List :\n'
 					for (let block of blocked) {
 						teks += `┣➢ @${block.split('@')[0]}\n`
 					}
-					teks += `𝗧𝗼𝘁𝗮𝗹 : ${blocked.length}`
+					teks += `Total : ${blocked.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": blocked}})
 					break
 				case 'ocr': 
@@ -396,7 +467,7 @@ client.on('group-participants-update', async (anu) => {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Citai Lolimu'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('𝗘𝗥𝗥𝗢𝗥 𝗧𝗢𝗗')
+						reply('ERROR')
 					}
 					break
 				case 'nsfwloli': 
@@ -407,7 +478,7 @@ client.on('group-participants-update', async (anu) => {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('𝗘𝗥𝗥𝗢𝗥 𝗧𝗢𝗗')
+						reply('ERROR')
 					}
 					break
 				case 'hilih': 
@@ -536,7 +607,7 @@ break
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '╔══✪〘 Mention All 〙✪══\n'
 					for (let mem of groupMembers) {
-						teks += `*┣¤͜͡҈✪* @${mem.jid.split('@')[0]}\n`
+						teks += `*┣¤͜͡҈✪ꔛ⃟* @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
                                         teks += '╚═〘 *A n x i e t y  B o t* 〙'
