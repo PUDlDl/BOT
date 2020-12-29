@@ -236,6 +236,31 @@ client.on('group-participants-update', async (anu) => {
                 client.sendMessage(dari, './aris'+'welot'+'mp3',{quoted: mek, ptt:true})
                 break
               
+case 'linkgroup':
+            if (!isBotGroupAdmins) return client.reply(from, 'Perintah ini hanya bisa di gunakan ketika bot menjadi admin', id)
+            if (isGroupMsg) {
+            const inviteLink = await client.getGroupInviteLink(groupId);
+            client.sendLinkWithAutoPreview(from, inviteLink, `\nLink group *${name}*`)} else {
+            client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
+            }
+            break
+
+case 'join':
+            if (args.length === 1) return client.reply(from, 'Kirim perintah *!join* linkgroup\n\nEx:\n!join https://chat.whatsapp.com/blablablablablabla', id)
+            const link = body.slice(6)
+            const tGr = await client.getAllGroups()
+            const minMem = 30
+            const isLink = link.match(/(https:\/\/chat.whatsapp.com)/gi)
+            const check = await client.inviteInfo(link)
+            if (!isLink) return client.reply(from, 'Ini link? 👊😏', id)
+            if (tGr.length > 15) return client.reply(from, 'Maaf jumlah group sudah maksimal!', id)
+            if (check.size < minMem) return client.reply(from, 'Member group tidak melebihi 30, bot tidak bisa masuk', id)
+            if (check.status === 200) {
+                await client.joinGroupViaLink(link).then(() => client.reply(from, 'Bot akan segera masuk!'))
+            } else {
+                client.reply(from, 'Link group tidak valid!', id)
+            }
+            break
                                 case 'qrcode':
 					const tex = encodeURIComponent(body.slice(8))
 					if (!tex) return client.sendMessage(from, 'masukan teks/url!', text, {quoted: mek})
