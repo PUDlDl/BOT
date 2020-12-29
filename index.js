@@ -235,79 +235,13 @@ client.on('group-participants-update', async (anu) => {
             case 'kangcopet':
                 client.sendMessage(dari, './aris'+'welot'+'mp3',{quoted: mek, ptt:true})
                 break
-                
-                case 'daftar':  // NAMBAHIN NOMOR DI DATABASE
-                argz = body.trim().split('|')
-                if (argz.length >= 2) {
-                const nonye = sender.id
-                const namanye = argz[1]
-                const umurnye = argz[2]
-                    if(isNaN(umurnye)) return await tobz.reply(from, 'Umur harus berupa angka!!', id)
-                    if(umurnye >= 40) return await tobz.reply(from, 'Kamu terlalu tua, kembali lagi ke masa muda untuk menggunakan Elaina', id)
-                    const jenenge = namanye.replace(' ','')
-                    var ceknya = nonye
-                        var obj = pendaftar.some((val) => {
-                            return val.id === ceknya
-                        })
-                        if (obj === true){
-                            return tobz.reply(from, 'kamu sudah terdaftar', id) // BAKAL RESPON JIKA NO UDAH ADA
-                        } else {
-                            const mentah = await tobz.checkNumberStatus(nonye) // PENDAFTARAN
-                            const msg = monospace(`Pendaftaran berhasil dengan SN: ${SN} pada ${moment().format('DD/MM/YY HH:mm:ss')}
-₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋
-[Nama]: ${jenenge} [@${nonye.replace(/[@c.us]/g, '')}]
-[Nomor]: wa.me/${nonye.replace('@c.us', '')}
-[Umur]: ${umurnye}
-⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻
-Untuk menggunakan bot silahkan kirim ${prefix}menu
-Total Pengguna yang telah terdaftar ${pendaftar.length}`)
-                            const hasil = mentah.canReceiveMessage ? msg : false
-                            if (!hasil) return tobz.reply(from, 'Nomor WhatsApp tidak valid [ Tidak terdaftar di WhatsApp ]', id) 
-                            {
-                            const register = ({
-                                id: mentah.id._serialized,
-                                nama: jenenge,
-                                umur: umurnye
-                            })
-                            pendaftar.push(register)
-                            fs.writeFileSync('./lib/database/user.json', JSON.stringify(pendaftar)) // DATABASE
-                                tobz.sendTextWithMentions(from, hasil)
-                            }
-                        }
-                    } else {
-                        await tobz.reply(from, `Format yang kamu masukkan salah sayang, kirim ${prefix}daftar |nama|umur\n\ncontoh format: ${prefix}daftar |pudidi|17\n\ncukup gunakan nama depan/panggilan saja`, id) //if user is not registered
-                    }
-                break
-            case 'daftarulang':
-                    if (!isAdmin) return tobz.reply(from, 'Command ini hanya dapat digunakan oleh admin AnxietyBot', id)  
-                    const nomernya = args[1]
-                    let textnya = nomernya.replace(/[-\s+@c.us]/g,'')
-                    const cusnya = textnya + '@c.us'
-                    const umurnya = args[2]
-                    if(umurnya >= 40) return await tobz.reply(from, 'Umur terlalu tua kak hhe, max 40 yaa :D', id)
-                        var found = false
-                        Object.keys(pendaftar).forEach((i) => {
-                            if(pendaftar[i].id == cusnya){
-                                found = i
-                            }
-                        })
-                        if (found !== false) {
-                            pendaftar[found].umur = umurnya;
-                            const updated = pendaftar[found]
-                            const result = monospace(`Update data berhasil dengan SN: ${SN} pada ${moment().format('DD/MM/YY HH:mm:ss')}
-₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋₋
-[Nama]: ${updated.nama} | @${updated.id.replace(/[@c.us]/g, '')}
-[Nomor]: wa.me/${updated.id.replace('@c.us', '')}
-[Umur]: ${updated.umur}
-⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻⁻
-Total Pengguna yang telah terdaftar ${pendaftar.length}`)
-                            console.log(pendaftar[found])
-                            fs.writeFileSync('./lib/database/user.json',JSON.stringify(pendaftar));
-                            tobz.sendTextWithMentions(from, result, id)
-                        } else {
-                                tobz.reply(from, `${monospace(`Di database ngga ada nomer itu kak`)}`, id)
-                        }
-                break
+              
+                                case 'qrcode':
+					const tex = encodeURIComponent(body.slice(8))
+					if (!tex) return client.sendMessage(from, 'masukan teks/url!', text, {quoted: mek})
+					const buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
+					client.sendMessage(from, buff, image, {quoted: mek})
+				        break
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
