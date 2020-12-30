@@ -385,12 +385,100 @@ client.on('group-participants-update', async (anu) => {
 					truteh = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					client.sendMessage(from, truteh, image, { caption: '*Truth*\n\n'+ ttrth, quoted: mek })
 					break
-				case 'dare':
+				case 'dhare':
 					const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','Kirim Poto Mantanmu Yang Saat Ini Lo Galmopin','Jujur Sekarang Lo Suka Sama Siapa?','Chat Mantan Dengan Caption "Aku Masih Sayang Kamu" Jika Sudah SS Kirim Ke Pemain','Paling Lama Pacaran Berapa Bulan','Prank Pacar Mu Dengan Caption "Maaf Kita Putus Aja Aku Udah Gak Nyaman" Jika Sudah SS Kirim Ke Pemain','Prank Teman Mu Ajak Pacaran Jika Sudah SS Kirim Ke Pemain','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "🦄💨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
 					const der = dare[Math.floor(Math.random() * dare.length)]
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					client.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
 					break	
+
+case 'tod':
+    aruga.reply(from, 'Sebelum bermain berjanjilah akan melaksanakan apapun perintah yang diberikan.\n\nSilahkan Pilih:\n➥ #truth\n➥ #dare', id)
+    break
+    case 'truth':
+    if (!isGroupMsg) return aruga.reply(from, menuId.textPrem())
+            fetch('https://raw.githubusercontent.com/AlvioAdjiJanuar/random/main/truth.txt')
+            .then(res => res.text())
+            .then(body => {
+                let truthx = body.split('\n')
+                let truthz = truthx[Math.floor(Math.random() * truthx.length)]
+                aruga.reply(from, truthz, id)
+            })
+            .catch(() => {
+                aruga.reply(from, 'Hayolohhh, ada yang error!!', id)
+            })
+            break
+    case 'dare':
+    if (!isGroupMsg) return aruga.reply(from, menuId.textPrem())
+            fetch('https://raw.githubusercontent.com/AlvioAdjiJanuar/random/main/dare.txt')
+            .then(res => res.text())
+            .then(body => {
+                let darex = body.split('\n')
+                let darez = darex[Math.floor(Math.random() * darex.length)]
+                aruga.reply(from, darez, id)
+            })
+            .catch(() => {
+                aruga.reply(from, 'Hayolohhh, ada yang error!!', id)
+            })
+            break
+
+          case 'ceksider': 
+           if (!isGroupMsg) return aruga.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)                
+           if (!quotedMsg) return aruga.reply(from, 'Balas/reply pesan saya kak', id)
+           if (!quotedMsgObj.fromMe) return aruga.reply(from, 'Balas/reply pesan saya kak', id)
+		   {
+           const reader = await aruga.getMessageReaders(quotedMsgObj.id)
+           let list = ''
+           for (let pembaca of reader) {
+           list += `- @${pembaca.id.replace(/@c.us/g, '')}\n` 
+             }
+           aruga.sendTextWithMentions(from, `nah. ini nih sider mau nimbrung apa gua kick\n${list}`)
+		   }
+           break
+
+case 'ttp':
+                if (!isGroupMsg) return aruga.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', message.id)
+                try
+                {
+                    const string = body.toLowerCase().includes('#ttp') ? body.slice(5) : body.slice(5)
+                    if(args)
+                    {
+                        if(quotedMsgObj == null)
+                        {
+                            const gasMake = await getStickerMaker(string)
+                            if(gasMake.status == true)
+                            {
+                                try{
+                                    await aruga.sendImageAsSticker(from, gasMake.base64)
+                                }catch(err) {
+                                    await aruga.reply(from, 'Gagal membuat.', id)
+                                } 
+                            }else{
+                                await aruga.reply(from, gasMake.reason, id)
+                            }
+                        }else if(quotedMsgObj != null){
+                            const gasMake = await getStickerMaker(quotedMsgObj.body)
+                            if(gasMake.status == true)
+                            {
+                                try{
+                                    await aruga.sendImageAsSticker(from, gasMake.base64)
+                                }catch(err) {
+                                    await aruga.reply(from, 'Gagal membuat.', id)
+                              
+
+case 'klasemen':
+		case 'klasmen':
+			if (!isGroupMsg) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
+			const klasemen = db.get('group').filter({id: groupId}).map('members').value()[0]
+            let urut = Object.entries(klasemen).map(([key, val]) => ({id: key, ...val})).sort((a, b) => b.denda - a.denda);
+            let textKlas = "*Klasemen Denda Sementara*\n"
+            let i = 1;
+            urut.forEach((klsmn) => {
+            textKlas += i+". @"+klsmn.id.replace('@c.us', '')+" ➤ Rp"+formatin(klsmn.denda)+"\n"
+            i++
+            });
+            await aruga.sendTextWithMentions(from, textKlas)
+			break
 
 case 'join':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!join* linkgroup\n\nEx:\n!join https://chat.whatsapp.com/blablablablablabla', id)
