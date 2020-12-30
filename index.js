@@ -92,11 +92,11 @@ await aruga.simulateTyping(chat.id, true).then(async () => {
  ╚━━❖❖❁❖❖❖❖❁❖❖━━╝
 ╭───✪═⟪ *Welcome* ! ⟫═✪
 │
-│╭──✪═━⟪ NEWMEM ⟫━═✪
+│╭──✪═━⟪ INTRO ⟫━═✪
 │├≽ _Nama:_
 │├≽ _Umur:_
 │├≽ _Askot:_
-│╰──✪═━⟪ INTRO ⟫━═✪
+│╰──✪═━⟪ NEWMEM ⟫━═✪
 ╚─┈┄┄┄─➢ *MOGA BETAH><*
 
 ✪ *Template 2* ✪
@@ -107,6 +107,8 @@ by *AnxietyBot~*
 │ ➢ _Umur:_
 │ ➢ _Askot:_ 	
 ╰━⋆⃟⊱๑⋆⃟⊱๑ ⋆⃟⊱๑⋆⃟⊱๑⋆⃟⊱๑⋆⃟⊱๑๑⋆⃟╯
+╔─┄─┄─┄┄┄┄┄┄─┄─┄─┄࿐
+╚─┄┄┈─➢ *MOGA BETAH><*
 
 ✪ *Template3* ✪
 by *AnxietyBot~*
@@ -133,6 +135,9 @@ conn.sendMessage(id, teks, MessageType.text)
 }
 
 //Chat AnxietyBot
+else if (text == 'Assalammualaikum'){
+conn.sendMessage(id, 'Waalaikumsalam, Ketik /help /info /donasi Contoh /help' ,MessageType.text);
+}
 else if (text == 'template'){
 conn.sendMessage(id, '
  ╔━━❖❖❁❖❖❖❖❁❖❖━━╗
@@ -140,11 +145,11 @@ conn.sendMessage(id, '
  ╚━━❖❖❁❖❖❖❖❁❖❖━━╝
 ╭───✪═⟪ *Welcome* ! ⟫═✪
 │
-│╭──✪═━⟪ NEWMEM ⟫━═✪
+│╭──✪═━⟪ INTRO ⟫━═✪
 │├≽ _Nama:_
 │├≽ _Umur:_
 │├≽ _Askot:_
-│╰──✪═━⟪ INTRO ⟫━═✪
+│╰──✪═━⟪ NEWMEM ⟫━═✪
 ╚─┈┄┄┄─➢ *MOGA BETAH><*
 
 ✪ *Template 2* ✪
@@ -155,8 +160,10 @@ by *AnxietyBot~*
 │ ➢ _Umur:_
 │ ➢ _Askot:_ 	
 ╰━⋆⃟⊱๑⋆⃟⊱๑ ⋆⃟⊱๑⋆⃟⊱๑⋆⃟⊱๑⋆⃟⊱๑๑⋆⃟╯
+╔─┄─┄┄┄┄┄┄─┄─┄─┄─┄࿐
+╚─┄┄┄─➢ *MOGA BETAH><*
 
-✪ *Template3* ✪
+✪ *Template 3* ✪
 by *AnxietyBot~*
 
 ╭════•›ꪶ ཻུ۪۪ꦽꦼ̷⸙ ━ ━ ━ ━ ꪶ ཻུ۪۪ꦽꦼ̷⸙‹•════
