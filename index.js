@@ -33,13 +33,13 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
-const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
-            + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:Fadhli\n' // MENDING LU TOBAT SU!
-            + 'ORG:@itspapoy;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' // JANGAN KEK BABI SU
-            + 'END:VCARD' // ARIS187 ID
-prefix = '-'
+const vcard = 'BEGIN:VCARD\n' // BABI MAU NGAPAIN?
+            + 'VERSION:3.0\n' // MAU NUMPANG NAMA DOANG ? XIXIXIXI
+            + 'FN:Fadhli\n' // TOBAT AJG!
+            + 'ORG:@itspapoy;\n' // KASIH CREDITS GUA LOTNOK!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' // BEGE
+            + 'END:VCARD' // AnxietyBot
+prefix = '/'
 blocked = []            
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
@@ -47,11 +47,11 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: 'SIMSALAMBIMBOT', // TOBAT SU ASU
-    instagram: 'https://instagram.com/adam_oey107', // INFO JANGAN DI UBAH
-    nomer: 'wa.me/6287714745440', // INFO SU JNGAN DI UBAH
+    A187: 'SIMSALAMBIMBOT', // GOBLOG
+    instagram: 'https://instagram.com/itspapoy', // INFO JANGAN DI UBAH KONT
+    nomer: 'wa.me/6287714745440', // INFO NYA JANGAN DI UBAHH AJJGGG
     youtube: '', // KINTIL
-    whatsapp: '', // BABI
+    whatsapp: '', // BABI NGEPET
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
@@ -227,7 +227,7 @@ client.on('group-participants-update', async (anu) => {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6283153843600@s.whatsapp.net"] // ganti nomer lu
+			const ownerNumber = ["6287714745440@s.whatsapp.net"] // DIGANTI AUTO ERROR TLOL
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -294,8 +294,7 @@ client.on('group-participants-update', async (anu) => {
             case 'kangcopet':
                 client.sendMessage(dari, './aris'+'welot'+'mp3',{quoted: mek, ptt:true})
                 break
-              
-case 'linkgroup':
+            case 'linkgroup':
             if (!isBotGroupAdmins) return client.reply(from, 'Perintah ini hanya bisa di gunakan ketika bot menjadi admin', id)
             if (isGroupMsg) {
             const inviteLink = await client.getGroupInviteLink(groupId);
