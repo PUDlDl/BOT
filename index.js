@@ -381,7 +381,7 @@ client.on('group-participants-update', async (anu) => {
                       buff = await getBuffer(anu.result)
                       client.sendMessage(from, buff, image, {quoted: mek})
                       break
-                              case 'glitch':
+                                case 'glitch':
 					var gh = body.slice(8)
 					var tels3 = gh.split("|")[0];
 					var tels4 = gh.split("|")[1];
@@ -390,6 +390,16 @@ client.on('group-participants-update', async (anu) => {
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1=${tels3}&text2=${tels4}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+                                case 'persengay':
+					gatauda = body.slice(7)
+					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`, {method: 'get'})
+					reply(anu.desc+anu.persen)
+					break
+                                case 'bucin':
+					gatauda = body.slice(7)
+					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`, {method: 'get'})
+					reply(anu.desc)
 					break
 				case 'party':
 					if (args.length < 1) return reply(mess.blank)
@@ -446,11 +456,11 @@ client.on('group-participants-update', async (anu) => {
                       client.sendMessage(from, buff, image, {quoted: mek})
                       break
 
-case 'say':
+                               case 'say':
                                        const asu = body.slice(4)
                                        if (argz.lenght >= 1) return client.sendText(from, asu)
                                        break
-                              case 'ramaljadian':
+                               case 'ramaljadian':
 					var gh = body.slice(10)
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];
@@ -458,7 +468,7 @@ case 'say':
 					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-                case 'tahta':
+                               case 'tahta':
 					if (args.length < 1) return reply(mess.blank)
 					teks = body.slice(7)
 					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
@@ -491,7 +501,7 @@ case 'say':
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+thun})
 					break
 
-case 'snowrite':
+                                case 'snowrite':
 					var gh = body.slice(10)
 					var gbl7 = gh.split("|")[0];
 					var gbl8 = gh.split("|")[1];
@@ -501,7 +511,7 @@ case 'snowrite':
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-		   case 'marvelogo':
+		                case 'marvelogo':
 					var gh = body.slice(10)
 					var gbl5 = gh.split("|")[0];
 					var gbl6 = gh.split("|")[1];
@@ -555,7 +565,7 @@ case 'snowrite':
 					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-                case 'pornohub':
+                                case 'pornohub':
 					var gh = body.slice(10)
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];
@@ -566,7 +576,7 @@ case 'snowrite':
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 
-case 'groupinfo':
+         case 'groupinfo':
                 client.updatePresence(from, Presence.composing)
                 if (!isGroup) return reply(mess.only.group)
                 ppUrl = await client.getProfilePicture(from) // leave empty to get your own
@@ -691,7 +701,7 @@ case 'tod':
                 aruga.reply(from, 'Hayolohhh, ada yang error!!', id)
             })
             break
-    case 'dare':
+case 'dare':
     if (!isGroupMsg) return aruga.reply(from, menuId.textPrem())
             fetch('https://raw.githubusercontent.com/AlvioAdjiJanuar/random/main/dare.txt')
             .then(res => res.text())
@@ -705,7 +715,7 @@ case 'tod':
             })
             break
 
-          case 'ceksider': 
+       case 'ceksider': 
            if (!isGroupMsg) return aruga.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)                
            if (!quotedMsg) return aruga.reply(from, 'Balas/reply pesan saya kak', id)
            if (!quotedMsgObj.fromMe) return aruga.reply(from, 'Balas/reply pesan saya kak', id)
@@ -719,7 +729,7 @@ case 'tod':
 		   }
            break
 
-case 'ttp':
+       case 'ttp':
                 if (!isGroupMsg) return aruga.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', message.id)
                 try
                 {
@@ -749,7 +759,7 @@ case 'ttp':
                                     await aruga.reply(from, 'Gagal membuat.', id)
                               
 
-case 'klasemen':
+                case 'klasemen':
 		case 'klasmen':
 			if (!isGroupMsg) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
 			const klasemen = db.get('group').filter({id: groupId}).map('members').value()[0]
@@ -763,7 +773,7 @@ case 'klasemen':
             await aruga.sendTextWithMentions(from, textKlas)
 			break
 
-case 'join':
+      case 'join':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!join* linkgroup\n\nEx:\n!join https://chat.whatsapp.com/blablablablablabla', id)
             const link = body.slice(6)
             const tGr = await client.getAllGroups()
@@ -895,8 +905,8 @@ case 'join':
 						reply(`kirim gambar dengan caption ${prefix}sticker atau reply/tag gambar`)
 					}
 					break
-				case 'getses':
-            	if (!isOwner) return reply(mess.only.ownerB)
+      case 'getses':
+            if (!isOwner) return reply(mess.only.ownerB)
             const sesPic = await client.getSnapshot()
             client.sendFile(from, sesPic, 'session.png', 'uyy ^_^...', id)
             break	
@@ -937,7 +947,7 @@ case 'join':
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
 					break
 				
-			case 'loli': 
+			        case 'loli': 
 				    try {
 						res = await fetchJson(`https://api.lolis.life/random`, {method: 'get'})
 						buffer = await getBuffer(res.url)
@@ -1061,10 +1071,10 @@ case 'join':
 						fs.unlinkSync(rano)
 					})
 					break
-				case 'fitnah':	
-				case 'fake':          
-if (!isGroup) return reply(mess.only.group)
-arg = body.substring(body.indexOf(' ') + 1)
+		      	  case 'fitnah':	
+		          case 'fake':          
+                                if (!isGroup) return reply(mess.only.group)
+                                arg = body.substring(body.indexOf(' ') + 1)
 				isi = arg.split(' |')[0] 
 				pesan = arg.split('|')[1] 
 				pesan2 = arg.split('|')[2] 
@@ -1077,17 +1087,18 @@ break
                  const linkgc = await conn.groupInviteCode (from) 
                  reply (linkgc)
                  break 
+
 				case 'tagall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
-					teks += '╔━━━━━━━━°✪〘 *Mention ALL* 〙✪°━━━━━━━━╗\n'
+					teks += '╔━━━━°✪ ░TAG|ALL░ ✪°━━━━╗\n'
 					for (let mem of groupMembers) {
-						teks += `*┣¤͜͡҈✪* @${mem.jid.split('@')[0]}\n`
+						teks += `*┣ꔷ㆒* @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-                                        teks += '╚━━━━━━━━°✪〘 *AnxietyBot* 〙✪°━━━━━━━━╝'
+                                        teks += '╚━━━━°✪ ░AnxietyBot░ ✪°━━━━╝'
 					mentions(teks, members_id, true)
 					break
 				case 'clearall':
