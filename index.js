@@ -128,12 +128,6 @@ by *AnxietyBot~*
 *Patuhi aturan group jika ingin dihargai ngoghey*`)
         }
 
-//FF
-if (text.includes("-say")){
-  const teks = text.replace(/-say /, "")
-conn.sendMessage(id, teks, MessageType.text)
-}
-
 //Chat AnxietyBot
 else if (text == 'Assalammualaikum'){
 conn.sendMessage(id, 'Waalaikumsalam, Ketik /help /info /donasi Contoh /help' ,MessageType.text);
@@ -349,6 +343,295 @@ client.on('group-participants-update', async (anu) => {
             client.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             }
             break
+
+               case 'stiltext':
+                      if (args.length < 1) return reply('Teks nya mana?')
+                      gh = body.slice(11)
+                      gl1 = gh.split("|")[0];
+                      gl2 = gh.split("|")[1];
+                      buff = await getBuffer(`https://api.vhtear.com/silktext?text=${gl1}&text2=${gl2}&apikey=ANTIGRATISNIHANJENKKK`)
+                      reply(mess.wait)
+                      client.sendMessage(from, buff, image, {quoted: mek, caption: 'thund ni '+gh})
+                      break
+                              case 'testing':
+					var gh = body.slice(9)
+					coli1 = gh.split("|")[0];
+					coli2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Teks nya mana?')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/silktext?text=${coli1}&text2=${coli2}&apikey={pikey}`)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+				case 'testing2':
+					var gh = body.slice(9)
+					coli1 = gh.split("|")[0];
+					coli2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Teks nya mana?')
+					reply(mess.wait)
+					party = await getBuffer(`https://api.vhtear.com/partytext?text=${coli1}&text2=${coli2}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, party, image, {quoted: mek})
+					break
+                case 'ninjalogo':
+                      if (args.length < 1) return reply('Teks nya mana?')
+                      gh = body.slice(11)
+                      gl1 = gh.split("|")[0];
+                      gl2 = gh.split("|")[1];
+                      reply(mess.wait)
+                      anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${gl1}&text2=${gl2}`, {method: 'get'})
+                      buff = await getBuffer(anu.result)
+                      client.sendMessage(from, buff, image, {quoted: mek})
+                      break
+                              case 'glitch':
+					var gh = body.slice(8)
+					var tels3 = gh.split("|")[0];
+					var tels4 = gh.split("|")[1];
+					if (args.length < 1) return reply(mess.blank)
+					reply(mess.wait)
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1=${tels3}&text2=${tels4}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+				case 'party':
+					if (args.length < 1) return reply(mess.blank)
+					part = body.slice(7)
+					if (part.length > 20) return reply('Teksnya kepanjangan, maksimal 20 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/partytext?text=${part}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {caption: 'Nih kak', quoted: mek})
+					break
+				case 'rtext':
+					if (args.length < 1) return reply(mess.blank)
+					tels5 = body.slice(7)
+					if (tels5.length > 10) return reply('Teksnya kepanjangan, maksimal 10 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/romancetext?text=${tels5}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: teks})
+					break
+				case 'water':
+					if (args.length < 1) return reply(mess.blank)
+					tels = body.slice(7)
+					if (tels.length > 15) return reply('Teksnya kepanjangan, maksimal 20 karakter')
+					reply(mess.wait)
+					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/tfire?text=${tels}&apikey=xptnbot`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+				case 'epep':
+					if (args.length < 1) return reply(mess.blank)
+					tels = body.slice(7)
+					if (tels.ength > 15) return reply('Teksnya kepanjangan, maksimal 20 karakter')
+					reply(mess.wait)
+					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/epep?text=${tels}&apikey=xptnbot`, {method: 'get'})
+					buff = await getBuffer(anu.result)
+					client.sendMessage(from, buff, image, {quoted: mek})
+					break
+                case 'wolflogo':
+                      if (args.length < 1) return reply('Teks nya mana?')
+                      gh = body.slice(9)
+                      gl1 = gh.split("|")[0];
+                      gl2 = gh.split("|")[1];
+                      reply(mess.wait)
+                      anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=wolflogo1&text1=${gl1}&text2=${gl2}`, {method: 'get'})
+                      buff = await getBuffer(anu.result)
+                      client.sendMessage(from, buff, image, {quoted: mek})
+                      break
+                case 'lionlogo':
+                      if (args.length < 1) return reply('Teks nya mana?')
+                      gh = body.slice(9)
+                      gl1 = gh.split("|")[0];
+                      gl2 = gh.split("|")[1];
+                      reply(mess.wait)
+                      anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=lionlogo&text1=${gl1}&text2=${gl2}`, {method: 'get'})
+                      buff = await getBuffer(anu.result)
+                      client.sendMessage(from, buff, image, {quoted: mek})
+                      break
+
+case 'say':
+                                       const asu = body.slice(4)
+                                       if (argz.lenght >= 1) return client.sendText(from, asu)
+                                       break
+                              case 'ramaljadian':
+					var gh = body.slice(10)
+					var gbl1 = gh.split("|")[0];
+					var gbl2 = gh.split("|")[1];
+					var gbl3 = gh.split("|")[2];
+					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey=ANTIGRATISNIHANJENKKK`)
+					reply(anu.result.hasil)
+					break
+                case 'tahta':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(7)
+					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
+					break
+				case 'testingg':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(7)
+					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://mhankbarbars.herokuapp.com/api/emoji2png?emoji=${teks}`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+teks})
+					break
+				case 'lovemake':
+					if (args.length < 1) return reply('Teksnya mana um')
+					love = body.slice(10)
+					if (love.length > 12) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+love})
+					break
+				case 'thunder':
+					if (args.length < 1) return reply('Teksnya mana um')
+					thun = body.slice(9)
+					if (thun.length > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+thun})
+					break
+
+case 'snowrite':
+					var gh = body.slice(10)
+					var gbl7 = gh.split("|")[0];
+					var gbl8 = gh.split("|")[1];
+					if (args.length < 1) return reply('Teksnya mana um')
+					reply(mess.wait)
+					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/snowwrite?text1=${gbl7}&text2=${gbl8}&apikey=xptnbot352`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+		   case 'marvelogo':
+					var gh = body.slice(10)
+					var gbl5 = gh.split("|")[0];
+					var gbl6 = gh.split("|")[1];
+					if (args.length < 1) return reply('Teksnya mana um')
+					reply(mess.wait)
+					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/marvellogo?text1=${gbl5}&text2=${gbl6}&apikey=xptnbot352`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+				case 'tag':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isOwner) return reply('kamu siapa?')
+					var value = body.slice(9)
+					var group = await client.groupMetadata(from)
+					var member = group['participants']
+					var mem = []
+					member.map( async adm => {
+					mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
+					})
+					var options = {
+					text: value,
+					contextInfo: { mentionedJid: mem },
+					quoted: mek
+					}
+					client.sendMessage(from, options, text)
+					break
+                                case 'primbonjodoh':
+					var gh = body.slice(14)
+					var gbl1 = gh.split("|")[0];
+					var gbl2 = gh.split("|")[1];
+					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
+					reply(anu.result.hasil)
+					break
+                              case 'quotemaker':
+					var gh = body.slice(12)
+					var quote = gh.split("|")[0];
+					var wm = gh.split("|")[1];
+					var bg = gh.split("|")[2];
+					const pref = `Usage: \n${prefix}quotemaker teks|watermark|theme\n\nEx :\n${prefix}quotemaker ini contoh|bicit|random`
+					if (args.length < 1) return reply(pref)
+					reply(mess.wait)
+					anu = await fetchJson(`https://terhambar.com/aw/qts/?kata=${quote}&author=${wm}&tipe=${bg}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'Nih anjim', quoted: mek})
+					break
+				case 'galaxtext':
+					if (args.length < 1) return reply('mau apa om')
+					teks = body.slice(12)
+					if (teks.length > 8) return reply('Teksnya kepanjangan, maksimal 8 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+                case 'pornohub':
+					var gh = body.slice(10)
+					var gbl1 = gh.split("|")[0];
+					var gbl2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Teksnya mana um')
+					reply(mess.wait)
+					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/textpro?theme=pornhub&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+
+case 'groupinfo':
+                client.updatePresence(from, Presence.composing)
+                if (!isGroup) return reply(mess.only.group)
+                ppUrl = await client.getProfilePicture(from) // leave empty to get your own
+			    buffer = await getBuffer(ppUrl)
+		        client.sendMessage(from, buffer, image, {quoted: mek, caption: `*NAME* : ${groupName}\n*MEMBER* : ${groupMembers.length}\n*ADMIN* : ${groupAdmins.length}\n*DESK* : ${groupDesc}`})
+                break
+				case 'testime':
+					setTimeout( () => {
+					client.sendMessage(from, '100', text) // ur cods
+					client.sendMessage(from, '50', text) // ur cods
+					client.sendMessage(from, '60', text) // ur cods
+					}, 10000) // 1000 = 1s,
+					break
+				case 'linkgrup':
+				case 'linkgc':
+				    if (!isGroup) return reply(mess.only.group)
+				    if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+				    linkgc = await client.groupInviteCode (from)
+				    yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
+				    client.sendMessage(from, yeh, text, {quoted: mek})
+			        break
+				case 'hidetag':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isOwner) return reply('kamu siapa?')
+					var value = body.slice(9)
+					var group = await client.groupMetadata(from)
+					var member = group['participants']
+					var mem = []
+					member.map( async adm => {
+					mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
+					})
+					var options = {
+					text: value,
+					contextInfo: { mentionedJid: mem },
+					quoted: mek
+					}
+					client.sendMessage(from, options, text)
+					break
+                                case 'tagme':
+					var nom = mek.participant
+					const tag = {
+					text: `@${nom.split("@s.whatsapp.net")[0]} Ku tag kau sayang❤️🗿!`,
+					contextInfo: { mentionedJid: [nom] }
+					}
+					client.sendMessage(from, tag, text, {quoted: mek})
+					break
+			        case 'infogc':
+				client.updatePresence(from, Presence.composing)
+				if (!isGroup) return reply(mess.only.group)
+					try {
+					ppimg = await client.getProfilePicture(from)
+				} catch {
+					ppimg = 'https://i.ibb.co/NthF8ds/IMG-20201223-WA0740.jpg'
+				}
+					let buf = await getBuffer(ppimg)
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += `*Nama grup :* ${groupName}\n*Deskripsi :* ${groupDesc}\n*Jumlah Admin :* ${groupAdmins.length}\n*Jumlah Member :* ${groupMembers.length}`
+					no = 0
+					for (let admon of groupAdmins) {
+						no += 1
+						teks += `[${no.toString()}]`
+					}
+					client.sendMessage(from, buf, image, {quoted: mek, caption: teks})
+					break
+
                                 case 'apakah':
 			 		apakah = body.slice(1)
 					const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi']
