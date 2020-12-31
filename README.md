@@ -22,7 +22,7 @@
 
 ## ``FEATURES``
 
-| Anxiety      |          Bot                |
+| Anxiety      |          Bot                | ツ   |
 | :-----------: | :-----------------------------: |
 
 | Active      |                   Feature        |
