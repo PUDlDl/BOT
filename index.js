@@ -331,13 +331,7 @@ case 'dare':
                                     await aruga.reply(from, 'Gagal membuat.', id)
                               
                            
-				case 'info':
-					me = client.user
-					uptime = process.uptime()
-					teks = `➽𝐍𝐚𝐦𝐚 𝐛𝐨𝐭 : ${me.name}\n➽𝐍𝐨𝐦𝐞𝐫 𝐛𝐨𝐭 : @${me.jid.split('@')[0]}\n➽𝐏𝐫𝐞𝐟𝐢𝐱 : ${prefix}\n➽𝐓𝐨𝐭𝐚𝐥 𝐛𝐥𝐨𝐜𝐤 : ${blocked.length}\n➽𝐀𝐤𝐭𝐢𝐟 𝐬𝐞𝐣𝐚𝐤 : ${kyun(uptime)}\n➽𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 : https://www.instagram.com/itspapoy\n➽𝐒𝐜𝐫𝐢𝐩𝐭 𝐛𝐲 : AnxietyBot\n➽𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐭𝐨:\n➽𝐀𝐥𝐥𝐚𝐡 𝐒𝐖𝐓\n➽𝐌𝐡𝐚𝐧𝐤𝐛𝐚𝐫𝐛𝐚𝐫\n➽𝐒𝐞𝐥𝐮𝐫𝐮𝐡 𝐜𝐫𝐞𝐚𝐭𝐨𝐫 𝐛𝐨𝐭 𝐲𝐚𝐧𝐠 𝐚𝐝𝐚 𝐝𝐢 𝐆𝐫𝐨𝐮𝐩\n➽𝐒𝐞𝐥𝐮𝐫𝐮𝐡 𝐩𝐞𝐦𝐢𝐥𝐢𝐤 𝐰𝐞𝐛 𝐩𝐞𝐧𝐲𝐞𝐝𝐢𝐚 𝐥𝐚𝐲𝐚𝐧𝐚𝐧 𝐀𝐏𝐈`
-					buffer = await getBuffer(me.imgUrl)
-					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
-					break
+				
 				case 'blocklist': 
 					teks = 'Block List :\n'
 					for (let block of blocked) {
