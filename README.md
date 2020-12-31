@@ -45,8 +45,12 @@ you've just cloned!!
 
 | AnxietyBot [√](https://bit.ly/ClickDiSinii) |           v 3.2            |            
 | :-----------: | :-----------------------------: |
-| Free    | y |
-| Premium | n |
+
+
+| Features | Use |
+| :-------:| :-: |
+| Free     |  y  |
+| Premium  |  n  |
 
 #
 
