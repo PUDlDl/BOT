@@ -1,7 +1,7 @@
 # <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> A en je aye
 <p align="center">
 
-![maybe_verified.png](emojis/Memes/maybe_verified.png)(https://github.com/phil-r/slack-emoji/blob/master/emojis/Memes/amazing.png)
+![amazing.png](emojis/Memes/amazing.png)
 
 | i'm PUDIDI GANG |
 | :------------:  |
