@@ -71,12 +71,6 @@ function kyun(seconds){
 
 const { tanggal, waktu, instagram, whatsapp, youtube, nomer, ontime } = config
 
-await aruga.simulateTyping(chat.id, true).then(async () => {
-          await aruga.sendText(chat.id, `Hai kamu~, Im AnxietyBot. To find out the commands on this bot type ${prefix}help`)
-        })
-	    }
-	}
-    })
 
 //Chat AnxietyBot
 else if (text == 'Assalammualaikum'){
