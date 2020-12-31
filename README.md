@@ -35,6 +35,9 @@
 |       ✅       | promote                       |
 |       ✅       | bc           |
 |       ✅       | welcome                           |
+
+| On      |          Other                |
+| :-----------: | :-----------------------------: |
 |       ✅       | Youtube Downloader               |
 |       ✅       | simi                           |
 |       ✅       | left                    |
@@ -43,6 +46,9 @@
 |       ✅       | nsfwloli                 |
 |       ✅       | loli              |
 |       ✅       | tts                            |
+
+| On      |          Other               |
+| :-----------: | :-----------------------------: |
 |       ✅       | tiktokstalk          |
 |       ✅       | tiktok             |
 |       ✅       | tagall               |
