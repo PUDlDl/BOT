@@ -400,69 +400,7 @@ client.on('group-participants-update', async (anu) => {
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {caption: 'Nih anjim', quoted: mek})
 					break
-				
-				case 'hidetag':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isOwner) return reply('kamu siapa?')
-					var value = body.slice(9)
-					var group = await client.groupMetadata(from)
-					var member = group['participants']
-					var mem = []
-					member.map( async adm => {
-					mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
-					})
-					var options = {
-					text: value,
-					contextInfo: { mentionedJid: mem },
-					quoted: mek
-					}
-					client.sendMessage(from, options, text)
-					break
-case 'snowrite':
-					var gh = body.slice(10)
-					var gbl7 = gh.split("|")[0];
-					var gbl8 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teksnya mana um')
-					reply(mess.wait)
-					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/snowwrite?text1=${gbl7}&text2=${gbl8}&apikey=xptnbot352`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					break
-		   case 'marvelogo':
-					var gh = body.slice(10)
-					var gbl5 = gh.split("|")[0];
-					var gbl6 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teksnya mana um')
-					reply(mess.wait)
-					anu = await fetchJson(`https://zeksapi.herokuapp.com/api/marvellogo?text1=${gbl5}&text2=${gbl6}&apikey=xptnbot352`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					break
-				case 'tag':
-					if (!isGroup) return reply(mess.only.group)
-					if (!isOwner) return reply('kamu siapa?')
-					var value = body.slice(9)
-					var group = await client.groupMetadata(from)
-					var member = group['participants']
-					var mem = []
-					member.map( async adm => {
-					mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
-					})
-					var options = {
-					text: value,
-					contextInfo: { mentionedJid: mem },
-					quoted: mek
-					}
-					client.sendMessage(from, options, text)
-					break
-	
-case 'primbonjodoh':
-					var gh = body.slice(14)
-					var gbl1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
-					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
-					reply(anu.result.hasil)
-					break
+			
 				
                                 case 'say':
                                        const asu = body.slice(4)
@@ -486,14 +424,7 @@ case 'tahta':
 					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
 					break
-				case 'testingg':
-					if (args.length < 1) return reply(mess.blank)
-					teks = body.slice(7)
-					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
-					reply(mess.wait)
-					buffer = await getBuffer(`https://mhankbarbars.herokuapp.com/api/emoji2png?emoji=${teks}`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+teks})
-					break
+				
 				case 'lovemake':
 					if (args.length < 1) return reply('Teksnya mana um')
 					love = body.slice(10)
@@ -510,15 +441,6 @@ case 'tahta':
 					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+thun})
 					break
-case 'stiltext':
-                      if (args.length < 1) return reply('Teks nya mana?')
-                      gh = body.slice(11)
-                      gl1 = gh.split("|")[0];
-                      gl2 = gh.split("|")[1];
-                      buff = await getBuffer(`https://api.vhtear.com/silktext?text=${gl1}&text2=${gl2}&apikey=ANTIGRATISNIHANJENKKK`)
-                      reply(mess.wait)
-                      client.sendMessage(from, buff, image, {quoted: mek, caption: 'thund ni '+gh})
-                      break
                 
                 case 'ninjalogo':
                       if (args.length < 1) return reply('Teks nya mana?')
