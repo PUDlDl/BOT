@@ -45,7 +45,7 @@ you've just cloned!!
 
 ## ``FEATURES`` 
 
-| AnxietyBot [✔](https://bit.ly/ClickDiSinii) |           v 3.2            |            
+| AnxietyBot [✓](https://bit.ly/ClickDiSinii) |           v 3.2            |            
 | :-----------: | :-----------------------------: |
 
 
@@ -58,14 +58,14 @@ you've just cloned!!
 
 | Active         |                 Feature          |   Lvl  |
 | :-----------:  | :------------------------------: | :----: |
-|       ✅       | Sticker Creator                  | Medium |
-|       ✅       | Nulis                            | Medium |
-|       ✅       | add                              | Medium |
-|       ✅       | kick                             | Medium |
-|       ✅       | demote                           | Medium |
-|       ✅       | promote                          | Medium |
-|       ✅       | bc                               | Medium |
-|       ✅       | welcome                          | Medium |
+|       ✔       | Sticker Creator                  | Medium |
+|       ✔      | Nulis                            | Medium |
+|       ✔      | add                              | Medium |
+|       ✔      | kick                             | Medium |
+|       ✔       | demote                           | Medium |
+|       ✔      | promote                          | Medium |
+|       ✔       | bc                               | Medium |
+|       ✔      | welcome                          | Medium |
 |           More                  | None            | None   |
 
 
