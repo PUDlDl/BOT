@@ -25,6 +25,7 @@
 | Anxiety       |         Bot                     |    v 3.2    |
 | :-----------: | :-----------------------------: | :---------: |
 
+
 | Active        |                 Feature          | Lvl       |
 | :-----------: | :------------------------------: | :-------: |
 |       ✅       | Sticker Creator                  | Medium |
@@ -36,9 +37,10 @@
 |       ✅       | bc                               | Medium |
 |       ✅       | welcome                          | Medium |
 
+
 | Active        |          Other                  | Lvl       | 
 | :-----------: | :-----------------------------: | :------ : |
-|       ✅       | YT Downloader                   | Medium |
+|       ✅       | Yt Dwnload                      | Medium |
 |       ✅       | simi                            | Medium |
 |       ✅       | left                            | Medium |
 |       ✅       | setpp                           | Medium |
@@ -46,6 +48,7 @@
 |       ✅       | nsfwloli                        | Medium |
 |       ✅       | loli                            | Medium |
 |       ✅       | tts                             | Medium |
+
 
 | Active        |        Other                    | Lvl       |
 | :-----------: | :-----------------------------: | :-------: |
@@ -57,6 +60,7 @@
 |       ✅       | unblock                         | Medium |
 |       ✅       | sound                           | Medium |
 |       ✅       | tsticker                        | Medium |
+
 
 | Active        |         Other                    | Lvl      |
 | :-----------: | :------------------------------: | :------: |
