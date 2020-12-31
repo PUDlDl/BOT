@@ -400,24 +400,7 @@ client.on('group-participants-update', async (anu) => {
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {caption: 'Nih anjim', quoted: mek})
 					break
-				case 'galaxtext':
-					if (args.length < 1) return reply('mau apa om')
-					teks = body.slice(12)
-					if (teks.length > 8) return reply('Teksnya kepanjangan, maksimal 8 karakter')
-					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					break
-                case 'pornohub':
-					var gh = body.slice(10)
-					var gbl1 = gh.split("|")[0];
-					var gbl2 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teksnya mana um')
-					reply(mess.wait)
-					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/textpro?theme=pornhub&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					break
+				
 				case 'hidetag':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('kamu siapa?')
@@ -480,18 +463,7 @@ case 'primbonjodoh':
 					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
 					reply(anu.result.hasil)
 					break
-				case 'qrcode':
-					const tex = encodeURIComponent(body.slice(8))
-					if (!tex) return client.sendMessage(from, 'masukan teks/url!', text, {quoted: mek})
-					const buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
-					client.sendMessage(from, buff, image, {quoted: mek})
-					break
-                                case 'wikien':
-					if (args.length < 1) return reply('𝐦𝐚𝐬𝐮𝐤𝐤𝐚𝐧 𝐤𝐚𝐭𝐚 𝐤𝐮𝐧𝐜𝐢')
-					tels = body.slice(8)					
-					anu = await fetchJson(`https://arugaz.herokuapp.com/api/wikien?q=${tels}`, {method: 'get'})
-					reply(anu.result)
-					break 
+				
                                 case 'say':
                                        const asu = body.slice(4)
                                        if (argz.lenght >= 1) return client.sendText(from, asu)
@@ -547,24 +519,7 @@ case 'stiltext':
                       reply(mess.wait)
                       client.sendMessage(from, buff, image, {quoted: mek, caption: 'thund ni '+gh})
                       break
-                case 'testing':
-					var gh = body.slice(9)
-					coli1 = gh.split("|")[0];
-					coli2 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teks nya mana?')
-					reply(mess.wait)
-					buffer = await getBuffer(`https://api.vhtear.com/silktext?text=${coli1}&text2=${coli2}&apikey={pikey}`)
-					client.sendMessage(from, buffer, image, {quoted: mek})
-					break
-				case 'testing2':
-					var gh = body.slice(9)
-					coli1 = gh.split("|")[0];
-					coli2 = gh.split("|")[1];
-					if (args.length < 1) return reply('Teks nya mana?')
-					reply(mess.wait)
-					party = await getBuffer(`https://api.vhtear.com/partytext?text=${coli1}&text2=${coli2}&apikey=ANTIGRATISNIHANJENKKK`)
-					client.sendMessage(from, party, image, {quoted: mek})
-					break
+                
                 case 'ninjalogo':
                       if (args.length < 1) return reply('Teks nya mana?')
                       gh = body.slice(11)
