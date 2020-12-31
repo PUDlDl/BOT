@@ -729,13 +729,12 @@ break
 					mentions(teks, members_id, true)
                            case 'mentionall':
                            case 'everyone':
-                                if (!isGroupMsg) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
-                                if (!isGroupAdmins) return aruga.reply(from, 'Gagal, perintah ini hanya dapat digunakan oleh admin grup!', id)
+                                if (!isGroupMsg) return reply(mess.onyl.group)
+                                if (!isGroupAdmins) return reply(mess.only.admin)
                                 members_id= []
                                 let teks = '╔══✪〘 Mention All 〙✪══\n'
                                 for (let mem of groupMembers) {
-                                teks += '╠❥'
-                                teks += ` @${mem.jid.split('@)[0]}\n`
+                                teks += '╠❥' @${mem.jid.split('@')[0]}\n`
                                 }
                                 teks += '╚═〘 *AnxietyBot* 〙'
                                 members_id.push(mem.jid)
@@ -826,7 +825,7 @@ break
             case 'owner':
             case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-       client.sendMessage(from, '𝗧𝘂𝗵 𝗱𝗮𝗵 𝗮𝗸𝘂 𝗸𝗮𝘀𝗶𝗵 𝗻𝗼𝗺𝗲𝗿 𝗖𝗢 👾𝗔𝗥𝟭𝟱𝗕𝗢𝗧👾,𝗝𝗔𝗡𝗚𝗔𝗡 𝗟𝗨𝗣𝗔 𝗗𝗜 𝗦𝗔𝗩𝗘 𝗘𝗔 ><',MessageType.text, { quoted: mek} )
+       client.sendMessage(from, 'Nihh nomer ownernya ,Jangan lupa di sv yaa ntr di svbck ><',MessageType.text, { quoted: mek} )
            break    
            case 'demote':
 					if (!isGroup) return reply(mess.only.group)
