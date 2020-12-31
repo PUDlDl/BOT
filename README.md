@@ -1,4 +1,7 @@
-# <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> Anjayy
+# <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> ╔━━❖❖❁❖❖❖❖❁❖❖━━╗
+ ║     AnxietyBot    ║
+ ╚━━❖❖❁❖❖❖❖❁❖❖━━╝
+
 <p align="center">
 
 | i'm PUDIDI GANG |
