@@ -19,6 +19,7 @@
 > node index js
 > Tinggal scan kode qr yeee..
 ```
+</details>
 
 ## ``FEATURES`` 
 
