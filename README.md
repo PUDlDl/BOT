@@ -10,16 +10,26 @@
 `SCRIPTNYA JANGAN DI JUAL/BELI lol`
 <</div>
 
-### ``CARA INSTALLNYA``
+## Clone project
+
 ```php
-> apt update && apt upgrade
-> pkg install git && pkg install wget && pkg install ffmpeg
 > git clone https://github.com/PUDIDI/BOT
+```
+
+## Install the dependencies:
+Before running the below command, make sure you're in the project directory that
+you've just cloned!!
+
+```php
 > cd BOT
 > bash install.sh
-> node index js
-> Tinggal scan kode qr yeee..
 ```
+
+### Use
+```php
+> npm start
+```
+
 </details>
 
 ## ``FEATURES`` 
