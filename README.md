@@ -36,7 +36,7 @@
 |       ✅       | promote                          | Medium |
 |       ✅       | bc                               | Medium |
 |       ✅       | welcome                          | Medium |
-
+|           More                  | None            | None   |
 
 | Active        |          Other                  | Lvl       | 
 | :-----------: | :-----------------------------: | :------:  |
@@ -48,7 +48,7 @@
 |       ✅       | nsfwloli                        | Medium |
 |       ✅       | loli                            | Medium |
 |       ✅       | tts                             | Medium |
-
+|           More                  | None           | None   |
 
 | Active        |        Other                    | Lvl       |
 | :-----------: | :-----------------------------: | :-------: |
@@ -60,7 +60,7 @@
 |       ✅       | unblock                         | Medium |
 |       ✅       | sound                           | Medium |
 |       ✅       | tsticker                        | Medium |
-
+|            More                 | None           | None   | 
 
 | Active        |         Other                    | Lvl      |
 | :-----------: | :------------------------------: | :------: |
@@ -73,7 +73,7 @@
 |       ✅       | leave                            | Medium |
 |       ✅       | url2img                          | Medium |
 |       ✅       | wait                             | Medium |
-|            More                  | None           |
+|            More                  | None           | None   |
 
 Ket: ````Aktiv 24 jam````
 
