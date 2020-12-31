@@ -22,7 +22,7 @@
 
 ## ``FEATURES``
 
-| Welcome       |         AnxietyBot                     |    v 3.2    |
+| ```Welcome```       |         AnxietyBot                     |    v 3.2    |
 | :-----------: | :-----------------------------: | :---------: |
 
 
