@@ -80,5 +80,5 @@ Ket: Off sibuk
 * [`fdciabdul`](https://github.com/fdciabdul/termux-whatsapp-bot)
 
 * [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)
-<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Mario_Gameplay.gif" alt="Mario Game" width="600" />
+<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/dino.gif" alt="Mario Game" width="600" />
 
