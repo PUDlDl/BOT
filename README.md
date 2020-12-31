@@ -16,8 +16,10 @@
 `SCRIPTNYA JANGAN DI JUAL/BELI lol`
 </div>
 
-| Clone project |
+|    Install    |
 | :-----------: |
+
+`Clone Project`
 
 ```php
 > git clone https://github.com/PUDIDI/BOT
