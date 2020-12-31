@@ -505,6 +505,39 @@ case 'primbonjodoh':
 					reply(anu.result.hasil)
 					break	
 
+
+case 'tahta':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(7)
+					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Harta Tahta '+teks})
+					break
+				case 'testingg':
+					if (args.length < 1) return reply(mess.blank)
+					teks = body.slice(7)
+					if (teks.length > 9) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://mhankbarbars.herokuapp.com/api/emoji2png?emoji=${teks}`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+teks})
+					break
+				case 'lovemake':
+					if (args.length < 1) return reply('Teksnya mana um')
+					love = body.slice(10)
+					if (love.length > 12) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/lovemessagetext?text=${love}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+love})
+					break
+				case 'thunder':
+					if (args.length < 1) return reply('Teksnya mana um')
+					thun = body.slice(9)
+					if (thun.length > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+thun})
+					break
 		case 'loli': 
 				    try {
 						res = await fetchJson(`https://api.lolis.life/random`, {method: 'get'})
