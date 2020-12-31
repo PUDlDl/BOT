@@ -25,7 +25,8 @@ you've just cloned!!
 > bash install.sh
 ```
 
-``Use``
+| ``Use`` | 
+| :-----: |
 ```php
 > npm start
 ```
