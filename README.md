@@ -1,14 +1,10 @@
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="70px"> 
 <p align="center">
 
-| `PUDIDI GANG` |
-| :----------:  |
+# | `PUDIDI GANG` |
+  | :----------:  |
 
 </details>
-
-| ``𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗠𝗵𝗮𝗻𝗸𝗕𝗮𝗿𝗕𝗮𝗿`` |
-| :-----------------------: |
-<p align="center">
 
 #
 
