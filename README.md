@@ -86,8 +86,8 @@
 
 | Waktu |             Keterangan            |
 | :---: |  :-----------------------------:  |
-|  ON   |   ```Diusahakan active 24jam```   |
-|  OFF  |         ```Berarti sibuk```       |
+|  ON   |      ```Bisa active 24jam```      |
+|  OFF  |        ```Berarti sibuk```        |
 
 ## ``THANKS TO`` <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
