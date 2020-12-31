@@ -657,21 +657,6 @@ case 'dare':
                                 }catch(err) {
                                     await aruga.reply(from, 'Gagal membuat.', id)
                               
-
-                case 'klasemen':
-		case 'klasmen':
-			if (!isGroupMsg) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
-			const klasemen = db.get('group').filter({id: groupId}).map('members').value()[0]
-            let urut = Object.entries(klasemen).map(([key, val]) => ({id: key, ...val})).sort((a, b) => b.denda - a.denda);
-            let textKlas = "*Klasemen Denda Sementara*\n"
-            let i = 1;
-            urut.forEach((klsmn) => {
-            textKlas += i+". @"+klsmn.id.replace('@c.us', '')+" ➤ Rp"+formatin(klsmn.denda)+"\n"
-            i++
-            });
-            await aruga.sendTextWithMentions(from, textKlas)
-			break
-
       case 'join':
             if (args.length === 1) return client.reply(from, 'Kirim perintah *!join* linkgroup\n\nEx:\n!join https://chat.whatsapp.com/blablablablablabla', id)
             const link = body.slice(6)
