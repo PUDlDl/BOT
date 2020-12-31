@@ -35,10 +35,10 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN:Aris🖤\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator AR15BOT;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6285722553839:+62 857-2255-3839\n' // JANGAN KEK BABI SU
-            + 'END:VCARD' // ARIS187 ID
+            + 'FN:Fadhli\n' // MENDING LU TOBAT SU!
+            + 'ORG:@itspapoy;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' // JANGAN KEK BABI SU
+            + 'END:VCARD' // Bacot
 prefix = '!'
 blocked = []            
 const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
@@ -47,9 +47,9 @@ const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Jul
 const bulan = arrayBulan[moment().format('MM') - 1]
 
 const config = {
-    A187: 'YEONGSIL BOT', // TOBAT SU ASU
-    instagram: 'https://instagram.com/adam_oey107', // INFO JANGAN DI UBAH
-    nomer: 'wa.me/6283153843600', // INFO SU JNGAN DI UBAH
+    A187: 'SIMSALABIM BOT', // TOBAT SU ASU
+    instagram: 'https://instagram.com/itspapoy', // INFO JANGAN DI UBAH
+    nomer: 'wa.me/6287714745440', // INFO SU JNGAN DI UBAH
     youtube: '', // KINTIL
     whatsapp: '', // BABI
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
@@ -79,7 +79,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, subscribe Aris187 ID`)
+   console.log(`[ ${time} ] QR code dah jadi nih , AnxietyBot`)
 })
 
 client.on('credentials-updated', () => {
@@ -93,7 +93,7 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@_sadboy.ig`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@itspapoy`)
 
 client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
@@ -107,7 +107,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝗛𝗮𝗹𝗹𝗼 @${num.split('@')[0]}\𝘀𝗲𝗹𝗮𝗺𝗮𝘁 𝗱𝗮𝘁𝗮𝗻𝗴 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 *${mdata.subject}* 𝘆𝗮𝗻𝗴 𝗯𝗲𝘁𝗮𝗵 𝗯𝗲𝘁𝗮𝗵 𝘆𝗮𝗵 𝗱𝗶𝘀𝗶𝗻𝗶🖤`
+				teks = `Hallo @${num.split('@')[0]}\Selamat datang di Group *${mdata.subject}* baik baik yahh di sini hhe`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -117,7 +117,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `𝗬𝗲𝗲𝘆𝗲 𝗯𝗲𝗯𝗮𝗻 𝗴𝗿𝗼𝘂𝗽 𝗯𝗲𝗿𝗸𝘂𝗿𝗮𝗻𝗴 𝟭,𝘀𝗮𝘆𝗼𝗻𝗮𝗿𝗮🥳 @${num.split('@')[0]} 𝗴𝗮 𝘂𝘀𝗮𝗵 𝗯𝗮𝗹𝗶𝗸 𝗸𝗲𝘀𝗶𝗻𝗶 𝗹𝗮𝗴𝗶 𝘆𝗮𝗵 𝘁𝗼𝗱`
+				teks = `Sayonaraaa👋🏻 @${num.split('@')[0]} ehh itu yg keluar nitip seblaq yak😃`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -159,11 +159,11 @@ client.on('group-participants-update', async (anu) => {
 					Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
 				},
 				only: {
-					group: '❬❗❭ 𝗚𝗥𝗢𝗨𝗣 𝗢𝗡𝗟𝗬 𝗧𝗢𝗗',
-					ownerG: '❬❗❭ 𝗢𝗪𝗡𝗘𝗥 𝗢𝗡𝗟𝗬 𝗧𝗢𝗗',
-					ownerB: '❬❗❭  𝗢𝗪𝗡𝗘𝗥 𝗢𝗡𝗟𝗬 𝗧𝗢𝗗',
-					admin: '❬❗❭ 𝗔𝗗𝗠𝗜𝗡 𝗢𝗡𝗟𝗬 𝗧𝗢𝗗',
-					Badmin: '❬❗❭ 𝗕𝗢𝗧 𝗛𝗔𝗥𝗨𝗦 𝗝𝗔𝗗𝗜 𝗔𝗗𝗠𝗜𝗡 𝗧𝗢𝗗'
+					group: '❬❗❭ Group Only sayang',
+					ownerG: '❬❗❭ Owner Only Sayang',
+					ownerB: '❬❗❭  Owner Only Sayang',
+					admin: '❬❗❭ Admin Only Sayang',
+					Badmin: '❬❗❭ Bot harus jadi Admin Sayang'
 				}
 			}
 
