@@ -36,7 +36,7 @@
 |       ✅       | bc                               | Medium |
 |       ✅       | welcome                          | Medium |
 
-| Active        |          Othr                   | Lvl       | 
+| Active        |          Other                  | Lvl       | 
 | :-----------: | :-----------------------------: | :------ : |
 |       ✅       | YT Downloader                   | Medium |
 |       ✅       | simi                            | Medium |
@@ -69,7 +69,7 @@
 |       ✅       | leave                            | Medium |
 |       ✅       | url2img                          | Medium |
 |       ✅       | wait                             | Medium |
-|            More                  |
+|            More                  | None           |
 
 Ket: ````Aktiv 24 jam````
 
