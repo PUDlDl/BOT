@@ -657,13 +657,7 @@ case 'dare':
                                 }catch(err) {
                                     await aruga.reply(from, 'Gagal membuat.', id)
                               
-      
-                                case 'qrcode':
-					const tex = encodeURIComponent(body.slice(8))
-					if (!tex) return client.sendMessage(from, 'masukan teks/url!', text, {quoted: mek})
-					const buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
-					client.sendMessage(from, buff, image, {quoted: mek})
-				        break
+                           
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
