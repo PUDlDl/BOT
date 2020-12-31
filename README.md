@@ -4,6 +4,8 @@
 | i'm PUDIDI GANG |
 | :------------:  |
 
+`JavaScript & NodeJS`
+
 </details>
 
 #
