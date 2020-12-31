@@ -36,7 +36,7 @@ you've just cloned!!
 > bash install.sh
 ```
 
-| Use | 
+|   End   | 
 | :-----: |
 
 ```php
