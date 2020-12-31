@@ -71,11 +71,11 @@
 |       ✅       | wait                          |
 |            More                  |
 
-Ket: Aktiv 24 jam
+Ket: ````Aktiv 24 jam````
 
-Ket: Off sibuk
+Ket: ````Off sibuk````
 
-## THANKS TO <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
+## ``THANKS TO`` <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
 * [`fdciabdul`](https://github.com/fdciabdul/termux-whatsapp-bot)
 
