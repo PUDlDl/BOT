@@ -39,8 +39,8 @@
 
 
 | Active        |          Other                  | Lvl       | 
-| :-----------: | :-----------------------------: | :------ : |
-|       ✅       | Yt Dwnload                      | Medium |
+| :-----------: | :-----------------------------: | :------:  |
+|       ✅       | Youtube Download                | Medium |
 |       ✅       | simi                            | Medium |
 |       ✅       | left                            | Medium |
 |       ✅       | setpp                           | Medium |
