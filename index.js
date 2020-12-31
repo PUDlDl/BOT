@@ -536,12 +536,24 @@ break
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						rchoice = Math.floor(Math.random() * list_emoji.length)
-						teks += `┣➥ @${mem.jid.split('@')[0]}\n`
+						teks += `*┣░* @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
-					break
+                           case 'mentionall':
+                           case 'everyone':
+                                if (!isGroupMsg) return aruga.reply(from, 'Maaf, perintah ini hanya dapat dipakai didalam grup!', id)
+                                if (!isGroupAdmins) return aruga.reply(from, 'Gagal, perintah ini hanya dapat digunakan oleh admin grup!', id)
+                                members_id= []
+                                let teks = '╔══✪〘 Mention All 〙✪══\n'
+                                for (let mem of groupMembers) {
+                                teks += '╠❥'
+                                teks += ` @${mem.jid.split('@)[0]}\n`
+                                }
+                                teks += '╚═〘 *AnxietyBot* 〙'
+                                members_id.push(mem.jid)
+                                break
+
 				case 'clearall':
 					if (!isOwner) return reply('𝙡𝙪 𝙨𝙞𝙖𝙥𝙖 𝙩𝙤𝙙?')
 					anu = await client.chats.all()
