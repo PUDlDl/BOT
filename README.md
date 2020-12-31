@@ -1,8 +1,6 @@
 # <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> A en je aye
 <p align="center">
 
-![amazing.png](emojis/Memes/amazing.png)
-
 | i'm PUDIDI GANG |
 | :------------:  |
 
