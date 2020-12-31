@@ -1,7 +1,8 @@
 # <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> A en je aye
 <p align="center">
 
-# GOBLOg ![maybe_verified.png](emojis/Memes/maybe_verified.png)
+![maybe_verified.png](emojis/Memes/maybe_verified.png)
+
 | i'm PUDIDI GANG |
 | :------------:  |
 
