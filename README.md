@@ -21,13 +21,14 @@
 ```
 
 ## ``FEATURES``
-```php
-| `AnxietyBot`       |         v 3.2                     |        |
-| :-----------: | :-----------------------------: | :---------: |
-```
 
-| Active        |                 Feature          | Lvl       |
-| :-----------: | :------------------------------: | :-------: |
+| AnxietyBot    |         'v 3.2'                 |             |
+| :-----------: | :-----------------------------: | :---------: |
+
+| :-----------: | :-----------------------------: | :---------: |
+
+| Active         |                 Feature          |   Lvl  |
+| :-----------:  | :------------------------------: | :----: |
 |       ✅       | Sticker Creator                  | Medium |
 |       ✅       | Nulis                            | Medium |
 |       ✅       | add                              | Medium |
@@ -38,8 +39,8 @@
 |       ✅       | welcome                          | Medium |
 |           More                  | None            | None   |
 
-| Active        |          Other                  | Lvl       | 
-| :-----------: | :-----------------------------: | :------:  |
+| Active         |          Other                  |   Lvl  | 
+| :-----------:  | :-----------------------------: | :----: |
 |       ✅       | Youtube Download                | Medium |
 |       ✅       | simi                            | Medium |
 |       ✅       | left                            | Medium |
@@ -50,8 +51,8 @@
 |       ✅       | tts                             | Medium |
 |           More                  | None           | None   |
 
-| Active        |        Other                    | Lvl       |
-| :-----------: | :-----------------------------: | :-------: |
+| Active         |        Other                    |   Lvl  |
+| :-----------:  | :-----------------------------: | :----: |
 |       ✅       | tiktokstalk                     | Medium |
 |       ✅       | tiktok                          | Medium |
 |       ✅       | tagall                          | Hard   |
@@ -62,18 +63,18 @@
 |       ✅       | tsticker                        | Medium |
 |            More                 | None           | None   | 
 
-| Active        |         Other                    | Lvl      |
-| :-----------: | :------------------------------: | :------: |
-|       ✅       | nulis                            | Medium |
-|       ✅       | meme                             | Medium |
-|       ✅       | memeindo                         | Medium |
-|       ✅       | ocr                              | Medium |
-|       ✅       | clone                            | Medium |
-|       ✅       | groupinfo                        | Medium |
-|       ✅       | leave                            | Medium |
-|       ✅       | url2img                          | Medium |
-|       ✅       | wait                             | Medium |
-|            More                  | None           | None   |
+| Active         |         Other                   |   Lvl  |
+| :-----------:  | :-----------------------------: | :----: |
+|       ✅       | nulis                           | Medium |
+|       ✅       | meme                            | Medium |
+|       ✅       | memeindo                        | Medium |
+|       ✅       | ocr                             | Medium |
+|       ✅       | clone                           | Medium |
+|       ✅       | groupinfo                       | Medium |
+|       ✅       | leave                           | Medium |
+|       ✅       | url2img                         | Medium |
+|       ✅       | wait                            | Medium |
+|            More                  | None          | None   |
 
 Ket: ````Aktiv 24 jam````
 
