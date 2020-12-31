@@ -40,8 +40,6 @@
 |       ✅       | welcome                          | Medium |
 |           More                  | None            | None   |
 
-#
-
 
 | Active         |          Other                  |   Lvl  | 
 | :-----------:  | :-----------------------------: | :----: |
@@ -69,8 +67,6 @@
 |       ✅       | sound                           | Medium |
 |       ✅       | tsticker                        | Medium |
 |            More                 | None           | None   | 
-
-#
 
 
 | Active         |         Other                   |   Lvl  |
