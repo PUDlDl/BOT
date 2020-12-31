@@ -38,7 +38,7 @@
 
 | Active        |          Othr                   | Lvl       | 
 | :-----------: | :-----------------------------: | :------ : |
-|       ✅       | Youtube Downloader              | Medium |
+|       ✅       | YT Downloader                   | Medium |
 |       ✅       | simi                            | Medium |
 |       ✅       | left                            | Medium |
 |       ✅       | setpp                           | Medium |
