@@ -125,5 +125,3 @@ you've just cloned!!
 | [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)      | [`PUDIDI`](https://github.com/PUDlDl/BOT)          |
 
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/dino.gif" alt="Mario Game" width="600" />
-
-<img src="https://www.gambaranimasi.org/img-animasi-bergerak-panah-0061-68267.htm />
