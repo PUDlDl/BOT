@@ -10,13 +10,15 @@
 `SCRIPTNYA JANGAN DI JUAL/BELI lol`
 <</div>
 
-## ``Clone project``
+| Clone project |
+| :-----------: |
 
 ```php
 > git clone https://github.com/PUDIDI/BOT
 ```
 
-#### ```Install the dependencies:```
+| Install the dependencies |
+| :----------------------: |
 Before running the below command, make sure you're in the project directory that
 you've just cloned!!
 
