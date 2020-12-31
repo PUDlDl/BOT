@@ -10,7 +10,7 @@
 `SCRIPTNYA JANGAN DI JUAL/BELI lol`
 <</div>
 
-### CARA INSTALLNYA
+### ``CARA INSTALLNYA``
 ```php
 > apt update && apt upgrade
 > pkg install git && pkg install wget && pkg install ffmpeg
