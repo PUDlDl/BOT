@@ -84,7 +84,7 @@
 
 ##
 
-| Keterangan |
+| Waktu |       Keterangan          |
 | :---: | :----------------------------: |
 |  ON   | ```Kalo on bisa sampe 24jam``` |
 |  OFF  |      ```Berarti sibuk```       |
