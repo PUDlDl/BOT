@@ -22,53 +22,53 @@
 
 ## ``FEATURES``
 
-| Anxiety      |          Bot                |    v 3.2        |
+| Anxiety       |         Bot                     |    v 3.2    |
 | :-----------: | :-----------------------------: | :---------: |
 
-| Active      |                   Feature        | Lvl |
+| Active        |                 Feature          | Lvl       |
 | :-----------: | :------------------------------: | :-------: |
 |       ✅       | Sticker Creator                  | Medium |
 |       ✅       | Nulis                            | Medium |
-|       ✅       | add                          | Medium |
-|       ✅       | kick                     | Medium |
-|       ✅       | demote                     | Medium |
-|       ✅       | promote                       | Medium |
-|       ✅       | bc           | Medium |
-|       ✅       | welcome                           | Medium |
+|       ✅       | add                              | Medium |
+|       ✅       | kick                             | Medium |
+|       ✅       | demote                           | Medium |
+|       ✅       | promote                          | Medium |
+|       ✅       | bc                               | Medium |
+|       ✅       | welcome                          | Medium |
 
-| Active      |          Other                | Lvl |
-| :-----------: | :-----------------------------: | :------ :|
-|       ✅       | Youtube Downloader               | Medium |
-|       ✅       | simi                           | Medium |
-|       ✅       | left                    | Medium |
-|       ✅       | setpp                    | Medium |
-|       ✅       | group buka/tutup                   | Medium |
-|       ✅       | nsfwloli                 | Medium |
-|       ✅       | loli              | Medium |
-|       ✅       | tts                            | Medium |
+| Active        |          Othr                   | Lvl       | 
+| :-----------: | :-----------------------------: | :------ : |
+|       ✅       | Youtube Downloader              | Medium |
+|       ✅       | simi                            | Medium |
+|       ✅       | left                            | Medium |
+|       ✅       | setpp                           | Medium |
+|       ✅       | group buka/tutup                | Medium |
+|       ✅       | nsfwloli                        | Medium |
+|       ✅       | loli                            | Medium |
+|       ✅       | tts                             | Medium |
 
-| Active      |          Other               | Lvl |
+| Active        |        Other                    | Lvl       |
 | :-----------: | :-----------------------------: | :-------: |
-|       ✅       | tiktokstalk          | Medium |
-|       ✅       | tiktok             | Medium |
-|       ✅       | tagall               | Hard |
-|       ✅       | clearall             | Medium |
-|       ✅       | block        | Medium |
-|       ✅       | unblock                        | Medium |
-|       ✅       | sound                              | Medium |
-|       ✅       | tsticker                    | Medium |
+|       ✅       | tiktokstalk                     | Medium |
+|       ✅       | tiktok                          | Medium |
+|       ✅       | tagall                          | Hard   |
+|       ✅       | clearall                        | Medium |
+|       ✅       | block                           | Medium |
+|       ✅       | unblock                         | Medium |
+|       ✅       | sound                           | Medium |
+|       ✅       | tsticker                        | Medium |
 
-| Active      |          Other                | Lvl |
-| :-----------: | :-----------------------------: | :------: |
-|       ✅       | nulis                             | Medium |
-|       ✅       | meme                           | Medium |
-|       ✅       | memeindo                     | Medium |
-|       ✅       | ocr                      | Medium |
+| Active        |         Other                    | Lvl      |
+| :-----------: | :------------------------------: | :------: |
+|       ✅       | nulis                            | Medium |
+|       ✅       | meme                             | Medium |
+|       ✅       | memeindo                         | Medium |
+|       ✅       | ocr                              | Medium |
 |       ✅       | clone                            | Medium |
-|       ✅       | groupinfo                          | Medium |
-|       ✅       | leave                             | Medium |
-|       ✅       | url2img                           | Medium |
-|       ✅       | wait                          | Medium |
+|       ✅       | groupinfo                        | Medium |
+|       ✅       | leave                            | Medium |
+|       ✅       | url2img                          | Medium |
+|       ✅       | wait                             | Medium |
 |            More                  |
 
 Ket: ````Aktiv 24 jam````
