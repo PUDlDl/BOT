@@ -20,7 +20,7 @@
 > Tinggal scan kode qr yeee..
 ```
 
-## ``FEATURES``
+## ``FEATURES`` //JANGAN DI GANTI GOBLOG
 
 | AnxietyBot    |         ```v 3.2```             |             
 | :-----------: | :-----------------------------: |
