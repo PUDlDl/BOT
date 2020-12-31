@@ -126,4 +126,4 @@ you've just cloned!!
 
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/dino.gif" alt="Mario Game" width="600" />
 
-https://www.gambaranimasi.org/img-animasi-bergerak-panah-0061-68267.htm
+<img src="https://www.gambaranimasi.org/img-animasi-bergerak-panah-0061-68267.htm />
