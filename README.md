@@ -12,7 +12,7 @@
 | :---------------: |
 
 `SCRIPTNYA JANGAN DI JUAL/BELI lol`
-<</div>
+</div>
 
 | Clone project |
 | :-----------: |
