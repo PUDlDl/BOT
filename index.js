@@ -661,7 +661,7 @@ case 'dare':
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama Bot* : ${me.name}\n*Nomer Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*Waktu Bot Active* : ${kyun(uptime)}\n*Thanks 4 MhankBarBar*`
+					teks = `Nama Bot : ${me.name}\nNomer Bot : @${me.jid.split('@')[0]}\nPrefix : ${prefix}\nTotal Block Contact : ${blocked.length}\nWaktu Bot Active : ${kyun(uptime)}\nThanks 4 MhankBarBar`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
