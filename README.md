@@ -19,7 +19,7 @@
 |    Install    |
 | :-----------: |
 
-`Clone Project`
+Clone this Project
 
 ```php
 > git clone https://github.com/PUDIDI/BOT
