@@ -121,8 +121,8 @@ you've just cloned!!
 
 ## ``THANKS TO`` <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
-| [`fdciabdul`](https://github.com/fdciabdul/termux-whatsapp-bot)   | [`ArugaZ`](https://github.com/ArugaZ/whatsapp-bot) |
-| :---------------------------------------------------------------: | :------------------------------------------------: |
-| [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)      | [`PUDIDI`](https://github.com/PUDlDl/BOT)          |
+| [`Allah`](https://)      | [`fdciabdul`](https://github.com/fdciabdul/termux-whatsapp-bot)   | [`ArugaZ`](https://github.com/ArugaZ/whatsapp-bot) |
+| :-------: | :---------------------------------------------------------------: | :------------------------------------------------: |
+| [`Kamu`](https:uwu.com)  | [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)      | [`PUDIDI`](https://github.com/PUDlDl/BOT)          |
 
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/dino.gif" alt="Mario Game" width="600" />
