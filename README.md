@@ -25,50 +25,50 @@
 | Anxiety      |          Bot                |    v 3.2        |
 | :-----------: | :-----------------------------: | :---------: |
 
-| Active      |                   Feature        |
-| :-----------: | :------------------------------: |
-|       ✅       | Sticker Creator                  |
-|       ✅       | Nulis                            |
-|       ✅       | add                          |
-|       ✅       | kick                     |
-|       ✅       | demote                     |
-|       ✅       | promote                       |
-|       ✅       | bc           |
-|       ✅       | welcome                           |
+| Active      |                   Feature        | Lvl |
+| :-----------: | :------------------------------: | :-------: |
+|       ✅       | Sticker Creator                  | Medium |
+|       ✅       | Nulis                            | Medium |
+|       ✅       | add                          | Medium |
+|       ✅       | kick                     | Medium |
+|       ✅       | demote                     | Medium |
+|       ✅       | promote                       | Medium |
+|       ✅       | bc           | Medium |
+|       ✅       | welcome                           | Medium |
 
-| Active      |          Other                |
-| :-----------: | :-----------------------------: |
-|       ✅       | Youtube Downloader               |
-|       ✅       | simi                           |
-|       ✅       | left                    |
-|       ✅       | setpp                    |
-|       ✅       | group buka/tutup                   |
-|       ✅       | nsfwloli                 |
-|       ✅       | loli              |
-|       ✅       | tts                            |
+| Active      |          Other                | Lvl |
+| :-----------: | :-----------------------------: | :------ :|
+|       ✅       | Youtube Downloader               | Medium |
+|       ✅       | simi                           | Medium |
+|       ✅       | left                    | Medium |
+|       ✅       | setpp                    | Medium |
+|       ✅       | group buka/tutup                   | Medium |
+|       ✅       | nsfwloli                 | Medium |
+|       ✅       | loli              | Medium |
+|       ✅       | tts                            | Medium |
 
-| Active      |          Other               |
-| :-----------: | :-----------------------------: |
-|       ✅       | tiktokstalk          |
-|       ✅       | tiktok             |
-|       ✅       | tagall               |
-|       ✅       | clearall             |
-|       ✅       | block        |
-|       ✅       | unblock                        |
-|       ✅       | sound                              |
-|       ✅       | tsticker                    |
+| Active      |          Other               | Lvl |
+| :-----------: | :-----------------------------: | :-------: |
+|       ✅       | tiktokstalk          | Medium |
+|       ✅       | tiktok             | Medium |
+|       ✅       | tagall               | Hard |
+|       ✅       | clearall             | Medium |
+|       ✅       | block        | Medium |
+|       ✅       | unblock                        | Medium |
+|       ✅       | sound                              | Medium |
+|       ✅       | tsticker                    | Medium |
 
-| Active      |          Other                |
-| :-----------: | :-----------------------------: |
-|       ✅       | nulis                             |
-|       ✅       | meme                           |
-|       ✅       | memeindo                     |
-|       ✅       | ocr                      |
-|       ✅       | clone                            |
-|       ✅       | bc                          |
-|       ✅       | leave                             |
-|       ✅       | url2img                           |
-|       ✅       | wait                          |
+| Active      |          Other                | Lvl |
+| :-----------: | :-----------------------------: | :------: |
+|       ✅       | nulis                             | Medium |
+|       ✅       | meme                           | Medium |
+|       ✅       | memeindo                     | Medium |
+|       ✅       | ocr                      | Medium |
+|       ✅       | clone                            | Medium |
+|       ✅       | groupinfo                          | Medium |
+|       ✅       | leave                             | Medium |
+|       ✅       | url2img                           | Medium |
+|       ✅       | wait                          | Medium |
 |            More                  |
 
 Ket: ````Aktiv 24 jam````
