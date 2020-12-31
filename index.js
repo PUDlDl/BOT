@@ -473,7 +473,39 @@ case 'snowrite':
 					client.sendMessage(from, options, text)
 					break
 	
-			case 'loli': 
+case 'primbonjodoh':
+					var gh = body.slice(14)
+					var gbl1 = gh.split("|")[0];
+					var gbl2 = gh.split("|")[1];
+					anu = await fetchJson(`https://api.vhtear.com/primbonjodoh?nama=${gbl1}&pasangan=${gbl2}&apikey=ANTIGRATISNIHANJENKKK`)
+					reply(anu.result.hasil)
+					break
+				case 'qrcode':
+					const tex = encodeURIComponent(body.slice(8))
+					if (!tex) return client.sendMessage(from, 'masukan teks/url!', text, {quoted: mek})
+					const buff = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
+					client.sendMessage(from, buff, image, {quoted: mek})
+					break
+                                case 'wikien':
+					if (args.length < 1) return reply('𝐦𝐚𝐬𝐮𝐤𝐤𝐚𝐧 𝐤𝐚𝐭𝐚 𝐤𝐮𝐧𝐜𝐢')
+					tels = body.slice(8)					
+					anu = await fetchJson(`https://arugaz.herokuapp.com/api/wikien?q=${tels}`, {method: 'get'})
+					reply(anu.result)
+					break 
+                                case 'say':
+                                       const asu = body.slice(4)
+                                       if (argz.lenght >= 1) return client.sendText(from, asu)
+                                       break
+                                case 'ramaljadian':
+					var gh = body.slice(10)
+					var gbl1 = gh.split("|")[0];
+					var gbl2 = gh.split("|")[1];
+					var gbl3 = gh.split("|")[2];
+					anu = await fetchJson(`https://api.vhtear.com/harijadian?tgl=${gbl1}&bln=${gbl2}&thn=${gbl3}&apikey=ANTIGRATISNIHANJENKKK`)
+					reply(anu.result.hasil)
+					break	
+
+		case 'loli': 
 				    try {
 						res = await fetchJson(`https://api.lolis.life/random`, {method: 'get'})
 						buffer = await getBuffer(res.url)
