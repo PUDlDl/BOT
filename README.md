@@ -1,8 +1,8 @@
-<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="70px"> 
+<img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> 
 <p align="center">
 
-| `PUDIDI GANG` |
-| :----------:  |
+| i'm PUDIDI GANG |
+| :------------:  |
 
 </details>
 
