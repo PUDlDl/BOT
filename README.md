@@ -6,7 +6,7 @@
 | ``𝗧𝗵𝗮𝗻𝗸𝘀 𝗙𝗼𝗿 𝗠𝗵𝗮𝗻𝗸𝗕𝗮𝗿𝗕𝗮𝗿`` |
 | :-----------------------: |
 
-## ``NOTE``
+# `NOTE`
 `SCRIPTNYA JANGAN DI JUAL/BELI lol`
 <</div>
 
@@ -19,6 +19,7 @@
 
 | Install the dependencies |
 | :----------------------: |
+
 Before running the below command, make sure you're in the project directory that
 you've just cloned!!
 
@@ -29,6 +30,7 @@ you've just cloned!!
 
 | Use | 
 | :-----: |
+
 ```php
 > npm start
 ```
