@@ -59,26 +59,26 @@ you've just cloned!!
 | Active         |                 Feature          |   Lvl  |
 | :-----------:  | :------------------------------: | :----: |
 |       ✔       | Sticker Creator                  | Medium |
-|       ✔      | Nulis                            | Medium |
-|       ✔      | add                              | Medium |
-|       ✔      | kick                             | Medium |
+|       ✔       | Nulis                            | Medium |
+|       ✔       | add                              | Medium |
+|       ✔       | kick                             | Medium |
 |       ✔       | demote                           | Medium |
-|       ✔      | promote                          | Medium |
+|       ✔       | promote                          | Medium |
 |       ✔       | bc                               | Medium |
-|       ✔      | welcome                          | Medium |
+|       ✔       | welcome                          | Medium |
 |           More                  | None            | None   |
 
 
 | Active         |          Other                  |   Lvl  | 
 | :-----------:  | :-----------------------------: | :----: |
-|       ✅       | Youtube Download                | Medium |
-|       ✅       | simi                            | Medium |
-|       ✅       | left                            | Medium |
-|       ✅       | setpp                           | Medium |
-|       ✅       | group buka/tutup                | Medium |
-|       ✅       | nsfwloli                        | Medium |
-|       ✅       | loli                            | Medium |
-|       ✅       | tts                             | Medium |
+|       ✔       | Youtube Download                | Medium |
+|       ✔       | simi                            | Medium |
+|       ✔       | left                            | Medium |
+|       ✔       | setpp                           | Medium |
+|       ✔       | group buka/tutup                | Medium |
+|       ✔       | nsfwloli                        | Medium |
+|       ✔       | loli                            | Medium |
+|       ✔       | tts                             | Medium |
 |           More                  | None           | None   |
 
 #
@@ -86,28 +86,28 @@ you've just cloned!!
 
 | Active         |        Other                    |   Lvl  |
 | :-----------:  | :-----------------------------: | :----: |
-|       ✅       | tiktokstalk                     | Medium |
-|       ✅       | tiktok                          | Medium |
-|       ✅       | tagall                          | Hard   |
-|       ✅       | clearall                        | Medium |
-|       ✅       | block                           | Medium |
-|       ✅       | unblock                         | Medium |
-|       ✅       | sound                           | Medium |
-|       ✅       | tsticker                        | Medium |
+|       ✔       | tiktokstalk                     | Medium |
+|       ✔       | tiktok                          | Medium |
+|       ✔       | tagall                          | Hard   |
+|       ✔       | clearall                        | Medium |
+|       ✔       | block                           | Medium |
+|       ✔       | unblock                         | Medium |
+|       ✔       | sound                           | Medium |
+|       ✔       | tsticker                        | Medium |
 |            More                 | None           | None   | 
 
 
 | Active         |         Other                   |   Lvl  |
 | :-----------:  | :-----------------------------: | :----: |
-|       ✅       | nulis                           | Medium |
-|       ✅       | meme                            | Medium |
-|       ✅       | memeindo                        | Medium |
-|       ✅       | ocr                             | Medium |
-|       ✅       | clone                           | Medium |
-|       ✅       | groupinfo                       | Medium |
-|       ✅       | leave                           | Medium |
-|       ✅       | url2img                         | Medium |
-|       ✅       | wait                            | Medium |
+|       ✔       | nulis                           | Medium |
+|       ✔       | meme                            | Medium |
+|       ✔       | memeindo                        | Medium |
+|       ✔       | ocr                             | Medium |
+|       ✔       | clone                           | Medium |
+|       ✔       | groupinfo                       | Medium |
+|       ✔       | leave                           | Medium |
+|       ✔       | url2img                         | Medium |
+|       ✔       | wait                            | Medium |
 |            More                  | None          | None   |
 
 ##
