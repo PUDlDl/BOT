@@ -25,7 +25,7 @@
 | Anxiety      |          Bot                |
 | :-----------: | :-----------------------------: |
 
-| On      |                   Feature        |
+| Active      |                   Feature        |
 | :-----------: | :------------------------------: |
 |       ✅       | Sticker Creator                  |
 |       ✅       | Nulis                            |
@@ -36,7 +36,7 @@
 |       ✅       | bc           |
 |       ✅       | welcome                           |
 
-| On      |          Other                |
+| Active      |          Other                |
 | :-----------: | :-----------------------------: |
 |       ✅       | Youtube Downloader               |
 |       ✅       | simi                           |
@@ -47,7 +47,7 @@
 |       ✅       | loli              |
 |       ✅       | tts                            |
 
-| On      |          Other               |
+| Active      |          Other               |
 | :-----------: | :-----------------------------: |
 |       ✅       | tiktokstalk          |
 |       ✅       | tiktok             |
@@ -57,6 +57,9 @@
 |       ✅       | unblock                        |
 |       ✅       | sound                              |
 |       ✅       | tsticker                    |
+
+| Active      |          Other                |
+| :-----------: | :-----------------------------: |
 |       ✅       | nulis                             |
 |       ✅       | meme                           |
 |       ✅       | memeindo                     |
