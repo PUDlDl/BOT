@@ -58,6 +58,7 @@ you've just cloned!!
 | :-------:| :-: |
 | Free     |  y  |
 | Premium  |  n  |
+|   VIP    |  y  |
 
 #
 
