@@ -1,6 +1,6 @@
-# <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> Anjayy
- ╔━━❖❖❁❖❖✪✪~••~✪✪❖❖❁❖❖━━╗  
- ╚━━❖❖❁❖❖✪✪~••~✪✪❖❖❁❖❖━━╝
+# <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> yg di bawah Error
+ ╔━━❖❖❁❖❖✪✪~•*•~✪✪❖❖❁❖❖━━╗  
+ ╚━━❖❖❁❖❖✪✪~•*•~✪✪❖❖❁❖❖━━╝
 
 <p align="center">
 
