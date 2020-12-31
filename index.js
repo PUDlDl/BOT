@@ -388,7 +388,55 @@ client.on('group-participants-update', async (anu) => {
 					buffer = await getBuffer(`https://imgur.com/${memein.hash}.jpg`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: '.......'})
 					break
-				
+			case 'quotemaker':
+					var gh = body.slice(12)
+					var quote = gh.split("|")[0];
+					var wm = gh.split("|")[1];
+					var bg = gh.split("|")[2];
+					const pref = `Usage: \n${prefix}quotemaker teks|watermark|theme\n\nEx :\n${prefix}quotemaker ini contoh|bicit|random`
+					if (args.length < 1) return reply(pref)
+					reply(mess.wait)
+					anu = await fetchJson(`https://terhambar.com/aw/qts/?kata=${quote}&author=${wm}&tipe=${bg}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {caption: 'Nih anjim', quoted: mek})
+					break
+				case 'galaxtext':
+					if (args.length < 1) return reply('mau apa om')
+					teks = body.slice(12)
+					if (teks.length > 8) return reply('Teksnya kepanjangan, maksimal 8 karakter')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/galaxytext?text=${teks}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+                case 'pornohub':
+					var gh = body.slice(10)
+					var gbl1 = gh.split("|")[0];
+					var gbl2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Teksnya mana um')
+					reply(mess.wait)
+					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/textpro?theme=pornhub&text1=${gbl1}&text2=${gbl2}`, {method: 'get'})
+					buffer = await getBuffer(anu.result)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+				case 'hidetag':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isOwner) return reply('kamu siapa?')
+					var value = body.slice(9)
+					var group = await client.groupMetadata(from)
+					var member = group['participants']
+					var mem = []
+					member.map( async adm => {
+					mem.push(adm.id.replace('c.us', 's.whatsapp.net'))
+					})
+					var options = {
+					text: value,
+					contextInfo: { mentionedJid: mem },
+					quoted: mek
+					}
+					client.sendMessage(from, options, text)
+					break
+
+	
 			case 'loli': 
 				    try {
 						res = await fetchJson(`https://api.lolis.life/random`, {method: 'get'})
