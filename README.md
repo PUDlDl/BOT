@@ -24,7 +24,7 @@
 
 ## ``FEATURES`` 
 
-| AnxietyBot [``√``](https://bit.ly/ClickDiSinii)   |           v 3.2            |            
+| AnxietyBot [√](https://bit.ly/ClickDiSinii) |           v 3.2            |            
 | :-----------: | :-----------------------------: |
 
 #
