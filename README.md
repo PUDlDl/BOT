@@ -85,9 +85,9 @@
 ##
 
 | Keterangan |
-| :---| :-----------------: |
-| ON  | ```Kalo on bisa sampe 24jam``` |
-| OFF | ```Berarti sibuk``` |
+| :---: | :----------------------------: |
+|  ON   | ```Kalo on bisa sampe 24jam``` |
+|  OFF  |      ```Berarti sibuk```       |
 
 ## ``THANKS TO`` <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
