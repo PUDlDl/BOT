@@ -538,6 +538,44 @@ case 'tahta':
 					buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${thun}&apikey=ANTIGRATISNIHANJENKKK`)
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: ' '+thun})
 					break
+case 'stiltext':
+                      if (args.length < 1) return reply('Teks nya mana?')
+                      gh = body.slice(11)
+                      gl1 = gh.split("|")[0];
+                      gl2 = gh.split("|")[1];
+                      buff = await getBuffer(`https://api.vhtear.com/silktext?text=${gl1}&text2=${gl2}&apikey=ANTIGRATISNIHANJENKKK`)
+                      reply(mess.wait)
+                      client.sendMessage(from, buff, image, {quoted: mek, caption: 'thund ni '+gh})
+                      break
+                case 'testing':
+					var gh = body.slice(9)
+					coli1 = gh.split("|")[0];
+					coli2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Teks nya mana?')
+					reply(mess.wait)
+					buffer = await getBuffer(`https://api.vhtear.com/silktext?text=${coli1}&text2=${coli2}&apikey={pikey}`)
+					client.sendMessage(from, buffer, image, {quoted: mek})
+					break
+				case 'testing2':
+					var gh = body.slice(9)
+					coli1 = gh.split("|")[0];
+					coli2 = gh.split("|")[1];
+					if (args.length < 1) return reply('Teks nya mana?')
+					reply(mess.wait)
+					party = await getBuffer(`https://api.vhtear.com/partytext?text=${coli1}&text2=${coli2}&apikey=ANTIGRATISNIHANJENKKK`)
+					client.sendMessage(from, party, image, {quoted: mek})
+					break
+                case 'ninjalogo':
+                      if (args.length < 1) return reply('Teks nya mana?')
+                      gh = body.slice(11)
+                      gl1 = gh.split("|")[0];
+                      gl2 = gh.split("|")[1];
+                      reply(mess.wait)
+                      anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=ninjalogo&text1=${gl1}&text2=${gl2}`, {method: 'get'})
+                      buff = await getBuffer(anu.result)
+                      client.sendMessage(from, buff, image, {quoted: mek})
+                      break
+
 		case 'loli': 
 				    try {
 						res = await fetchJson(`https://api.lolis.life/random`, {method: 'get'})
