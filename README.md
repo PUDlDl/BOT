@@ -20,11 +20,12 @@
 > Tinggal scan kode qr yeee..
 ```
 
-## ``FEATURES`` //JANGAN DI GANTI GOBLOG
+## ``FEATURES`` 
 
 | AnxietyBot    |         ```v 3.2```             |             
 | :-----------: | :-----------------------------: |
 
+##
 
 | Active         |                 Feature          |   Lvl  |
 | :-----------:  | :------------------------------: | :----: |
@@ -38,6 +39,7 @@
 |       ✅       | welcome                          | Medium |
 |           More                  | None            | None   |
 
+##
 
 | Active         |          Other                  |   Lvl  | 
 | :-----------:  | :-----------------------------: | :----: |
@@ -51,6 +53,7 @@
 |       ✅       | tts                             | Medium |
 |           More                  | None           | None   |
 
+##
 
 | Active         |        Other                    |   Lvl  |
 | :-----------:  | :-----------------------------: | :----: |
@@ -64,6 +67,7 @@
 |       ✅       | tsticker                        | Medium |
 |            More                 | None           | None   | 
 
+##
 
 | Active         |         Other                   |   Lvl  |
 | :-----------:  | :-----------------------------: | :----: |
