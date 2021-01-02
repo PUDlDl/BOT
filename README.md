@@ -64,7 +64,7 @@ you've just cloned!!
 
 #
 
-|Terakreditasi Point | B +(https) |
+|Terakreditasi Point | [B +](https.com) |
 | :-: | :-: |
 
 #
