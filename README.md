@@ -1,3 +1,6 @@
+<div align="center">
+<img src="https://img.wattpad.com/userbg/monopi123.49228.jpg" alt="Botto-re" width="500" />
+
 # <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="60px"> GAJE ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
  
 <p align="center">
