@@ -56,11 +56,16 @@ you've just cloned!!
 
 | Features | Use |
 | :-------:| :-: |
-| Free     |  y  |
-| Premium  |  n  |
-|   VIP    |  y  |
-|   VVIP   |  n  |
+|   Free   |  y  |
+|    VIP   |  n  |
+|   VVIP   |  y  |
 |   VVVIP  |  n  |
+|  Premium |  n  |
+
+#
+
+|Terakreditasi Point | B +(https) |
+| :-: | :-: |
 
 #
 
