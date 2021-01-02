@@ -57,8 +57,8 @@ you've just cloned!!
 | Features | Use |
 | :-------:| :-: |
 |   Free   |  y  |
-|    VIP   |  n  |
-|   VVIP   |  y  |
+|    VIP   |  y  |
+|   VVIP   |  n  |
 |   VVVIP  |  n  |
 |  Premium |  n  |
 
