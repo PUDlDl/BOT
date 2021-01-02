@@ -25,8 +25,8 @@
 | :---------------: |
 
 `SCRIPTNYA JANGAN DI JUAL/BELI lol`
-</div align="center">
 
+</div align="center">
 |    Install    |
 | :-----------: |
 
