@@ -9,7 +9,7 @@
 
 <p align="center">
 
-| i'm PUDIDI GANG |
+|   Description   |
 | :------------:  |
 
 `JavaScript & NodeJS`
