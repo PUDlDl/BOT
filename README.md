@@ -64,7 +64,7 @@ you've just cloned!!
 
 #
 
-|Terakreditasi Point | [B +](https.com) |
+|Terakreditasi Point | [B +](https://pointstepgit.com) |
 | :-: | :-: |
 
 #
@@ -121,6 +121,7 @@ you've just cloned!!
 |       ✔       | leave                           | Medium |
 |       ✔       | url2img                         | Medium |
 |       ✔       | wait                            | Medium |
+|       ✔       | ttp                             | Medium |
 |            More                  | None          | None   |
 
 ##
