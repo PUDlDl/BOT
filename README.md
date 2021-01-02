@@ -59,6 +59,8 @@ you've just cloned!!
 | Free     |  y  |
 | Premium  |  n  |
 |   VIP    |  y  |
+|   VVIP   |  n  |
+|   VVVIP  |  n  |
 
 #
 
