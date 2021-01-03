@@ -45,10 +45,10 @@ Clone this Project
 
 | Install the dependencies |
 | :----------------------: |
-```php
+``
 Before running the below command, make sure you're in the project directory that
 you've just cloned!!
-```
+``
 ```php
 > cd BOT
 > bash install.sh
