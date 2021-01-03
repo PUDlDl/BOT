@@ -138,17 +138,18 @@ you've just cloned!
 |       ✔       | groupinfo                       | Medium |
 |       ✔       | leave                           | Medium |
 |       ✔       | url2img                         | Medium |
-|       ✔       | wait                            | Medium |
-|       ✔       | ttp                             | Medium |
 |            More                  | None          | None   |
 
 #
 
 | Active         |          New                  |   Lvl  |
 | :------------: | :-----------------------------: | :----: |
+|       ✔       | wait                            | Medium |
+|       ✔       | ttp                             | Medium |
 |       ✔       | tahta                           | Medium |
 |       ✔       | quotemaker                      | Medium |
 |       ✔       | stickergif                      | Medium |
+|       More       | None                          | None |
 
 ##
 
