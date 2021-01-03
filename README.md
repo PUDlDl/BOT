@@ -149,6 +149,8 @@ you've just cloned!
 |       ✔       | tahta                           | Medium |
 |       ✔       | quotemaker                      | Medium |
 |       ✔       | stickergif                      | Medium |
+|       ✔       | imoji                           | Medium |
+|       ✔       | randomcat                       | Medium |
 |       More       | None                          | None |
 
 ##
