@@ -83,7 +83,7 @@ you've just cloned!
 
 #
 
-|Terakreditasi Point | [A](https://pointstepgit.com) |
+|Terakreditasi Point | [A](https://github.com) |
 | :-: | :-: |
 
 
