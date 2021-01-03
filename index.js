@@ -24,11 +24,11 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
             + 'VERSION:3.0\n' // NGAPAIN LAGI KALO GA MAU NUMPANG NAMA DOANG XIXIXIXI
-            + 'FN: ITSMEIKY\n' // MENDING LU TOBAT SU!
-            + 'ORG:Creator ITSMEIKY;\n' // KASIH CREDITS GUA SU!!!
-            + 'TEL;type=CELL;type=VOICE;waid=6281281872699:+62 81-2818-72699\n' // JANGAN KEK BABI SU
+            + 'FN: Fadhli\n' // MENDING LU TOBAT SU!
+            + 'ORG:@itspapoy;\n' // KASIH CREDITS GUA SU!!!
+            + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' // JANGAN KEK BABI SU
             + 'END:VCARD'
-prefix = '$'
+prefix = '/'
 blocked = []
 
 function kyun(seconds){
@@ -138,9 +138,9 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6281281872699@s.whatsapp.net"] // replace this with your number
-			const adminbotnumber = ["6281285634078@s.whatsapp.net"]
-			const frendsowner = ["6283173142772@s.whatsapp.net"]
+			const ownerNumber = ["6287714745440@s.whatsapp.net"] // replace this with your number
+			const adminbotnumber = ["6287714745440@s.whatsapp.net"]
+			const frendsowner = ["6287714745440@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -187,7 +187,7 @@ async function starts() {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*Anuther* : *ITSMEIKYXSEC404*\n*FRENDS* : XNZUL\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*Nama bot* : ${me.name}\n*Author* : *AnxietyBot*\n*Human* : Anxiety\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -319,7 +319,7 @@ async function starts() {
 					break
 			case 'creator':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                 client.sendMessage(from, 'itu pacar ku eh owner ku ><',MessageType.text, { quoted: mek} )
+                 client.sendMessage(from, 'Niehh nomer ownernya ,jangan lupa di sv yaa ntr di sv bck ><',MessageType.text, { quoted: mek} )
                  break
                  case 'fitnah':	
 				case 'fake':          
@@ -371,20 +371,7 @@ async function starts() {
 				    yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
 				    client.sendMessage(from, yeh, text, {quoted: mek})
 			        break
-			        case 'help':
-				    if (!isGroup) return reply(mess.only.group)
-				    if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-				    linkgc = await client.groupInviteCode (from)
-				    yeh = `Jangan Lupa Masuk Ke Group Kami Lord \n\nlink Group : https://chat.whatsapp.com/IABVod4NWrpB4PIl5rRxRy*`
-				    client.sendMessage(from, yeh, text, {quoted: mek})
-			        break
-			        case 'menu':
-				    if (!isGroup) return reply(mess.only.group)
-				    if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-				    linkgc = await client.groupInviteCode (from)
-				    yeh = `Jangan Lupa Masuk Ke Group Kami Lord \n\nlink Group : https://chat.whatsapp.com/IABVod4NWrpB4PIl5rRxRy*`
-				    client.sendMessage(from, yeh, text, {quoted: mek})
-			        break
+			        			       
 				case 'hidetag':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('kamu siapa?')
@@ -798,16 +785,16 @@ async function starts() {
                client.reply(from, `Waalaikumsalam ${pushname}:)`)
                 break				
                 case `help`:
-               client.reply(from, `Hallo Kak ${pushname} Jangan Lupa Masuk Ke Group Kami :)\nhttps://chat.whatsapp.com/IABVod4NWrpB4PIl5rRxRy`)
+               client.reply(from, `Heyow ${pushname} Terimakasih telah menggunakan AnxietyBot`)
                 break				
                 case `help`:
-               client.reply(from, `Hallo Kak ${pushname} Mau Gabung In Bot Ke Group Kamu ? Cukup Bayar 10k/Perbulan`)
+               client.reply(from, `Heyow ${pushname} Mau invite bot ke group kamu? hubungi langsung ownernya kak`)
                 break				
                 case `menu`:
-               client.reply(from, `Hallo Kak ${pushname} Jangan Lupa Masuk Ke Group Kami :)\nhttps://chat.whatsapp.com/IABVod4NWrpB4PIl5rRxRy`)
+               client.reply(from, `Heyow ${pushname} Terimakasih telah menggunakan AnxietyBot`)
                 break				
                 case `menu`:
-               client.reply(from, `Hallo Kak ${pushname} Mau Gabung In Bot Ke Group Kamu ? Cukup Bayar 10k/Perbulan`)
+               client.reply(from, `Heyow ${pushname} Mau invite bot ke group kamu? hubungi langsung ownernya kak`)
                 break
                 case 'speed':
                     const timestamp = speed();
@@ -824,7 +811,7 @@ async function starts() {
 					break
                 case 'donasi':
 				case 'donate':
-					client.sendMessage(from, '┏━━━━°❀ ❬ 𝘼𝘽𝙊𝙐𝙏 ❭ ❀°━━━━┓\n┃╔═══════════════════╗\n┏❉ *${prefix}info*\n┃❉ *${prefix}help*\n┗❉ *${prefix}creator*\n┃╚═══════════════════╝\n┣━━━━°❀ ❬ 𝗗𝗢𝗡𝗔𝗦𝗜 ❭ ❀°━━━⊱\n┃╔═══════════════════╗\n┃╠➥ *GOPAY:* 0821-2027-2969\n┃╠➥ *PULSA:* 0812-8652-3253\n┃╠➥ *OVO:* 0812-8187-2699\n┃╠➥*SAWERIA:* https://saweria.co/itsmeikyxsec404\n┃╚═══════════════════╝\n┣━━━━━━━━━━━━━━━━━━━━━⊱\n┣━━━━━━━━━━━━━━━━━━━━━┓\n┃  𝗣𝗢𝗪𝗘𝗥𝗘𝗗 𝗕𝗬 𝗜𝗧𝗦𝗠𝗘𝗜𝗞𝗬𝗫𝗦𝗘𝗖𝟰𝟬𝟰\n┗━━━━━━━━━━━━━━━━━━━━━┛', text, { quoted: mek })
+					client.sendMessage(from, '┏━━━━°ௐ ❬ 𝘼𝘽𝙊𝙐𝙏 ❭ ௐ°━━━━┓\n┃╔═══════════════════╗\n┏❉ *${prefix}info*\n┃❉ *${prefix}help*\n┗❉ *${prefix}creator*\n┃╚═══════════════════╝\n┣━━━━°ௐ ❬ 𝗗𝗢𝗡𝗔𝗦𝗜 ❭ ௐ°━━━⊱\n┃╔═══════════════════╗\n┃╠➥ *PULSA:* 0877-1474-5440\n┃╠➥ *GOPAY:* 0877-1474-5440\n┃╠➥ *OVO:* 0877-1474-5440\n┃╠➥*DANA:* 0877-1474-5440\n┃╚═══════════════════╝\n┣━━━━━━━━━━━━━━━━━━━━━⊱\n┣━━━━━━━━━━━━━━━━━━━━━┓\n┃  𝗕𝗬 AnxietyBot\n┗━━━━━━━━━━━━━━━━━━━━━┛', text, { quoted: mek })
 					break
                 case 'tes':
                    client.sendMessage(from, 'ok', text, {quoted: mek})
@@ -863,7 +850,7 @@ async function starts() {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('6281281872699@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6287714745440@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner BOT, laporan palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':
@@ -899,7 +886,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Cintai nekonime'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'walpaper':
@@ -909,7 +896,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Cintai nekonime'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'sketchimage':
@@ -919,7 +906,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Cintai nekonime'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'animecry':
@@ -929,7 +916,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Jangan Dipake Buat Bacol Btw Jan Lupa Donasi Dong :v'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'animekiss':
@@ -939,7 +926,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Jangan Dipake Buat Bacol Btw Jan Lupa Donasi Dong :v'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'meme':
@@ -949,7 +936,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih jangan lupa donasi'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'loli':
@@ -959,7 +946,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Jangan Dipake Buat Bacol Btw Jan Lupa Donasi Dong :v'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'animehug':
@@ -969,7 +956,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih jangan lupa donasi'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 				case 'loli':
@@ -979,7 +966,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Citai Lolimu'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'imagetest':
@@ -989,7 +976,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Cintai waifu!'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'waifu':
@@ -999,7 +986,7 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Ingat! Cintai waifu!'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'waifu2':
@@ -1075,150 +1062,150 @@ async function starts() {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Ngab Randomanime!'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'randomhentai':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://mhankbarbars.herokuapp.com/api/random/hentai?apiKey=B4w56Fy3WQnfEyUNvQy8`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Sanaa Coliii Ngab'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'hentai':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://mhankbarbars.herokuapp.com/api/random/hentai?apiKey=B4w56Fy3WQnfEyUNvQy8`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Sanaa Coliii Ngab'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'nsfwtrap':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Sanaa Coliii Ngab'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'nsfwneko':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Sanaa Coliii Ngab'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'nsfwblowjob':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih Sanaa Coliii Ngab'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 				case 'nsfwloli':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwloli`, {method: 'get'})
 						buffer = await getBuffer(res.url)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'nsfwblowjob':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 		             		}
 					break
 			    case 'nsfwneko':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'animecry':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/cry`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'hentai':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'animehug':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hug`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 			    case 'animekiss':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/kiss`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 				case 'nsfwtrap':
 				    try {
-						if (!isNsfw) return reply('❌ 𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ❌')
+						if (!isNsfw) return reply('𝗘𝗥𝗢𝗥 𝗙𝗜𝗧𝗨𝗥 𝗡𝗦𝗙𝗪 𝗕𝗘𝗟𝗨𝗠 𝗔𝗞𝗧𝗜𝗙 ☹️')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap`, {method: 'get'})
 						buffer = await getBuffer(res.result)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Jangan jadiin bahan buat comli om'})
 					} catch (e) {
 						console.log(`Error :`, color(e,'red'))
-						reply('❌ 𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ❌')
+						reply('𝗘𝗥𝗢𝗥 𝗠𝗨𝗡𝗚𝗞𝗜𝗡 𝗔𝗣𝗜 𝗞𝗘𝗬 𝗥𝗨𝗦𝗔𝗞 ☹️')
 					}
 					break
 				case 'hilih':
@@ -1685,26 +1672,26 @@ async function starts() {
 						fs.unlinkSync(rano)
 					})
 					break
-				case 'otagall2':
+				case 'otagall':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*😘* ${mem.jid.split('@')[0]}\n`
+						teks += `*ꔷ❥* ${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
 					break
-			    case 'otagall3':
+			    case 'otagall2':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*#* wa.me/${mem.jid.split('@')[0]}\n`
+						teks += `*%* wa.me/${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
@@ -1754,12 +1741,12 @@ async function starts() {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*#* @${mem.jid.split('@')[0]}\n`
+						teks += `*┣ௐ* @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
 					break
-			    case 'otagall':
+			    case 'otagall3':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -1769,7 +1756,7 @@ async function starts() {
 						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
-					mentions('╔══✪〘 Mention All 〙✪══'+teks+'╚═〘 ITSMEIKY BOT 〙', members_id, true)
+					mentions('╔══✪〘 TAG|ALL 〙✪══'+teks+'╚═〘 AnxieytyBot 〙', members_id, true)
 					break
 				case 'clearall':
 					if (!isOwner) return reply('Kamu siapa?')
@@ -1895,21 +1882,21 @@ async function starts() {
 					mentions(teks, groupAdmins, true)
 					break
 				case 'toimg':
-					if (!isQuotedSticker) return reply('❌ reply stickernya um ❌')
+					if (!isQuotedSticker) return reply('reply stickernya bambank 😑')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await client.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 						fs.unlinkSync(media)
-						if (err) return reply('❌ Gagal, pada saat mengkonversi sticker ke gambar ❌')
+						if (err) return reply('Gagal, pada saat mengkonversi sticker ke gambar 😑')
 						buffer = fs.readFileSync(ran)
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: '>//<'})
 						fs.unlinkSync(ran)
 					})
 					break
 				case 'simi':
-					if (args.length < 1) return reply('Textnya mana um?')
+					if (args.length < 1) return reply('Textnya mana bambank?')
 					teks = body.slice(5)
 					anu = await simih(teks) //fetchJson(`https://mhankbarbars.herokuapp.com/api/samisami?text=${teks}`, {method: 'get'})
 					//if (anu.error) return reply('Simi ga tau kak')
@@ -1923,11 +1910,11 @@ async function starts() {
 						if (isSimi) return reply('Mode simi sudah aktif')
 						samih.push(from)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Sukses mengaktifkan mode simi di group ini ✔️')
+						reply('Sukses mengaktifkan mode simi di group ini ✔')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./src/simi.json', JSON.stringify(samih))
-						reply('Sukes menonaktifkan mode simi di group ini ✔️')
+						reply('Sukes menonaktifkan mode simi di group ini ✔')
 					} else {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
@@ -1940,11 +1927,11 @@ async function starts() {
 						if (isNsfw) return reply('Mode nsfw sudah aktif')
 						nsfw.push(from)
 						fs.writeFileSync('./src/nsfw.json', JSON.stringify(nsfw))
-						reply('Sukses mengaktifkan mode nsfw di group ini ✔️')
+						reply('Sukses mengaktifkan mode nsfw di group ini ✔')
 					} else if (Number(args[0]) === 0) {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./src/nsfw.json', JSON.stringify(nsfw))
-						reply('Sukes menonaktifkan mode nsfw di group ini ✔️')
+						reply('Sukes menonaktifkan mode nsfw di group ini ✔')
 					} else {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
@@ -1957,11 +1944,11 @@ async function starts() {
 						if (isWelkom) return reply('Udah aktif um')
 						welkom.push(from)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Sukses mengaktifkan fitur welcome di group ini ✔️')
+						reply('Sukses mengaktifkan fitur welcome di group ini ✔')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./src/welkom.json', JSON.stringify(welkom))
-						reply('Sukses menonaktifkan fitur welcome di group ini ✔️')
+						reply('Sukses menonaktifkan fitur welcome di group ini ✔')
 					} else {
 						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
 					}
@@ -2009,7 +1996,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *admin bot Broadcast* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *Admin Bot Broadcast* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
@@ -2053,7 +2040,7 @@ async function starts() {
 						reply('Suksess broadcast')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `[ *Frends bot Broadcast* ]\n\n${body.slice(4)}`)
+							sendMess(_.jid, `[ *Broadcast AnxietyBot* ]\n\n${body.slice(4)}`)
 						}
 						reply('Suksess broadcast')
 					}
