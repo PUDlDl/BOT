@@ -36,9 +36,9 @@
 
 Clone this Project
 
-```php
-> git clone https://github.com/PUDIDI/BOT
 ```bash
+> git clone https://github.com/PUDIDI/BOT
+```
 
 <details>
  <summary>2</summary>
