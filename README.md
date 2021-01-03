@@ -134,10 +134,10 @@ you've just cloned!!
 
 ##
 
-| Waktu |             Keterangan            |
+| Timer |             Keterangan            |
 | :---: |  :-----------------------------:  |
-|  ON   |      ```Bisa active 24jam```      |
-|  OFF  |        ```Berarti sibuk```        |
+|  ON   |    ```Can be Active 24hours```    |
+|  OFF  |             ```Busy```            |
 
 ## ``THANKS TO`` <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Handshake.gif" width="60px">
 
