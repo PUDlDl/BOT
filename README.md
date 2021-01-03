@@ -55,7 +55,8 @@ you've just cloned!!
 > npm start
 ```
 
-</details>
+<details>
+ <summary>hmm</summary>
 
 ## ``FEATURES`` 
 
