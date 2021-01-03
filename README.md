@@ -143,7 +143,7 @@ you've just cloned!!
 
 ##
 
-| Timer |             Keterangan            |
+| Timer |            Information            |
 | :---: |  :-----------------------------:  |
 |  ON   |    ```Can be Active 24hours```    |
 |  OFF  |             ```Busy```            |
