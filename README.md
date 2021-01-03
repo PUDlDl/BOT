@@ -7,7 +7,7 @@
 # <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="50px"> Holaa ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
  
 <p align="center">
-<a href="#"> ✪〘 <img title="PUDIDI" src="https://img.shields.io/badge/PUDIDI GANGツ-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a> 〙✪
+<a href="#"> ✪〘 <img title="PUDIDI" src="https://img.shields.io/badge/aq lucyu maaciツ-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a> 〙✪
 </p>
 
 
