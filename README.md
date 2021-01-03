@@ -76,7 +76,6 @@ you've just cloned!!
 |Terakreditasi Point | [B +](https://pointstepgit.com) |
 | :-: | :-: |
 
-#
 
 | Active         |                 Feature          |   Lvl  |
 | :-----------:  | :------------------------------: | :----: |
