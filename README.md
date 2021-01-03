@@ -21,8 +21,8 @@
 
 #
 
-| BUDAYAKAN MEMBACA |
-| :---------------: |
+| Don't forget to read |
+| :------------------: |
 
 `SCRIPTNYA JANGAN DI JUAL/BELI lol`
 
