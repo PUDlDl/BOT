@@ -17,7 +17,8 @@
 
 `JavaScript & NodeJS`
 
-</details>
+<details>
+ <summary>Warning!</summary>
 
 #
 
@@ -26,7 +27,7 @@
 
 `Don't buy and sell script !`
 
-</details>
+ <summary>1</summary>
 
 |    Install    |
 | :-----------: |
@@ -36,6 +37,9 @@ Clone this Project
 ```php
 > git clone https://github.com/PUDIDI/BOT
 ```
+
+<details>
+ <summary>2</summary>
 
 | Install the dependencies |
 | :----------------------: |
@@ -47,6 +51,9 @@ you've just cloned!!
 > cd BOT
 > bash install.sh
 ```
+<details>
+ <summary>3</summary>
+
 
 |   End   | 
 | :-----: |
