@@ -12,7 +12,7 @@
 
 <p align="center">
 
-|   Description   |
+|       Use       |
 | :------------:  |
 
 `JavaScript & NodeJS`
