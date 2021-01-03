@@ -1,5 +1,5 @@
 <p align="center"> 
-  Visitor<br>
+  Req<br>
   <img src="https://profile-counter.glitch.me/PUDlDl-BOT/count.svg" />
 </p>
 
