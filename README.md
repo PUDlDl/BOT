@@ -142,6 +142,13 @@ you've just cloned!
 |       ✔       | ttp                             | Medium |
 |            More                  | None          | None   |
 
+#
+
+| Active         |          New                  |   Lvl  |
+| :------------: | :-----------------------------: | :----: |
+|       ✔       | stickerfgif                     | Medium |
+|       ✔       | wait                            | Medium |
+
 ##
 
 | Timer |            Information            |
