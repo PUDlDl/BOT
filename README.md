@@ -27,6 +27,7 @@
 
 `Don't buy and sell script !`
 
+<details>
  <summary>1</summary>
 
 |    Install    |
