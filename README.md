@@ -46,10 +46,8 @@ Clone this Project
 | Install the dependencies |
 | :----------------------: |
 
-```
 Before running the below command, make sure you're in the project directory that
-you've just cloned!!
-```
+you've just cloned!
 
 ```php
 > cd BOT
@@ -85,7 +83,7 @@ you've just cloned!!
 
 #
 
-|Terakreditasi Point | [B +](https://pointstepgit.com) |
+|Terakreditasi Point | [A](https://pointstepgit.com) |
 | :-: | :-: |
 
 
