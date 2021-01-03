@@ -146,8 +146,9 @@ you've just cloned!
 
 | Active         |          New                  |   Lvl  |
 | :------------: | :-----------------------------: | :----: |
-|       ✔       | stickerfgif                     | Medium |
-|       ✔       | wait                            | Medium |
+|       ✔       | tahta                           | Medium |
+|       ✔       | quotemaker                      | Medium |
+|       ✔       | stickergif                      | Medium |
 
 ##
 
