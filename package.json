@@ -1,5 +1,5 @@
 {
-  "name": "XPTNNBOT",
+  "name": "PUDIDIBOT",
   "version": "0.0.2",
   "description": "No comment",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "whatsapp",
     "bot"
   ],
-  "author": "XPTN",
+  "author": "GANG",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
@@ -41,10 +41,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XP-TN/XPTNNBOTV.git"
+    "url": "git+https://github.com/PUDlDl/BOT.git"
   },
   "bugs": {
-    "url": "https://github.com/XP-TN/XPTNNBOTV/issues"
+    "url": "https://github.com/PUDlDl/BOT/issues"
   },
-  "homepage": "https://github.com/XP-TN/XPTNNBOTV#readme"
+  "homepage": "https://github.com/PUDlDl/BOT#readme"
 }
