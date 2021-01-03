@@ -24,7 +24,7 @@
 | Don't forget to read |
 | :------------------: |
 
-`SCRIPTNYA JANGAN DI JUAL/BELI lol`
+`Don't buy and sell script !`
 
 </details>
 
