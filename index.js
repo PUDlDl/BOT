@@ -317,12 +317,13 @@ async function starts() {
 						reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
 					}
 					break
-			case 'creator':
+     case 'owner':       
+     case 'creator':
                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
                  client.sendMessage(from, 'Niehh nomer ownernya ,jangan lupa di sv yaa ntr di sv bck ><',MessageType.text, { quoted: mek} )
                  break
                  case 'fitnah':	
-				case 'fake':          
+	         case 'fake':          
                     if (!isGroup) return reply(mess.only.group)
                     arg = body.substring(body.indexOf(' ') + 1)
 				    isi = arg.split(' |')[0] 
