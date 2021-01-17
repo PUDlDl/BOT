@@ -1,6 +1,6 @@
 */
 pasti mau di ubahツ
-//*kalo mau copas kasi credits ya syg
+kalo mau copas kasi credits ya syg
 PUDlDl BOT
 /*
 
