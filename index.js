@@ -1,7 +1,7 @@
 */
 pasti mau di ubahツ
 kalo mau copas kasi credits ya syg
-PUDlDl BOT
+PUDlDlBOT
 /*
 
 const
@@ -45,6 +45,9 @@ const vcard = 'BEGIN:VCARD\n'
             + 'END:VCARD' 
 prefix = '/'
 blocked = []          
+
+//PROTECT
+let antilink = JSON.parse(fs.readFileSync('./lib/database/antilink.json'))
 
 /********** LOAD FILE **************/
 
@@ -193,6 +196,7 @@ client.on('group-participants-update', async (anu) => {
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isadminbot = adminbotNumber.includes(sender)
+                        const GroupLinkDetector = antilink.includes(chatId)
 			const isfrendsowner = frensdowner.includes(sender)
 			const isUrl = (url) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
