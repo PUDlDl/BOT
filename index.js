@@ -46,8 +46,10 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '/'
 blocked = []          
 
-//PROTECT
+
+// PROTECT
 let antilink = JSON.parse(fs.readFileSync('./lib/database/antilink.json'))
+
 
 /********** LOAD FILE **************/
 
