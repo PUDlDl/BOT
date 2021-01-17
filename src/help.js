@@ -10,6 +10,9 @@ const help = (prefix) => {
 ├─❏ *PREFIX : *${prefix}*
 ╰──────────────────ᜰ	                
 
+[!] Apa itu prefix?
+Awalan atau prefiks adalah sebuah afiks yang dibubuhkan pada awal sebuah kata dasar.
+
 
 呢么？自己去的人吗啡乙醇酒吧好的嘛时刻准
 Ngapain di baca emang ngerti? ;v
