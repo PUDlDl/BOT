@@ -1,6 +1,8 @@
-//*pasti mau di ubahツ
-//*kalo mau copas kasi credits ya syg
-//*PUDlDlBOT
+/*
+*pasti mau di ubahツ
+*kalo mau copas kasi credits ya syg
+*PUDlDlBOT
+*/
 
 const
 {
@@ -294,6 +296,17 @@ client.on('group-participants-update', async (anu) => {
 					teks += `𝗧𝗼𝘁𝗮𝗹 : ${blocked.length}`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": blocked}})
 					break
+                               case 'afk':
+                                        tels = body.slice(4)
+                                        if (args.length < 1) return reply('Kamoh afk karena apa?')
+                                        if (!isUser) return reply(mess.only.daftarB)
+                                        var nom = mek.participant
+                                        const tag = {
+                                                text: `@${nom.split("@s.whatsapp.net")[0]} *SEDANG AFK ${tels} JANGAN GANGGU YAps*`,
+                                                contextInfo: { mentionedJid: [nom] }
+                                        }
+                                        client.sendMessage(from, tag, text, {quoted: mek})
+                                        break
                 case 'hidetag':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('kamu siapa?')
@@ -321,8 +334,27 @@ client.on('group-participants-update', async (anu) => {
 					reply(mess.wait)
 					anu = await fetchJson(`https://terhambar.com/aw/qts/?kata=${quote}&author=${wm}&tipe=${bg}`, {method: 'get'})
 					buffer = await getBuffer(anu.result)
-					client.sendMessage(from, buffer, image, {caption: 'Nih anjim', quoted: mek})
+					client.sendMessage(from, buffer, image, {caption: 'Nih dah jadi', quoted: mek})
 					break
+case 'quotemakers':
+                    gh = body.slice(12)
+                    if (!isUser) return reply(mess.only.daftarB)
+                    teks1 = gh.split("|")[0];
+                    teks2 = gh.split("|")[1];
+                    teks3 = gh.split("|")[2]
+                    data = await fetchJson(`https://terhambar.com/aw/qts/?kata=${teks1}&author=${teks2}&tipe=${teks3}`)
+                    hasil = await getBuffer(data.result)
+                    client.sendMessage(from, hasil, image, {quoted: mek, caption: 'neh...'})
+                    break
+                    case 'glitch':
+                    gh = body.slice(7)
+                    if (!isUser) return reply(mess.only.daftarB)
+                    teks1 = gh.split("|")[0];
+                    teks2 = gh.split("|")[1];
+                    data = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=glitch&text1=${teks1}&text2=${teks2}&apikey=BotWeA`, {method: 'get'})
+                    hasil = await getBuffer(data.result)
+                    client.sendMessage(from, hasil, image, {quoted: mek, caption: 'neh...'})
+                    break
                  case 'phlogo':
 					var gh = body.slice(9)
 					var gbl1 = gh.split("|")[0];
@@ -542,7 +574,7 @@ client.on('group-participants-update', async (anu) => {
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/wikien?q=${tels}`, {method: 'get'})
 					reply(anu.result)
 					break
-			        case 'igstalk':
+			        case 'igstalkk':
 					if (args.length < 1) return reply('Masukan username mu!!')
 					ige = body.slice(9)
 					reply(mess.wait)
@@ -551,6 +583,13 @@ client.on('group-participants-update', async (anu) => {
 					hasil = `User Ditemukan!!\n\n*➸ Username :* ${anu.result.username}\n*➸ Nama :* ${anu.result.fullname}\n*➸ Followers :* ${anu.result.followers}\n*➸ Followings :* ${anu.result.followings}\n*➸ Bio :* ${anu.result.biography}`
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
 					break
+                                case 'igstalk':
+                                        hmm = await fetchJson(`https://freerestapi.herokuapp.com/api/v1/igs?u=${body.slice(9)}`)
+                                        buffer = await getBuffer(hmm.data.profilehd)
+                                        hasil = `Fullname : ${hmm.data.fullname}\nFollowers : ${hmm.data.follower}\nFollowing : ${hmm.data.following}\nPrivate : ${hmm.data.private}\nVerified : ${hmm.data.verified}\nBio : ${hmm.data.bio}`
+                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
+                                        break
+                                
                 case 'infogempa':
                    anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/infogempa`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
