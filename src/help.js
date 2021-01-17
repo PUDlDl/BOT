@@ -69,7 +69,7 @@ const help = (prefix) => {
 ╰──────────────────
 
 *_Random Pict Cwk_* 
-╰──────────────────
+──────────────────
 ❏ *${prefix}cewek*
 ❏ *${prefix}cowok*
 ╰───────────────────
@@ -209,6 +209,7 @@ const help = (prefix) => {
 ❏ *${prefix}blocklist*
 ❏ *${prefix}block*
 ❏ *${prefix}unblock*
+❏ *${prefix}ban*
 ❏ *${prefix}bc*
 ❏ *${prefix}bc1*
 ❏ *${prefix}bc2*
