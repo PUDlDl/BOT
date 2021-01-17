@@ -33,7 +33,7 @@ _Asiap santuy 87 88_ ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BO
 
 
 <details>
- <summary>CLICK</summary>
+ <summary>1</summary>
 
 
 |    Install    |
@@ -46,6 +46,9 @@ Clone this Project
 ```bash
 > git clone https://github.com/PUDlDl/BOT
 ```
+
+<details>
+ <summary>2</summary>
 
 
 | Install the dependencies |
@@ -60,6 +63,9 @@ you've just cloned!
 > cd BOT
 > bash install.sh
 ```
+
+<details>
+ <summary>3</summary>
 
 
 |   End   | 
