@@ -432,8 +432,7 @@ client.on('group-participants-update', async (anu) => {
                 }
             break
                              case 'trendtwit':
-					client.updatePresence(from, Presence.composing) 
-                                        if (!isUser) return reply(mess.only.daftarB)
+					client.updatePresence(from, Presence.composing)                                        
 					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/trendingtwitter`, {method: 'get'})
 					teks = '=================\n'
 					for (let i of data.result) {
@@ -471,8 +470,7 @@ client.on('group-participants-update', async (anu) => {
 					client.sendMessage(from, buffer, image, {caption: 'Nih dah jadi', quoted: mek})
 					break
             case 'quotemakers':
-                    gh = body.slice(12)
-                    if (!isUser) return reply(mess.only.daftarB)
+                    gh = body.slice(12)                   
                     teks1 = gh.split("|")[0];
                     teks2 = gh.split("|")[1];
                     teks3 = gh.split("|")[2]
