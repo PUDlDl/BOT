@@ -3,9 +3,8 @@
   <img src="https://profile-counter.glitch.me/PUDlDl-BOT/count.svg" />
 </p>
 
-# <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="40px"> `Hae`  ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
+![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
 
- 
 <p align="center">
 <a href="#"> ✪〘 <img title="PUDIDI" src="https://img.shields.io/badge/piwツ-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a> 〙✪
 </p>
