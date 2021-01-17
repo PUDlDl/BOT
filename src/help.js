@@ -7,6 +7,7 @@ const help = (prefix) => {
 ├─❏ *VERSION  : 4.2*
 ├─❏ *STATUS : Online*
 ├─❏ *SPEED : 92ms*
+├─❏ *PREFIX : *${prefix}*
 ╰──────────────────ᜰ	                
 
 
@@ -184,7 +185,6 @@ Ngapain di baca emang ngerti? ;v
 ❏ *${prefix}dare*
 ❏ *${prefix}lirik*
 ❏ *${prefix}chord*
-❏ *${prefix}gcainebot*
 ❏ *${prefix}hidetag*
 ❏ *${prefix}ssweb*
 ❏ *${prefix}indohot*
