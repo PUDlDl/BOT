@@ -1,5 +1,5 @@
 const help = (prefix) => {
-	return `AnxietyBot
+	return `
 	
 ╔══❏〘 INFORMATION 〙❏══╗
 ├─❏ *BOT TYPE : JavaScript 
@@ -7,7 +7,7 @@ const help = (prefix) => {
 ├─❏ *VERSION  : 4.2*
 ╰──────────────────	                
 
-*ABOUT BOT*
+*_ABOUT BOT_*
 ──────────────────
 ❏ *${prefix}owner*
 ❏ *${prefix}donasi*
@@ -17,7 +17,7 @@ const help = (prefix) => {
 ❏ *${prefix}request*
 ╰──────────────────
 
-*MAKER*
+*_MAKER_*
 ──────────────────
 ❏ *${prefix}ocr*
 ❏ *${prefix}sticker*
@@ -25,7 +25,7 @@ const help = (prefix) => {
 ❏ *${prefix}toimg*
 ╰──────────────────
 
-*LOGO MAKER*
+*_LOGO MAKER_*
 ──────────────────
 ❏ *${prefix}phlogo*
 ❏ *${prefix}text3d*
@@ -33,13 +33,13 @@ const help = (prefix) => {
 ❏ *${prefix}bplogo*
 ╰──────────────────
 
-*Random Picture Meme*
+*_Random Picture Meme_*
 ──────────────────
 ❏ *${prefix}meme*
 ❏ *${prefix}memeindo*
 ╰──────────────────
 
-*Random Picture Anime*
+*_Random Picture Anime_*
 ──────────────────
 ❏ *${prefix}waifu*
 ❏ *${prefix}neko*
@@ -51,25 +51,25 @@ const help = (prefix) => {
 ❏ *${prefix}animeboy*
 ╰──────────────────
 
-*Random Picture Bembem*
+*_Random Picture Bembem_*
 ──────────────────
 ❏ *${prefix}cars*
 ❏ *${prefix}motor*
 ╰──────────────────
 
-*Random Picture AlatTakol* 
+*_Random Picture AlatTakol_* 
 ──────────────────
 ❏ *${prefix}gitar*
 ❏ *${prefix}drum*
 ╰──────────────────
 
-*Random Pict Cwk* 
+*_Random Pict Cwk_* 
 ╰──────────────────
 ❏ *${prefix}cewek*
 ❏ *${prefix}cowok*
 ╰───────────────────
 
-*Random Pict CsPlayJPN* 
+*_Random Pict CsPlayJPN_* 
 ──────────────────
 ❏ *${prefix}mano*
 ❏ *${prefix}aliga*
@@ -86,13 +86,13 @@ const help = (prefix) => {
 ❏ *${prefix}cosplayjapan*
 ╰──────────────────
 
-*Random Pict Animasi* 
+*_Random Pict Animasi_* 
 ──────────────────
 ❏ *${prefix}pokemon*
 ❏ *${prefix}doraemon*
 ╰──────────────────
 
-*Random Pict BTS* 
+*_Random Pict BTS_* 
 ──────────────────
 ❏ *${prefix}bts*
 ❏ *${prefix}jimin*
@@ -104,7 +104,7 @@ const help = (prefix) => {
 ❏ *${prefix}jeonjungkook*
 ╰──────────────────
 
-*Random Pict B.Pink* 
+*_Random Pict B.Pink_* 
 ──────────────────
 ❏ *${prefix}blackpink*
 ❏ *${prefix}lisa*
@@ -113,14 +113,14 @@ const help = (prefix) => {
 ❏ *${prefix}roseannepark*
 ╰──────────────────
 
-*Random Pict Animals*
+*_Random Pict Animals_*
 ──────────────────
 ❏ *${prefix}anjing*
 ❏ *${prefix}kucing*
 ❏ *${prefix}hamster*
 ╰──────────────────
 
-*Random Pict Quotes*
+*_Random Pict Quotes_*
 ──────────────────
 ❏ *${prefix}katabijak*
 ❏ *${prefix}katakata*
@@ -129,14 +129,14 @@ const help = (prefix) => {
 ❏ *${prefix}quotesislami*
 ╰──────────────────
 
-*Random Pict Estetik*
+*_Random Pict Estetik_*
 ──────────────────
 ❏ *${prefix}aesthetic*
 ❏ *${prefix}bluesky*
 ❏ *${prefix}flower*
 ╰──────────────────
 
-*KERANG*
+*_KERANG_*
 ──────────────────
 ❏ *${prefix}kapankah*
 ❏ *${prefix}apakah*
@@ -144,13 +144,13 @@ const help = (prefix) => {
 ❏ *${prefix}rate*
 ╰──────────────────
 
-*DOWNLOADER*
+*_DOWNLOADER_*
 ──────────────────
 ❏ *${prefix}ytmp4*
 ❏ *${prefix}ytmp3*
 ╰──────────────────
 
-*OTHERS*
+*_OTHERS_*
 ❏ *${prefix}fototiktok*
 ❏ *${prefix}map*
 ❏ *${prefix}kbbi*
@@ -177,8 +177,8 @@ const help = (prefix) => {
 ❏ *${prefix}pesankosong*
 ╰──────────────────
 
-*GROUP*
-ᜰ➢Admin Only
+*_GROUP_*
+ᜰ➢ _Admin Only_
 ──────────────────
 ❏ *${prefix}linkgc*
 ❏ *${prefix}tagall*
@@ -196,7 +196,7 @@ const help = (prefix) => {
 ❏ *${prefix}welcome* [1/0]
 ╰──────────────────
 
-*OWNER BOT*
+*_OWNER BOT_*
 ──────────────────
 ❏ *${prefix}clearall*
 ❏ *${prefix}blocklist*
@@ -208,8 +208,7 @@ const help = (prefix) => {
 ❏ *${prefix}leave*
 ❏ *${prefix}setpp*
 ❏ *${prefix}setprefix*
-╰──────────────────
-`
+╰──────────────────`
 }
 
 exports.help = help
