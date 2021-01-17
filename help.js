@@ -1,20 +1,18 @@
 
 const help = (prefix) => { 
 	return `                 
-┏━━━°✪〘 INFORMATION 〙✪°━━━┓
-┃
+
+〘 INFORMATION 〙
 ┃➣ *${prefix}info*
 ┃➣ *${prefix}owner*
 ┃➣ *${prefix}donasi*
-┃
-┣━━━°✪〘 MAKER 〙✪══°━━━≽
-┃
+
+〘 MAKER 〙
 ┣➥ *${prefix}sticker*
 ┣➥ *${prefix}tsticker*
 ┣➥ *${prefix}nulis*
-┃
-┣━━━━°✪〘 MEDIA 〙✪°━━━≽
-┃
+
+〘 MEDIA 〙
 ┣➥ *${prefix}tts*
 ┣➥ *${prefix}tiktok*
 ┣➥ *${prefix}meme*
@@ -23,13 +21,12 @@ const help = (prefix) => {
 ┣➥ *${prefix}ocr*
 ┣➥ *${prefix}loli*
 ┃
-┣━━━°✪〘 DOWNLOADER 〙✪°━━≽
-┃
+
+〘 DOWNLOADER 〙
 ┣➥ *yt* [link]
 ┣➥ *play* [judul lagu]
-┃
-┣━━━━°✪〘 GROUP 〙✪══°━━━━≽
-┃
+
+〘 GROUP 〙
 ┣➥ *${prefix}add* [62xxx]
 ┣➥ *${prefix}kick* [tag]
 ┣➥ *${prefix}setpp*
@@ -41,9 +38,8 @@ const help = (prefix) => {
 ┣➥ *${prefix}nsfw* [1/0]
 ┣➥ *${prefix}simih* [1/0]
 ┣➥ *${prefix}tagall*
-┃
-┣━━━━━°✪〘 OWNER 〙✪°━━━━≽
-┃
+
+〘 OWNER 〙
 ┣➥ *${prefix}bc* 
 ┣➥ *${prefix}leave*
 ┣➥ *${prefix}clearall*
@@ -51,9 +47,8 @@ const help = (prefix) => {
 ┣➥ *${prefix}clone* [tag]
 ┣➥ *${prefix}block*
 ┣➥ *${prefix}unblock*
-┃
-┣━━━━°✪〘 OTHER 〙✪°━━━━━≽
-┃
+
+〘 OTHER 〙
 ┣➥ *${prefix}ytsearch*
 ┣➥ *${prefix}listadmin*
 ┣➥ *${prefix}simi*
@@ -61,7 +56,6 @@ const help = (prefix) => {
 ┣➥ *${prefix}fitnah*
 ┣➥ *${prefix}tiktokstalk*
 ┣➥ *${prefix}url2img*
-┃
 ┣━━━━━━━━━━━━━━━━━━━━
 ┃ by AnxietyBotツ
 ┗━━━━━━━━━━━━━━━━━━━━
