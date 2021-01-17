@@ -408,12 +408,12 @@ client.on('group-participants-update', async (anu) => {
                 if (userLevel === undefined && userXp === undefined) return reply(mess.levelnol)
                 sem = sender.replace('@s.whatsapp.net','')
                 resul = `◪ *LEVEL*\n  ├─❏ *Name* : ${sem}\n  ├─❏ *User XP* : ${userXp}\n  └─ ❏ *User Level* : ${userLevel}`
-               client.sendMessage(from, resul, text, { quoted: mek})
+                client.sendMessage(from, resul, text, { quoted: mek})
                 .catch(async (err) => {
                         console.error(err)
                         await reply(`Error!\n${err}`)
                     })
-            break
+                break
         case 'leveling':
                 if (!isGroup) return reply(mess.only.group)
                 if (!isGroupAdmins) return reply(mess.only.admin)
@@ -421,11 +421,11 @@ client.on('group-participants-update', async (anu) => {
                 if (args[0] === '1') {
                     if (isLevelingOn) return reply('*fitur level sudah aktif sebelum nya*')
                     _leveling.push(groupId)
-                    fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
+                    fs.writeFileSync('./database/leveling.json', JSON.stringify(_leveling))
                      reply(mess.levelon)
                 } else if (args[0] === '0') {
                     _leveling.splice(groupId, 1)
-                    fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
+                    fs.writeFileSync('./database/leveling.json', JSON.stringify(_leveling))
                      reply(mess.leveloff)
                 } else {
                     reply(' *Ketik perintah 1 untuk mengaktifkan, 0 untuk menonaktifkan* \n *Contoh: ${prefix}leveling 1*')
