@@ -1,8 +1,6 @@
-*/
-pasti mau di ubahツ
-kalo mau copas kasi credits ya syg
-PUDlDlBOT
-/*
+//*pasti mau di ubahツ
+//*kalo mau copas kasi credits ya syg
+//*PUDlDlBOT
 
 const
 {
@@ -47,11 +45,11 @@ prefix = '/'
 blocked = []          
 
 
-// PROTECT
-const antilink = JSON.parse(fs.readFileSync('./lib/database/antilink.json'))
-
-
 /********** LOAD FILE **************/
+
+// PROTECT
+let antilink = JSON.parse(fs.readFileSync('./lib/database/antilink.json'))
+
 
 /********** END FILE ***************/
   
