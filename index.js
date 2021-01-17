@@ -1,3 +1,7 @@
+//*pasti mau di ubahツ
+//*kalo mau copas kasi credits ya syg
+//*PUDlDl BOT
+
 const
 {
    WAConnection,
@@ -50,7 +54,7 @@ const config = {
     XBOT: 'PUDlDlBOT', 
     instagram: 'https://instagram.com/itspapoy', 
     nomer: 'wa.me/6287714745440',
-    youtube: 'https://www.youtube.com/c/Fadhli Ryan F', 
+    youtube: 'https://www.youtube.com/c/Namaytlu', 
     whatsapp: 'https://chat.whatsapp.com/papalepapale', 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
