@@ -37,6 +37,8 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
+const _leveling = JSON.parse(fs.readFileSync('./database/leveling.json'))
+const _level = JSON.parse(fs.readFileSync('./database/level.json'))
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
             + 'FN:Fadhli\n' 
@@ -233,7 +235,11 @@ client.on('group-participants-update', async (anu) => {
 
 			mess = {
 				wait: '❬!❭ Waitt.., lagi prosess',
-				success: '️❬√❭ Succes 🤩',
+				success: '️❬√❭ Succes 🤩',                       
+                                levelon: '❬√❭ *enable leveling*',
+				leveloff: ' ❬ X ❭  *disable leveling*',
+				levelnoton: '❬ X ❭ *leveling not aktif*',
+				levelnol: '*LEVEL KAMU MASIH* 0 :(',				
 				error: {
 					stick: 'Yah gagal ;(, coba ulangi ^_^',
 					Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
@@ -267,6 +273,7 @@ client.on('group-participants-update', async (anu) => {
 			const isOwner = ownerNumber.includes(sender)
 			const isadminbot = adminbotNumber.includes(sender)                        
 			const isfrendsowner = frensdowner.includes(sender)
+                        const isLevelingOn = isGroup ? _leveling.includes(groupId) : false
                         const pengirim = sender.id
                         const GroupLinkDetector = antilink.includes(chatId)
 			const isUrl = (url) => {
@@ -282,6 +289,24 @@ client.on('group-participants-update', async (anu) => {
 				(id == null || id == undefined || id == false) ? client.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}})
 			}
 
+//function leveling
+            if (isGroup && isLevelingOn) {
+            const currentLevel = getLevelingLevel(sender)
+            const checkId = getLevelingId(sender)
+            try {
+                if (currentLevel === undefined && checkId === undefined) addLevelingId(sender)
+                const amountXp = Math.floor(Math.random() * 10) + 500
+                const requiredXp = 5000 * (Math.pow(2, currentLevel) - 1)
+                const getLevel = getLevelingLevel(sender)
+                addLevelingXp(sender, amountXp)
+                if (requiredXp <= getLevelingXp(sender)) {
+                    addLevelingLevel(sender, 1)
+                    await reply(`*「 LEVEL UP 」*\n\n➸ *Name*: ${sender}\n➸ *XP*: ${getLevelingXp(sender)}\n➸ *Level*: ${getLevel} -> ${getLevelingLevel(sender)}\n\nCongratss Sayang!! 🎉`)
+                }
+            } catch (err) {
+                console.error(err)
+            }
+        }
 			colors = ['red','white','black','blue','yellow','green']
 			const isMedia = (type === 'imageMessage' || type === 'videoMessage')
 			const isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMessage')
