@@ -18,7 +18,7 @@ const qrcode = require("qrcode-terminal")
 const moment = require("moment-timezone") 
 const fs = require("fs") 
 const { color, bgcolor } = require('./lib/color')
-const { help } = require('./lib/help')
+const { help } = require('./src/help')
 const { donasi } = require('./lib/donasi')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
@@ -255,19 +255,19 @@ client.on('group-participants-update', async (anu) => {
 				case 'Iri':
 		        case 'iri?':
                 case 'iri':
-                   client.sendMessage(from, 'sound' + 'iri.mp3', {quoted: mek, ptt:true})
+                   client.sendMessage(from, 'lib' + 'iri.mp3', {quoted: mek, ptt:true})
                break
                 
             case 'abgjago':
             case 'abangjago':
-                client.sendMessage(from, 'sound' + 'abangjago'+'mp3', {quoted: mek, ptt:true})
+                client.sendMessage(from, 'lib' + 'abangjago'+'mp3', {quoted: mek, ptt:true})
                 break
             case 'tarekses':
             case 'tariksis':
             case 'tareksis':
             case 'tareeksis':
             case 'tareekses':
-                client.sendMessage(from, './sound'+'/tarekses.mp3', {quoted: mek, ptt:true})
+                client.sendMessage(from, './lib'+'/tarekses.mp3', {quoted: mek, ptt:true})
                 break
             case 'welotka':
             case 'welutka':
