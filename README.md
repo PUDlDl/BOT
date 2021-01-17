@@ -191,4 +191,4 @@ you've just cloned!
 
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/dino.gif" alt="Mario Game" width="600" />
 
-[`Donate?`] [Saweria](https://saweria.co/PUDlDl)
+`Donate?` [Saweria](https://saweria.co/PUDlDl)
