@@ -19,6 +19,7 @@ const moment = require("moment-timezone")
 const fs = require("fs") 
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
+const { lisfont } = require('./lib/lisfont')
 const { donasi } = require('./src/donasi')
 const { fetchJson } = require('./lib/fetcher')
 const { recognize } = require('./lib/ocr')
@@ -248,6 +249,9 @@ client.on('group-participants-update', async (anu) => {
 				case 'menu':
 					client.sendMessage(from, help(prefix), text)
 					break
+                                case 'lisfont':
+                                        client.sendMessage(from, listfont(prefix), text)
+					break
 				case 'donasi':
 				case 'donate':
 					client.sendMessage(from, donasi(), text)
@@ -257,26 +261,7 @@ client.on('group-participants-update', async (anu) => {
                 case 'iri':
                    client.sendMessage(from, 'lib' + 'iri.mp3', {quoted: mek, ptt:true})
                break
-                
-            case 'abgjago':
-            case 'abangjago':
-                client.sendMessage(from, 'lib' + 'abangjago'+'mp3', {quoted: mek, ptt:true})
-                break
-            case 'tarekses':
-            case 'tariksis':
-            case 'tareksis':
-            case 'tareeksis':
-            case 'tareekses':
-                client.sendMessage(from, './lib'+'/tarekses.mp3', {quoted: mek, ptt:true})
-                break
-            case 'welotka':
-            case 'welutka':
-            case 'kangcopet':
-                client.sendMessage(dari, './sound'+'welot'+'mp3',{quoted: mek, ptt:true})
-                break
-                
-                
-				case 'info':
+                	        case 'info':
 					me = client.user
 					uptime = process.uptime()
 					teks = `*INFO OWNER*\n*Owner bot* : Fadhli\n*No Owner* : wa.me/6287714745440\n*Ig owner* : www.instagram.com/itspapoy\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Ketik* : ${prefix}report _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
