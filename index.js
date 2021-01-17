@@ -357,10 +357,10 @@ client.on('group-participants-update', async (anu) => {
 					client.sendMessage(from, help(prefix), text)
 					break
                                 case 'listfont':
-                                        client.sendMessage(from, listfont(prefix), text)
+                                        client.sendMessage(from, listfont(prefix), text, {quoted: mek})
 					break
                                 case 'kodenuklir':
-                                        client.sendMessage(from, kodenuklir(prefix), text)
+                                        client.sendMessage(from, kodenuklir(prefix), text, {quoted: mek})
 					break
 				case 'donasi':
 				case 'donate':
