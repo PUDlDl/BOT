@@ -168,12 +168,12 @@ you've just cloned!
 | Active         |          New                  |   Lvl  |
 | :------------: | :-----------------------------: | :----: |
 |       ✔       | wait                            | Medium |
-|       ✔       | ttp                             | Medium |
-|       ✔       | tahta                           | Medium |
+|       ✔       | apakah                          | Medium |
+|       ✔       | bisakah                         | Medium |
 |       ✔       | quotemaker                      | Medium |
 |       ✔       | stickergif                      | Medium |
-|       ✔       | imoji                           | Medium |
-|       ✔       | randomcat                       | Medium |
+|       ✔       | rate                            | Medium |
+|       ✔       | kapankah                        | Medium |
 |       More       | None                          | None |
 
 ##
