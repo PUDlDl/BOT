@@ -400,7 +400,48 @@ client.on('group-participants-update', async (anu) => {
                                         }
                                         client.sendMessage(from, tag, text, {quoted: mek})
                                         break
-                case 'hidetag':
+        case 'level':
+                if (!isLevelingOn) return reply(mess.levelnoton)
+                if (!isGroup) return reply(mess.only.group)
+                const userLevel = getLevelingLevel(sender)
+                const userXp = getLevelingXp(sender)
+                if (userLevel === undefined && userXp === undefined) return reply(mess.levelnol)
+                sem = sender.replace('@s.whatsapp.net','')
+                resul = `◪ *LEVEL*\n  ├─❏ *Name* : ${sem}\n  ├─❏ *User XP* : ${userXp}\n  └─ ❏ *User Level* : ${userLevel}`
+               client.sendMessage(from, resul, text, { quoted: mek})
+                .catch(async (err) => {
+                        console.error(err)
+                        await reply(`Error!\n${err}`)
+                    })
+            break
+        case 'leveling':
+                if (!isGroup) return reply(mess.only.group)
+                if (!isGroupAdmins) return reply(mess.only.admin)
+                if (args.length < 1) return reply('Ketik 1 untuk mengaktifkan fitur')
+                if (args[0] === '1') {
+                    if (isLevelingOn) return reply('*fitur level sudah aktif sebelum nya*')
+                    _leveling.push(groupId)
+                    fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
+                     reply(mess.levelon)
+                } else if (args[0] === '0') {
+                    _leveling.splice(groupId, 1)
+                    fs.writeFileSync('./database/json/leveling.json', JSON.stringify(_leveling))
+                     reply(mess.leveloff)
+                } else {
+                    reply(' *Ketik perintah 1 untuk mengaktifkan, 0 untuk menonaktifkan* \n *Contoh: ${prefix}leveling 1*')
+                }
+            break
+                             case 'trendtwit':
+					client.updatePresence(from, Presence.composing) 
+                                        if (!isUser) return reply(mess.only.daftarB)
+					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/trendingtwitter`, {method: 'get'})
+					teks = '=================\n'
+					for (let i of data.result) {
+						teks += `*Hastag* : ${i.hastag}\n*link* : ${i.link}\n*rank* : ${i.rank}\n*Tweet* : ${i.tweet}\n=================\n`
+					}
+					reply(teks.trim())
+					break
+                              case 'hidetag':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('kamu siapa?')
 					var value = body.slice(9)
@@ -417,8 +458,8 @@ client.on('group-participants-update', async (anu) => {
 					}
 					client.sendMessage(from, options, text)
 					break
-                case 'quotemaker':
-					var gh = body.slice(12)
+                            case 'quotemaker':
+			          	var gh = body.slice(12)
 					var quote = gh.split("|")[0];
 					var wm = gh.split("|")[1];
 					var bg = gh.split("|")[2];
@@ -429,7 +470,7 @@ client.on('group-participants-update', async (anu) => {
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {caption: 'Nih dah jadi', quoted: mek})
 					break
-case 'quotemakers':
+            case 'quotemakers':
                     gh = body.slice(12)
                     if (!isUser) return reply(mess.only.daftarB)
                     teks1 = gh.split("|")[0];
