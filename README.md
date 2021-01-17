@@ -3,7 +3,7 @@
   <img src="https://profile-counter.glitch.me/PUDlDl-BOT/count.svg" />
 </p>
 
-_Asiap santuy 87 88_ ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
+_Asiap santuy 87 88_  ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
 
 <p align="center">
 <a href="#"> ✪〘 <img title="PUDIDI" src="https://img.shields.io/badge/piwツ-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a> 〙✪
@@ -18,10 +18,6 @@ _Asiap santuy 87 88_ ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BO
 `JavaScript & NodeJS`
 
 
-<details>
- <summary>Warning!</summary>
-
-
 #
 
 
@@ -31,9 +27,6 @@ _Asiap santuy 87 88_ ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BO
 
 `Don't buy and sell script !`
 
-
-<details>
- <summary>1</summary>
 
 
 |    Install    |
@@ -47,8 +40,6 @@ Clone this Project
 > git clone https://github.com/PUDlDl/BOT
 ```
 
-<details>
- <summary>2</summary>
 
 
 | Install the dependencies |
@@ -64,9 +55,6 @@ you've just cloned!
 > bash install.sh
 ```
 
-<details>
- <summary>3</summary>
-
 
 |   End   | 
 | :-----: |
@@ -75,10 +63,6 @@ you've just cloned!
 ```php
 > npm start
 ```
-
-
-<details>
- <summary>hmm</summary>
 
 
 ## ``FEATURES`` 
