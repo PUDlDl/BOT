@@ -8,7 +8,7 @@
 <img src="https://img.wattpad.com/userbg/monopi123.49228.jpg" alt="Botto-re" width="500" />
 
 
-# <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="40px"> `Holaaa`  ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
+# <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="40px"> `Um Brou`  ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
 
  
 <p align="center">
@@ -190,3 +190,5 @@ you've just cloned!
 | [`Kamu`](https://uwu.com) | [`MhankBarBar`](https://github.com/MhankBarBar/whatsapp-bot)      | [`Mantan`](https://tempatsampah.com)               |
 
 <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/dino.gif" alt="Mario Game" width="600" />
+
+[`Donate?`] [Saweria](https://saweria.co/PUDlDl)
