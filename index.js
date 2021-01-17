@@ -48,7 +48,7 @@ blocked = []
 
 
 // PROTECT
-let antilink = JSON.parse(fs.readFileSync('./lib/database/antilink.json'))
+const antilink = JSON.parse(fs.readFileSync('./lib/database/antilink.json'))
 
 
 /********** LOAD FILE **************/
