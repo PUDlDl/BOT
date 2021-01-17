@@ -3,11 +3,6 @@
   <img src="https://profile-counter.glitch.me/PUDlDl-BOT/count.svg" />
 </p>
 
-
-<div align="center">
-<img src="https://img.wattpad.com/userbg/monopi123.49228.jpg" alt="Botto-re" width="500" />
-
-
 # <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="40px"> `Hae`  ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
 
  
@@ -39,7 +34,7 @@
 
 
 <details>
- <summary>1</summary>
+ <summary>CLICK</summary>
 
 
 |    Install    |
@@ -54,10 +49,6 @@ Clone this Project
 ```
 
 
-<details>
- <summary>2</summary>
-
-
 | Install the dependencies |
 | :----------------------: |
 
@@ -70,10 +61,6 @@ you've just cloned!
 > cd BOT
 > bash install.sh
 ```
-
-
-<details>
- <summary>3</summary>
 
 
 |   End   | 
