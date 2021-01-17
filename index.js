@@ -93,7 +93,7 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@affis_saputro123`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by:PUDlDlBOT`)
 
 client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
@@ -255,12 +255,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'donasi':
 				case 'donate':
 					client.sendMessage(from, donasi(), text)
-				break
-				case 'Iri':
-		        case 'iri?':
-                case 'iri':
-                   client.sendMessage(from, 'lib' + 'iri.mp3', {quoted: mek, ptt:true})
-               break
+				break				
                 	        case 'info':
 					me = client.user
 					uptime = process.uptime()
