@@ -33,6 +33,11 @@ const help = (prefix) => {
 ❏ *${prefix}bplogo*
 ╰──────────────────
 
+*_Random ListFont_*
+──────────────────
+❏ *${prefix}listfont*
+╰──────────────────
+
 *_Random Picture Meme_*
 ──────────────────
 ❏ *${prefix}meme*
@@ -151,6 +156,7 @@ const help = (prefix) => {
 ╰──────────────────
 
 *_OTHERS_*
+──────────────────
 ❏ *${prefix}fototiktok*
 ❏ *${prefix}map*
 ❏ *${prefix}kbbi*
@@ -197,6 +203,7 @@ const help = (prefix) => {
 ╰──────────────────
 
 *_OWNER BOT_*
+ᜰ➢ _Owner Only_
 ──────────────────
 ❏ *${prefix}clearall*
 ❏ *${prefix}blocklist*
