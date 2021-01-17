@@ -31,11 +31,11 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Admin Ainebot\n' 
-            + 'ORG: Pengembang AINEBOT;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=62895330379186:+62 895-3303-79186\n' 
+            + 'FN:Fadhli\n' 
+            + 'ORG:@itspapoy;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' 
             + 'END:VCARD' 
-prefix = '!'
+prefix = '/'
 blocked = []          
 
 /********** LOAD FILE **************/
@@ -46,11 +46,11 @@ const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 const bulan = arrayBulan[moment().format('MM') - 1]
 const config = {
-    XBOT: '🤖AINEBOT🤖', 
-    instagram: 'https://instagram.com/anemio999', 
-    nomer: 'wa.me/62895330379186',
-    youtube: 'https://www.youtube.com/channel/UCCOUPwMDA19sekkYzkdmu6w', 
-    whatsapp: 'https://chat.whatsapp.com/EYGeuRbVFkfI8JrH3cNrGV', 
+    XBOT: 'PUDlDlBOT', 
+    instagram: 'https://instagram.com/itspapoy', 
+    nomer: 'wa.me/6287714745440',
+    youtube: 'https://www.youtube.com/c/Fadhli Ryan F', 
+    whatsapp: 'https://chat.whatsapp.com/papalepapale', 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
@@ -78,7 +78,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, Scan now..`)
+   console.log(`[ ${time} ] QR code nya dah jadi nih, by @itspapoy`)
 })
 
 client.on('credentials-updated', () => {
@@ -106,7 +106,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*Hallo* 👋 @${num.split('@')[0]}\nSelamat datang di group *${mdata.subject}*\nSemoga betah ya di sini 😅`
+				teks = `[ *𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐝𝐚𝐭𝐚𝐧𝐠 𝐝𝐢 𝐆𝐫𝐨𝐮𝐩 𝐲𝐚𝐧𝐠 𝐏𝐞𝐧𝐮𝐡 𝐃𝐫𝐚𝐦𝐚 ${mdata.subject}* ]\n*❉───────────❉*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋツ:\nཧᜰ꙰ꦿ➢𝐍𝐚𝐦𝐚:\nཧᜰ꙰ꦿ➢𝐔𝐦𝐮𝐫:\nཧᜰ꙰ꦿ➢𝐀𝐬𝐤𝐨𝐭:\nཧᜰ꙰ꦿ➢𝐂𝐰𝐤 𝐚𝐩𝐚 𝐂𝐰𝐤:\nཧᜰ꙰ꦿ➢𝐃𝐨𝐢??:\nཧᜰ꙰ꦿ➢𝐁𝐚𝐜𝐚 𝐃𝐞𝐬𝐜 𝐲𝐚𝐚 𝐚𝐭𝐰 𝐌𝐚𝐮 𝐝𝐢 𝐒𝐚𝐧𝐭𝐞𝐭? 𝐌𝐨𝐠𝐚 𝐛𝐞𝐭𝐚𝐡 𝐝𝐢 𝐠𝐫𝐮𝐩ツ\n*❉───────────❉*\nཧᜰ꙰ꦿ➢ᴮᵗʷ ˢᵛ ⁿᵒ ᴬᵈᵐⁱⁿ ˢᵐᵃ ᵇᵒᵗ ʸᵃᵃ ᵐᵃᵃᶜⁱ><`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -116,7 +116,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `*Titip salam yah kak* @${num.split('@')[0]}\n*I will miss you* 🤭 `
+				teks = `(っ◔◡◔)っ𝗦𝗮𝘆𝗼𝗻𝗮𝗿𝗮𝗮𝗮👋🏻 @${num.split('@')[0]}\n𝘠𝘢𝘯𝘨 𝘬𝘦𝘭𝘶𝘢𝘳 𝘯𝘪𝘵𝘪𝘱 𝘴𝘦𝘣𝘭𝘢𝘲 𝘺𝘢𝘢 𝘣𝘵𝘸 𝘮𝘸𝘩𝘩𝘦ᥬ😉᭄`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -151,25 +151,25 @@ client.on('group-participants-update', async (anu) => {
 			const isCmd = body.startsWith(prefix)
 
 			mess = {
-				wait: '❬❗❭ 𝗪𝗔𝗜𝗧, 𝗹𝗮𝗴𝗶 𝗽𝗿𝗼𝘀𝗲𝘀',
-				success: '️❬ ✔ ❭ 𝘀𝘂𝗰𝗰𝗲𝘀𝘀 🖤',
+				wait: '❬!❭ Waitt.., lagi prosess',
+				success: '️❬√❭ Succes 🤩',
 				error: {
 					stick: 'Yah gagal ;(, coba ulangi ^_^',
 					Iv: '𝗠𝗮𝗮𝗳 𝗹𝗶𝗻𝗸 𝘁𝗶𝗱𝗮𝗸 𝘃𝗮𝗹𝗶𝗱☹️'
 				},
 				only: {
-					group: '❬❗❭ 𝗚𝗥𝗢𝗨𝗣 𝗢𝗡𝗟𝗬 ',
-					ownerG: '❬❗❭ 𝗢𝗪𝗡𝗘𝗥 𝗢𝗡𝗟𝗬 ',
-					ownerB: '❬❗❭  𝗢𝗪𝗡𝗘𝗥 𝗢𝗡𝗟𝗬 ',
-					admin: '❬❗❭ 𝗔𝗗𝗠𝗜𝗡 𝗢𝗡𝗟𝗬 ',
-					Badmin: '❬❗❭ 𝗕𝗢𝗧 𝗛𝗔𝗥𝗨𝗦 𝗝𝗔𝗗𝗜 𝗔𝗗𝗠𝗜𝗡 '
+					group: '❌ Perintah ini hanya bisa di gunakan dalam group! ❌',
+					ownerG: '❌ Perintah ini hanya bisa di gunakan oleh owner group! ❌',
+					ownerB: '❌ Perintah ini hanya bisa di gunakan oleh owner bot! ❌',
+					admin: '❌ Perintah ini hanya bisa di gunakan oleh admin group! ❌',
+					Badmin: '❌ Perintah ini hanya bisa di gunakan ketika bot menjadi admin! ❌'
 				}
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["62895330379186@s.whatsapp.net"]
-			const pacarNumber = ["62895321438933@s.whatsapp.net"]
-			const birdhaNumber = ["6285156459328@s.whatsapp.net"]
+			const ownerNumber = ["6287714745440@s.whatsapp.net"]
+			const adminbotNumber = ["6287714745440@s.whatsapp.net"]
+			const frendsowner = ["6287714745450@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -184,8 +184,8 @@ client.on('group-participants-update', async (anu) => {
 			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
-			const isPacar = pacarNumber.includes(sender)
-			const isBirdha = birdhaNumber.includes(sender)
+			const isadminbot = adminbotNumber.includes(sender)
+			const isfrendsowner = frensdowner.includes(sender)
 			const isUrl = (url) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
 			}
@@ -211,25 +211,25 @@ client.on('group-participants-update', async (anu) => {
 			switch(command) {
 				case 'bisakah':
 					bisakah = body.slice(1)
-					const bisa =['Bisa','Tidak Bisa','Coba Ulangi']
+					const bisa =['Bisa','Bisa jadi','Semoga aja','Mungkin','Tidak Bisa','Coba Ulangi']
 					const keh = bisa[Math.floor(Math.random() * bisa.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
 					break
 				case 'kapankah':
 					kapankah = body.slice(1)
-					const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi']
+					const kapan =['Barusan','Besok','Lusa','Tadi','4 Hari Lagi','99 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi']
 					const koh = kapan[Math.floor(Math.random() * kapan.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
 					break
                                 case 'apakah':
 					apakah = body.slice(1)
-					const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi']
+					const apa =['Iya','Tidak','Mungkin','Gatau','Bisa','Bisa Jadi','Coba Ulangi']
 					const kah = apa[Math.floor(Math.random() * apa.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
 					break
 				case 'rate':
 					rate = body.slice(1)
-					const ra =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
+					const ra =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','99','41','39']
 					const te = ra[Math.floor(Math.random() * ra.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+rate+'*\n\nJawaban : '+ te+'%', text, { quoted: mek })
 					break
@@ -279,7 +279,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*INFO OWNER*\n*Owner bot* : Muhammad Ridwan Reynaldy\n*No Owner* : wa.me/62895330379186\n*Ig owner* : www.instagram.com/anemio999\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
+					teks = `*INFO OWNER*\n*Owner bot* : Fadhli\n*No Owner* : wa.me/6287714745440\n*Ig owner* : www.instagram.com/itspapoy\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Ketik* : ${prefix}report _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -287,7 +287,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'snk':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Syarat & Ketentuan Ainebot*\n1. Teks dan nama pengguna WhatsApp anda kami simpan di dalam server selama bot aktif.\n2. Data anda akan di hapus ketika bot offline.\n3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim.\n4. Kami tidak pernah meminta anda untuk memberikan informasi pribadi.\n5. Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot.\n6. Cukup perintah 1x jika bot tidak merespon harap ulangi kembali, Jika di ulangi kembali tidak merespon, Bot tidak aktif\n7. Dilarang spam, Share virus virtex, Telpon, Video call, Kami akan blockir anda.\n8. Apapun yang anda perintah pada bot ini, *KAMI TIDAK BERTANGGUNG JAWAB!*\n\nTERIMA KASIH !~`
+					teks = `*Syarat & Ketentuan AnxietyBot*\n1. Teks dan nama pengguna WhatsApp anda kami simpan di dalam server selama bot aktif.\n2. Data anda akan di hapus ketika bot offline.\n3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim.\n4. Kami tidak pernah meminta anda untuk memberikan informasi pribadi.\n5. Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot.\n6. Cukup perintah 1x jika bot tidak merespon harap ulangi kembali, Jika di ulangi kembali tidak merespon, Bot tidak aktif\n7. Dilarang spam, Share virus virtex, Telpon, Video call, Kami akan blockir anda.\n8. Apapun yang anda perintah pada bot ini, *KAMI TIDAK BERTANGGUNG JAWAB!*\n\nTERIMA KASIH !~`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -380,7 +380,7 @@ client.on('group-participants-update', async (anu) => {
 					anu = await fetchJson(`https://mnazria.herokuapp.com/api/anime?query=${teks}`, {method: 'get'})
 					reply('anime nya ni '+teks+' adalah :\n\n'+anu.title)
 					break
-                case 'lpr':
+                case 'report':
                      const pesan = body.slice(5)
                       if (pesan.length > 300) return client.sendMessage(from, 'Maaf Teks Terlalu Panjang, Maksimal 300 Teks', msgType.text, {quoted: mek})
                         var nomor = mek.participant
@@ -389,21 +389,21 @@ client.on('group-participants-update', async (anu) => {
                          text: teks1,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('62895330379186@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6287714745440@s.whatsapp.net', options, text, {quoted: mek})
                     reply('Masalah telah di laporkan ke owner AINEBOT, Laporan palsu atau main² tidak akan ditanggapi.')
                     break
                 case 'request':
                      const cfrr = body.slice(8)
                       if (cfrr.length > 300) return client.sendMessage(from, 'Maaf Teks Terlalu Panjang, Maksimal 300 Teks', msgType.text, {quoted: mek})
                         var nomor = mek.participant
-                       const ress = `*[REQUEST VITUR]*\nNomor : @${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${cfrr}`
+                       const ress = `*[REQUEST]*\nNomor : @${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${cfrr}`
 
                       var options = {
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('62895330379186@s.whatsapp.net', options, text, {quoted: mek})
-                    client.sendMessage('6285156459328@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6287714745440@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('6287714745440@s.whatsapp.net', options, text, {quoted: mek})
                     reply('REQUEST ANDA TELAH SAMPAI KE OWNER AINEBOT, Requests palsu atau main² tidak akan ditanggapi.')
                     break
                 case 'ssweb':
@@ -1261,10 +1261,34 @@ client.on('group-participants-update', async (anu) => {
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
 					for (let mem of groupMembers) {
-						teks += `*>* @${mem.jid.split('@')[0]}\n`
+						teks += `*🚀* @${mem.jid.split('@')[0]}\n`
 						members_id.push(mem.jid)
 					}
 					mentions(teks, members_id, true)
+					break
+                                case 'mentionall':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n'
+					for (let mem of groupMembers) {
+						teks += `╠➥ @${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions('╔══❏〘 Mention|All 〙❏══'+teks+'╚═❏〘 AnxietyBot 〙', members_id, true)
+					break
+                                case 'otagall':
+					if (!isGroup) return reply(mess.only.group)
+					if (!isGroupAdmins) return reply(mess.only.admin)
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n'
+					for (let mem of groupMembers) {
+						teks += `╠❏🐊 @${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions('╔══🐊〘 OTAG|All 〙🐊══'+teks+'╚═🐊〘 AnxietyBot 〙', members_id, true)
 					break
 				case 'tagme':
 					var nom = mek.participant
