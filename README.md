@@ -50,7 +50,7 @@ Clone this Project
 
 
 ```bash
-> git clone https://github.com/PUDIDI/BOT
+> git clone https://github.com/PUDlDl/BOT
 ```
 
 
