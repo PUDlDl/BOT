@@ -1,6 +1,7 @@
-//*mau ngapain om? Pasti mau di ubahツ
-//*kalo mau copas kasi credits ya om !
-//*PUDlDlBOT
+*/ mau ngapain om? yaa make nanya mau copasツ
+* kalo mau copas kasi credits ya om !
+* PUDlDlBOT
+/*
 
 const
 {
@@ -20,6 +21,7 @@ const
 } = require("@adiwajshing/baileys")
 const qrcode = require("qrcode-terminal") 
 const moment = require("moment-timezone") 
+const kagApi = require('@kagchi/kag-api')
 const fs = require("fs") 
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
@@ -40,7 +42,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'ORG:@itspapoy;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' 
             + 'END:VCARD' 
-prefix = '+'
+prefix = '/'
 blocked = []          
 
 function kyun(seconds){
