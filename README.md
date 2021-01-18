@@ -13,7 +13,7 @@
 |       Use       |
 | :------------:  |
 
-`JavaScript & NodeJS`
+`JavaScript & NodeJS` ![](https://visitor-badge.glitch.me/badge?page_id=PUDlDl.BOT)
 
 
 #
