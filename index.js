@@ -221,19 +221,19 @@ client.on('group-participants-update', async (anu) => {
 			switch(command) {
 				case 'bisakah':
 					bisakah = body.slice(1)
-					const bisa =['Bisa','Tidak Bisa','Coba Ulangi']
+					const bisa =['Bisa','Sepertinya','Tidak Bisa','Mungkin','Coba Ulangi']
 					const keh = bisa[Math.floor(Math.random() * bisa.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+bisakah+'*\n\nJawaban : '+ keh, text, { quoted: mek })
 					break
 				case 'kapankah':
 					kapankah = body.slice(1)
-					const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi']
+					const kapan =['Besok','Semoga yah','Lusa','Barusan','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi']
 					const koh = kapan[Math.floor(Math.random() * kapan.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+kapankah+'*\n\nJawaban : '+ koh, text, { quoted: mek })
 					break
                                 case 'apakah':
 					apakah = body.slice(1)
-					const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi']
+					const apa =['Iya','Bisa','Gatau','Semoga yahh''Tanyakan pada peta','Tidak','Bisa Jadi','Coba Ulangi']
 					const kah = apa[Math.floor(Math.random() * apa.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
 					break
@@ -264,31 +264,8 @@ client.on('group-participants-update', async (anu) => {
 				break                                
                                 case 'kodenuklir':
                                         client.sendMessage(from, kodenuklir(prefix), text, {quoted: mek})
-				break
-				case 'Iri':
-		        case 'iri?':
-                case 'iri':
-                   client.sendMessage(from, 'sound' + 'iri.mp3', {quoted: mek, ptt:true})
-               break
-                
-            case 'abgjago':
-            case 'abangjago':
-                client.sendMessage(from, 'sound' + 'abangjago'+'mp3', {quoted: mek, ptt:true})
-                break
-            case 'tarekses':
-            case 'tariksis':
-            case 'tareksis':
-            case 'tareeksis':
-            case 'tareekses':
-                client.sendMessage(from, './sound'+'/tarekses.mp3', {quoted: mek, ptt:true})
-                break
-            case 'welotka':
-            case 'welutka':
-            case 'kangcopet':
-                client.sendMessage(dari, './sound'+'welot'+'mp3',{quoted: mek, ptt:true})
-                break
-                
-                
+				break			
+                               
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
