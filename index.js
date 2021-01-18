@@ -1,8 +1,6 @@
-*/
-* mau ngapain? kalo ga di ubahツ
-* kalo mau copas kasi credits ya syg
-* PUDlDlBOT
-/*
+//*mau ngapain om? Pasti mau di ubahツ
+//*kalo mau copas kasi credits ya om !
+//*PUDlDlBOT
 
 const
 {
