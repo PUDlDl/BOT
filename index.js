@@ -1,7 +1,7 @@
-*/ mau ngapain om? yaa make nanya mau copasツ
-* kalo mau copas kasi credits ya om !
+/* MAU NGAPAIN OM ? OH MAU COPASツ
+* KALO MAU COPAS CANTUMIN CREDITSNYA YA OM !
 * PUDlDlBOT
-/*
+*/
 
 const
 {
