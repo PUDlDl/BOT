@@ -43,11 +43,6 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '+'
 blocked = []          
 
-/********** LOAD FILE **************/
-
-/********** END FILE ***************/
-  
-
 function kyun(seconds){
   function pad(s){
     return (s < 10 ? '0' : '') + s;
