@@ -176,8 +176,8 @@ client.on('group-participants-update', async (anu) => {
 
 			const botNumber = client.user.jid
 			const ownerNumber = ["6287714745440@s.whatsapp.net"]
-			const adminbotNumber = ["6287714745440@s.whatsapp.net"]
-			const frendsowner = ["6287714745450@s.whatsapp.net"]
+			const pacarNumber = ["6287714745450@s.whatsapp.net"]
+			const birdhaNumber = ["6285156459328@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -192,8 +192,8 @@ client.on('group-participants-update', async (anu) => {
 			const isNsfw = isGroup ? nsfw.includes(from) : false
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
-			const isadminbot = adminbotNumber.includes(sender)                        
-			const isfrendsowner = frensdowner.includes(sender)
+			const isPacar = pacarNumber.includes(sender)
+			const isBirdha = birdhaNumber.includes(sender)
                         const pengirim = sender.id
                         const GroupLinkDetector = antilink.includes(chatId)
 			const isUrl = (url) => {
