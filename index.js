@@ -1,8 +1,8 @@
-/*
+*/
 * mau ngapain? kalo ga di ubahツ
 * kalo mau copas kasi credits ya syg
 * PUDlDlBOT
-*/
+/*
 
 const
 {
