@@ -1,6 +1,10 @@
 const help = (prefix) => {
-	return `Haaee.
-	
+	return `
+
+❏───────────────❏
+Haey. *${id.split("@s.whatsapp.net")[0]}*
+❏───────────────❏	
+
 ╔══❏〘 INFORMATION 〙❏══╗
 ├─❏ *BOT TYPE : JavaScript 
 ├─❏ *NAME : Anxiety𝗕𝗢𝗧*
@@ -48,9 +52,9 @@ Ngapain yg ini di baca emang ngerti? ;v
 ╰──────────────────
 
 
-🚀 *_Random EmotBerambod*
+🚀 *_Random Emotᥬ᭄,*
 ──────────────────
-❏ *${prefix}emotberambod* [Viral?]
+❏ *${prefix}emotberambod*
 ╰──────────────────
 
 
