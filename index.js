@@ -89,7 +89,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `[ *𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐝𝐚𝐭𝐚𝐧𝐠 𝐝𝐢 𝐆𝐫𝐨𝐮𝐩 𝐲𝐚𝐧𝐠 𝐏𝐞𝐧𝐮𝐡 𝐃𝐫𝐚𝐦𝐚 ${mdata.subject}* ]\n*❉───────────❉*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋツ:\nཧᜰ꙰ꦿ➢𝐍𝐚𝐦𝐚:\nཧᜰ꙰ꦿ➢𝐔𝐦𝐮𝐫:\nཧᜰ꙰ꦿ➢𝐀𝐬𝐤𝐨𝐭:\nཧᜰ꙰ꦿ➢𝐂𝐰𝐤 𝐚𝐩𝐚 𝐂𝐰𝐤:\nཧᜰ꙰ꦿ➢𝐃𝐨𝐢??:\nཧᜰ꙰ꦿ➢𝐁𝐚𝐜𝐚 𝐃𝐞𝐬𝐜 𝐲𝐚𝐚 𝐚𝐭𝐰 𝐌𝐚𝐮 𝐝𝐢 𝐒𝐚𝐧𝐭𝐞𝐭? 𝐌𝐨𝐠𝐚 𝐛𝐞𝐭𝐚𝐡 𝐝𝐢 𝐠𝐫𝐮𝐩ツ\n*❉───────────❉*\nཧᜰ꙰ꦿ➢ᴮᵗʷ ˢᵛ ⁿᵒ ᴬᵈᵐⁱⁿ ˢᵐᵃ ᵇᵒᵗ ʸᵃᵃ ᵐᵃᵃᶜⁱ><`
+				teks = `[ *𝐒𝐞𝐥𝐚𝐦𝐚𝐭 𝐝𝐚𝐭𝐚𝐧𝐠 𝐝𝐢 𝐆𝐫𝐨𝐮𝐩 𝐲𝐚𝐧𝐠 𝐏𝐞𝐧𝐮𝐡 𝐃𝐫𝐚𝐦𝐚 ${mdata.subject}* ]\n*❉───────────❉*\n@${num.split('@')[0]} ɪɴᴛʀᴏ/ᴅɪᴋɪᴄᴋツ:\n❏ᜰ꙰ꦿ➢𝐍𝐚𝐦𝐚:\n❏ᜰ꙰ꦿ➢𝐔𝐦𝐮𝐫:\n❏ᜰ꙰ꦿ➢𝐀𝐬𝐤𝐨𝐭:\n❏ᜰ꙰ꦿ➢𝐂𝐰𝐤 𝐚𝐩𝐚 𝐂𝐰𝐤:\n❏ᜰ꙰ꦿ➢𝐃𝐨𝐢??:\n❏ᜰ꙰ꦿ➢𝐁𝐚𝐜𝐚 𝐃𝐞𝐬𝐜 𝐲𝐚𝐚 𝐚𝐭𝐰 𝐌𝐚𝐮 𝐝𝐢 𝐒𝐚𝐧𝐭𝐞𝐭? 𝐌𝐨𝐠𝐚 𝐛𝐞𝐭𝐚𝐡 𝐝𝐢 𝐠𝐫𝐮𝐩ツ\n*❉───────────❉*\n❏ᜰ꙰ꦿ➢ᴮᵗʷ ˢᵛ ⁿᵒ ᴬᵈᵐⁱⁿ ˢᵐᵃ ᵇᵒᵗ ʸᵃᵃ ᵐᵃᵃᶜⁱ><`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -244,14 +244,13 @@ async function starts() {
                                 case 'kodenuklir':
                                         client.sendMessage(from, kodenuklir(prefix), text, {quoted: mek})
 				break			
-                               
-				case 'info':
+                               case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*INFO OWNER*\n*Owner bot* : Muhammad Ridwan Reynaldy\n*No Owner* : wa.me/62895330379186\n*Ig owner* : www.instagram.com/anemio999\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
+					teks = `❏ 𝐍𝐚𝐦𝐚 𝐛𝐨𝐭 : ${me.name}\n❏ 𝐍𝐨𝐦𝐞𝐫 𝐛𝐨𝐭 : @${me.jid.split('@')[0]}\n❏ 𝐏𝐫𝐞𝐟𝐢𝐱 : ${prefix}\n❏ 𝐓𝐨𝐭𝐚𝐥 𝐛𝐥𝐨𝐜𝐤 : ${blocked.length}\n❏ 𝐀𝐤𝐭𝐢𝐟 𝐬𝐞𝐣𝐚𝐤 : ${kyun(uptime)}\n❏ 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 : instagram.com/itspapoy\n❏ 𝐒𝐜𝐫𝐢𝐩𝐭 𝐛𝐲 : AnxietyBot\n❏ 𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐓𝐡𝐚𝐧𝐤𝐬 𝐭𝐨:\n➽ 𝐀𝐥𝐥𝐚𝐡 𝐒𝐖𝐓\n➽ 𝐌𝐡𝐚𝐧𝐤𝐛𝐚𝐫𝐛𝐚𝐫\n➽ 𝐒𝐞𝐥𝐮𝐫𝐮𝐡 𝐜𝐫𝐞𝐚𝐭𝐨𝐫 𝐛𝐨𝐭\n➽ 𝐒𝐞𝐥𝐮𝐫𝐮𝐡 𝐩𝐞𝐦𝐢𝐥𝐢𝐤 𝐰𝐞𝐛 𝐩𝐞𝐧𝐲𝐞𝐝𝐢𝐚 𝐥𝐚𝐲𝐚𝐧𝐚𝐧 𝐀𝐏𝐈`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
-					break
+					break				
 				case 's&k':
 				case 'snk':
 					me = client.user
