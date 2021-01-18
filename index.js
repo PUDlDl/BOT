@@ -47,18 +47,6 @@ blocked = []
 
 /********** END FILE ***************/
   
-const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
-const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
-const bulan = arrayBulan[moment().format('MM') - 1]
-const config = {
-    XBOT: 'PUDlDlBOT', 
-    instagram: 'https://instagram.com/itspapoy', 
-    nomer: 'wa.me/6287714745440',
-    youtube: 'https://www.youtube.com/channel/linkytlu', 
-    whatsapp: 'https://chat.whatsapp.com/linkgrouplu', 
-    tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
-    waktu: time
-}
 
 function kyun(seconds){
   function pad(s){
@@ -77,7 +65,7 @@ async function starts() {
 	client.logger.level = 'warn'
 	console.log(banner.string)
 	client.on('qr', () => {
-		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
+		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Nihh Scan QR code di hp satunya lagi'))
 	})
 	client.on('credentials-updated', () => {
 		fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -85,10 +73,10 @@ async function starts() {
 	})
 	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
 	client.on('connecting', () => {
-		start('2', 'Connecting...')
+		start('2', 'Tunggu bentar nyett...')
 	})
 	client.on('open', () => {
-		success('2', 'Connected')
+		success('2', 'Terhubung')
 	})
 	await client.connect({timeoutMs: 30*1000})
 
