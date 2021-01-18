@@ -1614,7 +1614,7 @@ async function starts() {
 							reply(err)
 						})
 					} else {
-						reply(' *KIRIM FOTO DENGAN CAPTIO OCR* ')
+						reply('𝐊𝐢𝐫𝐢𝐦 𝐟𝐨𝐭𝐨 𝐚𝐭𝐚𝐮 𝐭𝐚𝐠 𝐟𝐨𝐭𝐨 𝐲𝐚𝐧𝐠 𝐬𝐮𝐝𝐚𝐡 𝐭𝐞𝐫𝐤𝐢𝐫𝐢𝐦')
 					}
 					break
 				default:
@@ -1630,4 +1630,6 @@ async function starts() {
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
-	})
+	})	
+	}
+starts()
