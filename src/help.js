@@ -1,5 +1,5 @@
 const help = (prefix) => {
-	return `Hallo! member AnxietyBot
+	return `Haaee.
 	
 ╔══❏〘 INFORMATION 〙❏══╗
 ├─❏ *BOT TYPE : JavaScript 
@@ -48,9 +48,9 @@ Ngapain yg ini di baca emang ngerti? ;v
 ╰──────────────────
 
 
-🚀 *_Random ListFont_*
+🚀 *_Random EmotBerambod*
 ──────────────────
-❏ *${prefix}listfont*
+❏ *${prefix}emotberambod* [Viral?]
 ╰──────────────────
 
 
@@ -222,14 +222,15 @@ Ngapain yg ini di baca emang ngerti? ;v
 ❏ *${prefix}mentionall*
 ❏ *${prefix}tagme*
 ❏ *${prefix}add* [+62xx]
-❏ *${prefix}group* [buka/tutup]
+❏ *${prefix}gc* [on/off]
+❏ *${prefix}group* [on/off]
 ❏ *${prefix}demote* [@tag]
 ❏ *${prefix}promote* [@tag]
 ❏ *${prefix}kick* [@tag]
 ❏ *${prefix}listadmin*
 ❏ *${prefix}simih* [1/0]
 ❏ *${prefix}nsfw* [1/0] 
-❏ *${prefix}welcome* [1/0]
+❏ *${prefix}welcome* [1/0] [Wajib]
 ╰──────────────────
 
 
@@ -247,6 +248,9 @@ Ngapain yg ini di baca emang ngerti? ;v
 ❏ *${prefix}leave*
 ❏ *${prefix}setpp*
 ❏ *${prefix}setprefix*
+❏ *${prefix}tagall*
+❏ *${prefix}otagall*
+❏ *${prefix}mentionall*
 ╰──────────────────`
 }
 
