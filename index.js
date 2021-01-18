@@ -80,33 +80,17 @@ async function starts() {
 		console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
 	})
 
-const { tanggal, waktu, instagram, whatsapp, youtube, nomer, ontime } = config
+	fs.existsSync('./BarBar.json') && client.loadAuthInfo('./BarBar.json')
+	client.on('connecting', () => {
+		start('2', 'Connecting...')
+	})
+	client.on('open', () => {
+		success('2', 'Connected')
+	})
+	await client.connect({timeoutMs: 30*1000})
+        fs.writeFileSync('./BarBar.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
 
-
-
-const { exec } = require("child_process")
-
-const client = new WAConnection()
-
-client.on('qr', qr => {
-   qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code dah jadi nih, Scan QR CODE nya zeyeng.`)
-})
-
-client.on('credentials-updated', () => {
-   const authInfo = client.base64EncodedAuthInfo()
-   console.log(`credentials updated!`)
-
-   fs.writeFileSync('./session.json', JSON.stringify(authInfo, null, '\t'))
-})
-
-fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
-
-client.connect();
-
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@itspapoy`)
-
-client.on('group-participants-update', async (anu) => {
+	client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
 		try {
 			const mdata = await client.groupMetadata(anu.jid)
