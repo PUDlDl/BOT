@@ -442,7 +442,7 @@ client.on('group-participants-update', async (anu) => {
                     client.sendMessage('6287714745440@s.whatsapp.net', options, text, {quoted: mek})
                     client.sendMessage('6287714745440@s.whatsapp.net', options, text, {quoted: mek})
                     reply('REQUEST ANDA TELAH SAMPAI KE OWNER AINEBOT, Requests palsu atau main² tidak akan ditanggapi.')
-                    break
+                    break                
                 case 'ssweb':
 					if (args.length < 1) return reply('Urlnya mana kak?')
 					teks = body.slice(7)
@@ -584,7 +584,7 @@ client.on('group-participants-update', async (anu) => {
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/wikien?q=${tels}`, {method: 'get'})
 					reply(anu.result)
 					break
-			        case 'igstalkk':
+			        case 'igstalk':
 					if (args.length < 1) return reply('Masukan username mu!!')
 					ige = body.slice(9)
 					reply(mess.wait)
@@ -593,13 +593,6 @@ client.on('group-participants-update', async (anu) => {
 					hasil = `User Ditemukan!!\n\n*➸ Username :* ${anu.result.username}\n*➸ Nama :* ${anu.result.fullname}\n*➸ Followers :* ${anu.result.followers}\n*➸ Followings :* ${anu.result.followings}\n*➸ Bio :* ${anu.result.biography}`
 					client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
 					break
-                                case 'igstalk':
-                                        hmm = await fetchJson(`https://freerestapi.herokuapp.com/api/v1/igs?u=${body.slice(9)}`)
-                                        buffer = await getBuffer(hmm.data.profilehd)
-                                        hasil = `Fullname : ${hmm.data.fullname}\nFollowers : ${hmm.data.follower}\nFollowing : ${hmm.data.following}\nPrivate : ${hmm.data.private}\nVerified : ${hmm.data.verified}\nBio : ${hmm.data.bio}`
-                                        client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
-                                        break
-                                
                 case 'infogempa':
                    anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/infogempa`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
@@ -1088,21 +1081,21 @@ client.on('group-participants-update', async (anu) => {
               	               if (args.length < 1) return reply('teksnya mana kak?')
                                         teks = `${body.slice(8)}`
                                         if (teks.length > 10) return client.sendMessage(from, 'Teksnya kepanjangan, Maksimal 5 kalimat', text, {quoted: mek})
-                                        buff = await getBuffer(`https://docs-jojo.herokuapp.com/api/blackpink?text=${teks}`, {method: 'get'})
+                                        buff = await getBuffer(`https://arugaz.my.id/api/textpro/blackpink?text=${teks}`, {method: 'get'})
                                         client.sendMessage(from, buff, image, {quoted: mek, caption: `${teks}`})
 			     	        break
                 case 'text3d':
               	               if (args.length < 1) return reply('teksnya mana kak?')
                                         teks = `${body.slice(8)}`
                                         if (teks.length > 10) return client.sendMessage(from, 'Teksnya kepanjangan, Maksimal 5 kalimat', text, {quoted: mek})
-                                        buff = await getBuffer(`https://docs-jojo.herokuapp.com/api/text3d?text=${teks}`, {method: 'get'})
+                                        buff = await getBuffer(`https://arugaz.my.id/api/textpro/text3d?text=${teks}`, {method: 'get'})
                                         client.sendMessage(from, buff, image, {quoted: mek, caption: `${teks}`})
 			     	        break
                 case 'thunder':
               	               if (args.length < 1) return reply('teksnya mana kak?')
                                         teks = `${body.slice(8)}`
                                         if (teks.length > 10) return client.sendMessage(from, 'Teksnya kepanjangan, Maksimal 5 kalimat', text, {quoted: mek})
-                                        buff = await getBuffer(`https://docs-jojo.herokuapp.com/api/thunder?text=${teks}`, {method: 'get'})
+                                        buff = await getBuffer(`https://arugaz.my.id/api/textpro/thundertext?text=${teks}`, {method: 'get'})
                                         client.sendMessage(from, buff, image, {quoted: mek, caption: `${teks}`})
 			     	        break
                 case 'shorturl':
