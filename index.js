@@ -40,7 +40,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'ORG:@itspapoy;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' 
             + 'END:VCARD' 
-prefix = '🚀'
+prefix = '+'
 blocked = []          
 
 /********** LOAD FILE **************/
