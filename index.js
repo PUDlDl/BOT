@@ -233,7 +233,7 @@ client.on('group-participants-update', async (anu) => {
 					break
                                 case 'apakah':
 					apakah = body.slice(1)
-					const apa =['Iya','Bisa','Gatau','Semoga yahh''Tanyakan pada peta','Tidak','Bisa Jadi','Coba Ulangi']
+					const apa =['Iya','Bisa','Gatau','Semoga yahh','Tanyakan pada peta','Tidak','Bisa Jadi','Coba Ulangi']
 					const kah = apa[Math.floor(Math.random() * apa.length)]
 					client.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: mek })
 					break
