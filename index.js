@@ -33,7 +33,6 @@ const ffmpeg = require('fluent-ffmpeg')
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
-const antilink = JSON.parse(fs.readFileSync('./lib/database/antilink.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
@@ -84,7 +83,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, Scan QR CODE nya zeyeng.`)
+   console.log(`[ ${time} ] QR code dah jadi nih, Scan QR CODE nya zeyeng.`)
 })
 
 client.on('credentials-updated', () => {
@@ -191,10 +190,8 @@ client.on('group-participants-update', async (anu) => {
 			const isSimi = isGroup ? samih.includes(from) : false
 			const isOwner = ownerNumber.includes(sender)
 			const isPacar = pacarNumber.includes(sender)
-			const isBirdha = birdhaNumber.includes(sender)
-                        const pengirim = sender.id
-                        const GroupLinkDetector = antilink.includes(chatId)
-			const isUrl = (url) => {
+			const isBirdha = birdhaNumber.includes(sender)                        
+                        const isUrl = (url) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
 			}
 			const reply = (teks) => {
