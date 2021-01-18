@@ -37,11 +37,11 @@ const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Admin Ainebot\n' 
-            + 'ORG: Pengembang AINEBOT;\n' 
-            + 'TEL;type=CELL;type=VOICE;waid=62895330379186:+62 895-3303-79186\n' 
+            + 'FN:Fadhli\n' 
+            + 'ORG:@itspapoy;\n' 
+            + 'TEL;type=CELL;type=VOICE;waid=6287714745440:+62 877-1474-5440\n' 
             + 'END:VCARD' 
-prefix = '!'
+prefix = '🚀'
 blocked = []          
 
 /********** LOAD FILE **************/
@@ -55,11 +55,11 @@ const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const arrayBulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 const bulan = arrayBulan[moment().format('MM') - 1]
 const config = {
-    XBOT: '🤖AINEBOT🤖', 
-    instagram: 'https://instagram.com/anemio999', 
-    nomer: 'wa.me/62895330379186',
-    youtube: 'https://www.youtube.com/channel/UCCOUPwMDA19sekkYzkdmu6w', 
-    whatsapp: 'https://chat.whatsapp.com/EYGeuRbVFkfI8JrH3cNrGV', 
+    XBOT: 'PUDlDlBOT', 
+    instagram: 'https://instagram.com/itspapoy', 
+    nomer: 'wa.me/6287714745440',
+    youtube: 'https://www.youtube.com/channel/linkytlu', 
+    whatsapp: 'https://chat.whatsapp.com/linkgrouplu', 
     tanggal: `TANGGAL: ${moment().format('DD')} ${bulan} ${moment().format('YYYY')}`,
     waktu: time
 }
@@ -87,7 +87,7 @@ const client = new WAConnection()
 
 client.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(`[ ${time} ] QR code is ready, Scan now..`)
+   console.log(`[ ${time} ] QR code is ready, Scan QR CODE nya zeyeng.`)
 })
 
 client.on('credentials-updated', () => {
@@ -101,7 +101,7 @@ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
 
 client.connect();
 
-// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@affis_saputro123`)
+// client.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log(`${time}: Bot by ig:@itspapoy`)
 
 client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
