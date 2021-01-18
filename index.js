@@ -1446,10 +1446,10 @@ client.on('group-participants-update', async (anu) => {
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (args[0] === 'buka') {
+					if (args[0] === 'on') {
 					    reply(`𝗕𝗲𝗿𝗵𝗮𝘀𝗶𝗹 𝗠𝗲𝗺𝗯𝘂𝗸𝗮 𝗚𝗿𝗼𝘂𝗽`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, false)
-					} else if (args[0] === 'tutup') {
+					} else if (args[0] === 'off') {
 						reply(`𝗕𝗲𝗿𝗵𝗮𝘀𝗶𝗹 𝗠𝗲𝗻𝘂𝘁𝘂𝗽 𝗚𝗿𝗼𝘂𝗽`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
@@ -1459,20 +1459,20 @@ client.on('group-participants-update', async (anu) => {
             case 'owner':
             case 'creator':
                   client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                  client.sendMessage(from, 'Link Owner : wa.me/62895330379186',MessageType.text, { quoted: mek} )
-                  client.sendMessage(from, 'Tuh nomer owner ku >_<, jangan spam atau ku block kamu',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, 'Mutualan IG? : instagram.com/itspapoy',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, 'Nihh nomer ownernya , janlup di sv yaa ntr di svbck kooツ',MessageType.text, { quoted: mek} )
                   break
-            case 'assalamualaikum':
-                  client.sendMessage(from, 'Waalaikumsalam Warahmatullahi Wabarakatuh 😇',MessageType.text, { quoted: mek} )
+            case 'Assalamualaikum':
+                  client.sendMessage(from, 'Waalaikumsalam',MessageType.text, { quoted: mek} )
                   break
             case 'hi':
-                  client.sendMessage(from, 'Hi juga kak 😅',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, 'Haee ketik ${prefix}help aja yaa',MessageType.text, { quoted: mek} )
                   break
             case 'bot':
-                  client.sendMessage(from, 'Iya.. kak? 😅',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, 'euyy ketik ${prefix}help aja yaa',MessageType.text, { quoted: mek} )
                   break
             case 'hai':
-                  client.sendMessage(from, 'Hai juga kak 😅',MessageType.text, { quoted: mek} )
+                  client.sendMessage(from, 'Heyow ketik ${prefix}help aja yaa',MessageType.text, { quoted: mek} )
                   break
             case 'emotberambod':
                   client.sendMessage(from, 'INI EMOT BERAMBODnya ᥬ😀 ᭄ᥬ😃᭄ᥬ😄᭄ᥬ😁᭄ᥬ😆᭄ᥬ😅᭄ᥬ😂᭄ᥬ🤣᭄ᥬ🥲᭄ᥬ☺️᭄ᥬ😊᭄ᥬ😇᭄ᥬ🙂᭄ᥬ🙃᭄ᥬ😉᭄ᥬ😌᭄ᥬ😍᭄ᥬ🥰᭄',MessageType.text, { quoted: mek} )
