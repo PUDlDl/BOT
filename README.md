@@ -62,7 +62,7 @@ you've just cloned!
 > npm start
 ```
 
-### ```Salin aj biar garibet```
+### ```Salin biar garibet```
 
 ```bash
 pkg install git && pkg install bash
