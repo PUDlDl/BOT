@@ -62,6 +62,14 @@ you've just cloned!
 > npm start
 ```
 
+## Salin aj biar garibet
+
+```bash
+pkg install git
+git clone https://github.com/PUDlDl/BOT
+cd BOT
+bash install.sh && npm i && npm i got && node index.js
+```
 
 ## ``FEATURES`` 
 
