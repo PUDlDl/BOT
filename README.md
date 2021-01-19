@@ -25,7 +25,7 @@
 
 `Don't buy and sell script !`
 
-
+---------
 
 |    Install    |
 | :-----------: |
@@ -37,8 +37,7 @@ Clone this Project
 ```bash
 > git clone https://github.com/PUDlDl/BOT
 ```
-
-
+---------
 
 | Install the dependencies |
 | :----------------------: |
@@ -52,7 +51,7 @@ you've just cloned!
 > cd BOT
 > bash install.sh
 ```
-
+---------
 
 |   End   | 
 | :-----: |
