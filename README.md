@@ -63,7 +63,7 @@ you've just cloned!
 ```
 ---------
 
-###### ```Salin biar garibet```
+### ```Salin biar garibet```
 
 ```bash
 pkg install git && pkg install bash
