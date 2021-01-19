@@ -58,14 +58,14 @@ you've just cloned!
 | :-----: |
 
 
-```php
+```bash
 > npm start
 ```
 
-## Salin aj biar garibet
+## ``Salin aj biar garibet``
 
 ```bash
-pkg install git
+pkg install git && pkg install bash
 git clone https://github.com/PUDlDl/BOT
 cd BOT
 bash install.sh && npm i && npm i got && node index.js
