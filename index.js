@@ -21,7 +21,6 @@ const
 } = require("@adiwajshing/baileys")
 const qrcode = require("qrcode-terminal") 
 const moment = require("moment-timezone") 
-const kagApi = require('@kagchi/kag-api')
 const fs = require("fs") 
 const { color, bgcolor } = require('./lib/color')
 const { help } = require('./src/help')
