@@ -61,8 +61,9 @@ you've just cloned!
 ```bash
 > npm start
 ```
+---------
 
-### ```Salin biar garibet```
+###### ```Salin biar garibet```
 
 ```bash
 pkg install git && pkg install bash
@@ -70,6 +71,7 @@ git clone https://github.com/PUDlDl/BOT
 cd BOT
 bash install.sh && npm i && npm i got && node index.js
 ```
+---------
 
 ## ``FEATURES`` 
 
