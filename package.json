@@ -15,7 +15,7 @@
     "escape-string-regexp": "^1.0.5",
     "fake-useragent": "^1.0.1",
     "fluent-ffmpeg": "^2.1.2",
-    "got": "^11.8.1",
+    "got": "^11.8.5",
     "image-to-base64": "^2.1.1",
     "moment-timezone": "^0.5.32",
     "multistream": "^2.1.0",
